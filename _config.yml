@@ -112,13 +112,13 @@ author:
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-	  url: "https://ihmmaru99.github.io"
+		  #url: "https://ihmmaru99.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/ihmmaru99"
+		  #url: "https://github.com/ihmmaru99"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/ihmmaru99"
+		  #url: "https://instagram.com/ihmmaru99"
 
 # Site Footer
 footer:
