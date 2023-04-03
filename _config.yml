@@ -113,9 +113,6 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
       url: mailto:ihmmaru99@gmail.com
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://ihmmaru99.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/ihmmaru99"
