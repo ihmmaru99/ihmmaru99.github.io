@@ -18,12 +18,12 @@ minimal_mistakes_skin    : "air" # "default", "aqua", "contrast", "dark", "dirt"
 locale                   : "ko-KR"
 title                    : "Ihmmaru99의 잡동사니"
 title_separator          : "-"
-subtitle                 : "version 1.0" # site tagline that appears below site title in masthead
+subtitle                 : # site tagline that appears below site title in masthead
 name                     : "임정빈 (Ihm Jeong-Bin)"
 description              : "Ihmmaru99의 잡다한 모든 것"
 url                      : "https://ihmmaru99.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "https://github.com/ihmmaru99/ihmmaru99.github.io"
+repository               : #
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -59,8 +59,8 @@ reCaptcha:
 atom_feed:
   path                   : # blank (default) uses feed.xml
   hide                   : # true, false (default)
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search                   : true # false (default)
+search_full_content      : true # false (default)
 search_provider          : # lunr (default), algolia, google
 lunr:
   search_within_pages    : # true, false (default)
@@ -104,15 +104,15 @@ analytics:
 
 # Site Author
 author:
-  name             : "임정빈 (Ihm Jeong-Bin)"
+  name             : "Ihm Jeong-Bin"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "**임정빈의 잡다한 모든 것의 기록**"
-  location         : "Republic of Korea"
-  email            : "ihmmaru99@gmail.com"
+  bio              : "임정빈의 잡다한 모든 것의 기록"
+  location         : "Korea"
+  email            : #
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-	  url: #
+	  url: mailto:ihmmaru99@gmail.com
     - label: "Github"
       icon: "fas fa-fw fa-github"
       url: "https://github.com/ihmmaru99"
@@ -286,7 +286,7 @@ defaults:
       related: true
   # _pages
   - scope:
-	  path: "_pages"
+	  path: ""
 	  type: pages
 	values:
 	  layout: single
