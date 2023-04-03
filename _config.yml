@@ -108,7 +108,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "**자율주행 소프트웨어 엔지니어가 되기 위한 노력**"
   location         : "Korea"
-  email            : "ihmmaru99@gmail.com"
+  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -118,23 +118,17 @@ author:
       url: "https://ihmmaru99.github.io"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/ihmmaru99"
+      url: "https://github.com/ihmmaru99"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/ihmmaru99"
+      url: "https://instagram.com/ihmmaru99"
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/ihmmaru99"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
@@ -143,7 +137,7 @@ footer:
       # url:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url:
+      url: "https://instagram.com/ihmmaru99"
 
 
 # Reading Files
@@ -284,3 +278,10 @@ defaults:
       comments: # true
       share: true
       related: true
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
