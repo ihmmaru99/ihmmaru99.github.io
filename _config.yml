@@ -108,7 +108,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "**임정빈의 잡다한 모든 것의 기록**"
   location         : "Republic of Korea"
-  email            :
+  email            : "ihmmaru99@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
