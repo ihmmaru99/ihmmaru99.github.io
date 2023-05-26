@@ -2,7 +2,6 @@
 permalink: /about/
 title: "About"
 toc: true
-toc_sticky: true
-toc_label: "MYSELF"
+sidebar_main: true
 ---
 안녕하세요.

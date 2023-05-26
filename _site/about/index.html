@@ -134,8 +134,6 @@
               <a href="/about/">Introduce</a>
             </li><li class="masthead__menu-item">
               <a href="/categories/">Category</a>
-            </li><li class="masthead__menu-item">
-              <a href="/tags/">Tags</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -178,7 +176,7 @@
     </h3>
     
       <div class="author__bio p-note" itemprop="description">
-        <p><strong>자율주행 소프트웨어 엔지니어(진)~</strong></p>
+        <p><strong>자율주행 소프트웨어 엔지니어(진)</strong></p>
 
       </div>
     
@@ -269,8 +267,51 @@
 </div>
 
   
-  </div>
 
+  
+    <!--전체 글 수를 세기 위한 연산. sum 변수에 전체 글 수 저장-->
+
+
+
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle menu</label>
+  <ul class="nav__items" id="category_tag_menu">
+      <!--전체 글 수-->
+      <li>
+            📂 <span style="font-family:'TheJamsil5Bold';">전체 글 수</style> <span style="font-family:''TheJamsil5Bold';">2</style> <span style="font-family:'TheJamsil5Bold';">개</style> 
+      </li>
+      <li>
+        <span class="nav__sub-title">Autonomous Driving</span>
+        <!--span 태그로 카테고리들을 크게 분류 ex) C/C++/C#-->
+        <span class="nav__sub-title">C/C++/C#</span>
+            <!--ul 태그로 같은 카테고리들 모아둔 페이지들 나열-->
+            <ul>
+                <!--Cpp 카테고리 글들을 모아둔 페이지인 /categories/cpp 주소의 글로 링크 연결-->
+                <!--category[1].size 로 해당 카테고리를 가진 글의 개수 표시--> 
+                
+                    
+                        <li><a href="/categories/cpp" class="">C ++ (2)</a></li>
+                    
+                
+            </ul>
+        <span class="nav__sub-title">Coding Test</span>
+            <ul>
+                
+                    
+                
+            </ul>
+            <ul>
+                
+                    
+                
+            </ul>
+      </li>
+  </ul>
+</nav>
+  
+
+  </div>
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
@@ -294,9 +335,9 @@
 
       <section class="page__content e-content" itemprop="text">
         
-          <aside class="sidebar__right sticky">
+          <aside class="sidebar__right ">
             <nav class="toc">
-              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> MYSELF</h4></header>
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
               
 
             </nav>
@@ -318,7 +359,13 @@
 
       
 
-      
+      <!--첫 번째 문단-->
+
+
+
+
+<!--두 번째 문단-->
+
     </div>
 
     
