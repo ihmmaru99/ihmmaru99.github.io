@@ -15,18 +15,18 @@
 minimal_mistakes_skin    : "air" # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "ko-KR"
-title                    : "Ihmmaru99의 잡동사니"
+locale                   : "en-US"
+title                    : "ihmmaru99의 잡동사니"
 title_separator          : "-"
 subtitle                 : "잡다한 모든 것의 기록"
 name                     : "임정빈 (Ihm Jeong-Bin)"
 description              : "ihmmaru99's blog"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://ihmmaru99.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "https://github.com/ihmmaru99/ihmmaru99.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+masthead_title           : "ihmmaru99의 잡동사니"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "임정빈 (Ihm Jeong-Bin)"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "image/profile/IhmJB_drawing.jpeg"
   bio              : "**자율주행 소프트웨어 엔지니어를 향하여~**"
   location         : "Korea"
   email            :
