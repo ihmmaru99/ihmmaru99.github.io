@@ -91,7 +91,6 @@ classes: wide
   {% comment %}<!-- only show related on a post page when `related: true` -->{% endcomment %}
   {% if page.id and page.related and site.related_posts.size > 0 %}
     <div class="page__related"> <!--site.data.ui-text[site.locale].related_label-->
-      <h4 class="page__related-title">{{ "최근 글 10 개 :)" }}</h4>
         {% for post in site.related_posts limit:10 %}
           {% include archive-single2.html %}
         {% endfor %}
