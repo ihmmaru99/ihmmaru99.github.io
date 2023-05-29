@@ -1,12 +1,25 @@
 <!doctype html>
 <!--
-  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
-  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Minimal Mistakes Jekyll Theme 4.19.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
 -->
 <html lang="ko" class="no-js">
   <head>
+    <!--폰트 : "Nanum Gothic Coding", "Coming Soon"-->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
+    
+    <!--폰트 : "Iropke Batang"-->
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css">
+
+    <!--폰트 : "Cafe24Oneprettynight"-->
+    
+    <!--main.scss 조금이라도 빨리 로드 되길.. preload-->
+    <link rel="preload" as="style" href="/assets/css/main.css">
+
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>[C++] 테스트입니다. - IhmMaru99의 잡동사니</title>
@@ -112,6 +125,19 @@
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
 <!-- end custom head snippets -->
 
+    <!-- 스크롤바 커스터마이징 -->
+    <style> 
+      ::-webkit-scrollbar{width: 16px;}
+      ::-webkit-scrollbar-track {background-color:#4b4f52; border-radius: 16px;}
+      ::-webkit-scrollbar-thumb {background-color:#5e6265; border-radius: 16px;}
+      ::-webkit-scrollbar-thumb:hover {background: #ffd24c;}
+      ::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment 
+      {
+          width:12px;height:12px;background:transparent;}
+      }  
+
+      
+    </style>
   </head>
 
   <body class="layout--single wide">
@@ -135,11 +161,11 @@
           <span class="site-subtitle">잡다한 모든 것의 기록</span>
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="https://ihmmaru99.github.io">Home</a>
+              <a href="https://ihmmaru99.github.io">홈</a>
             </li><li class="masthead__menu-item">
-              <a href="/introduce/">Introduce</a>
+              <a href="/introduce/">소개</a>
             </li><li class="masthead__menu-item">
-              <a href="/categories/">Category</a>
+              <a href="/categories/">카테고리</a>
             </li></ul>
         
         <button class="greedy-nav__toggle hidden" type="button">
@@ -439,7 +465,7 @@
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         
         <p></p>
-        <h4 class="page__meta-title"><span style="font-family:'TheJamsil5Bold'; color:#0174DF;">Algorithm</span> <span style="font-family:'TheJamsil5Bold';">카테고리 내 다른 글 보러가기</span></h4>
+        <h4 class="page__meta-title"><span style="font-family:'TheJamsil5Bold'; color:#0174DF;">Algorithm</span> <span style="font-family:'TheJamsil5Bold';"> 카테고리 내 다른 글 보러가기 </span></h4>
         <!--
 
   <nav class="pagination">
@@ -612,6 +638,10 @@
 
       </footer>
     </div>
+
+    <aside class="sidebar__top">
+      <a href="#site-nav"> <i class="fas fa-angle-double-up fa-2x"></i></a>
+    </aside>
 
     
   <script src="/assets/js/main.min.js"></script>

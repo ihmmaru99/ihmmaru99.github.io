@@ -14,7 +14,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/categories/algorithm</loc>
-<lastmod>2023-05-30T00:43:24+09:00</lastmod>
+<lastmod>2023-05-30T00:49:52+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/categories/</loc>
@@ -22,7 +22,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/categories/boj</loc>
-<lastmod>2023-05-30T00:49:11+09:00</lastmod>
+<lastmod>2023-05-30T00:49:52+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/categories/cpp</loc>
@@ -30,7 +30,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/categories/programmers</loc>
-<lastmod>2023-05-30T00:45:59+09:00</lastmod>
+<lastmod>2023-05-30T00:49:52+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
@@ -43,9 +43,5 @@
 <url>
 <loc>http://localhost:4000/tags/</loc>
 <lastmod>2023-05-26T19:52:27+09:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/year-archive/</loc>
-<lastmod>2023-05-26T20:43:35+09:00</lastmod>
 </url>
 </urlset>

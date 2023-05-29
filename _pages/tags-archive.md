@@ -1,11 +1,7 @@
 ---
 permalink: /tags/
-title: "Tag"
+title: "태그"
 layout: tags
-author_profile: true
-toc: true
-toc_sticky: true
-toc_label: "Tags"
+toc: false
 sidebar_main: true
 ---
-Tag

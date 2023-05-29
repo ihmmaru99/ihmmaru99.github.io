@@ -1,10 +1,10 @@
 # main links
 main: 
-  - title: "Home"
+  - title: "홈"
     url: https://ihmmaru99.github.io
-  - title: "Introduce"
+  - title: "소개"
     url: /introduce/
-  - title: "Category"
+  - title: "카테고리"
     url: /categories/
   # - title: "Tags"
   #   url: /tags/
