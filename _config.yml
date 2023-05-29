@@ -15,7 +15,7 @@
 minimal_mistakes_skin    : "air" # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "ko-KR"
 title                    : "IhmMaru99의 잡동사니"
 title_separator          : "-"
 subtitle                 : "잡다한 모든 것의 기록"
@@ -215,6 +215,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-last-modified-at
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -277,6 +278,8 @@ defaults:
       related: true
       mathjax: true
       sidebar_main: true
+      toc: true
+      toc_sticky: true
   # _pages
   - scope:
       path: "_pages"
