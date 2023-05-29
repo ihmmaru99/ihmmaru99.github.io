@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-29T23:15:29+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IhmMaru99의 잡동사니</title><subtitle>ihmmaru99&apos;s blog</subtitle><author><name>임정빈 (Ihm Jeong-Bin)</name></author><entry><title type="html">[C++] 테스트입니다.</title><link href="http://localhost:4000/cpp/test/" rel="alternate" type="text/html" title="[C++] 테스트입니다." /><published>2023-05-25T00:00:00+09:00</published><updated>2023-05-29T00:00:00+09:00</updated><id>http://localhost:4000/cpp/test</id><content type="html" xml:base="http://localhost:4000/cpp/test/"><![CDATA[<h1 id="임정빈">임정빈</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-30T00:37:50+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IhmMaru99의 잡동사니</title><subtitle>ihmmaru99&apos;s blog</subtitle><author><name>임정빈 (Ihm Jeong-Bin)</name></author><entry><title type="html">[C++] 테스트입니다.</title><link href="http://localhost:4000/cpp/test/" rel="alternate" type="text/html" title="[C++] 테스트입니다." /><published>2023-05-25T00:00:00+09:00</published><updated>2023-05-29T00:00:00+09:00</updated><id>http://localhost:4000/cpp/test</id><content type="html" xml:base="http://localhost:4000/cpp/test/"><![CDATA[<h1 id="임정빈">임정빈</h1>
+<hr />
+<h2 id="세종과학고-8기"><strong>세종과학고 8기</strong></h2>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello World"</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<h2 id="한양대학교-미래자동차공학과-18학번"><strong>한양대학교 미래자동차공학과 18학번</strong></h2>
+<h3 id="반갑꼬리">반갑꼬리</h3>
+<hr />
+<blockquote>
+  <p>철은 무거우니까 들지 말자</p>
+</blockquote>
+
+<p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/0cbd500e-4fdc-46c8-863b-91678c20dd2a" alt="test" /></p>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="Cpp" /><category term="Cpp" /><summary type="html"><![CDATA[이건 아마도 미리보기 같은거]]></summary></entry><entry><title type="html">[C++] 테스트입니다</title><link href="http://localhost:4000/algorithm/test/" rel="alternate" type="text/html" title="[C++] 테스트입니다" /><published>2023-05-25T00:00:00+09:00</published><updated>2023-05-29T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/test</id><content type="html" xml:base="http://localhost:4000/algorithm/test/"><![CDATA[<h1 id="임정빈">임정빈</h1>
 <hr />
 <h2 id="세종과학고-8기"><strong>세종과학고 8기</strong></h2>
 <div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
@@ -11,13 +27,8 @@
 <h3 id="반갑꾸릉내">반갑꾸릉내</h3>
 <hr />
 <blockquote>
-  <p>철은 무거우니까 들지 말자</p>
-  <blockquote>
-    <p>어차피 인생은 굴러먹다가 가는 뜬구름 같은</p>
-  </blockquote>
-</blockquote>
-
-<p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/0cbd500e-4fdc-46c8-863b-91678c20dd2a" alt="test" /></p>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="Cpp" /><category term="Cpp" /><summary type="html"><![CDATA[이건 아마도 미리보기 같은거]]></summary></entry><entry><title type="html">[C++] 테스트입니다2</title><link href="http://localhost:4000/cpp/test3/" rel="alternate" type="text/html" title="[C++] 테스트입니다2" /><published>2023-05-25T00:00:00+09:00</published><updated>2023-05-29T00:00:00+09:00</updated><id>http://localhost:4000/cpp/test3</id><content type="html" xml:base="http://localhost:4000/cpp/test3/"><![CDATA[<h1 id="임정빈">임정빈</h1>
+  <p>어차피 인생은 굴러먹다가 가는 뜬구름 같은</p>
+</blockquote>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="Algorithm" /><category term="BOJ" /><category term="Programmers" /><summary type="html"><![CDATA[이건 아마도 미리보기 같은거]]></summary></entry><entry><title type="html">[C++] 테스트입니다</title><link href="http://localhost:4000/algorithm/test2/" rel="alternate" type="text/html" title="[C++] 테스트입니다" /><published>2023-05-25T00:00:00+09:00</published><updated>2023-05-29T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/test2</id><content type="html" xml:base="http://localhost:4000/algorithm/test2/"><![CDATA[<h1 id="임정빈">임정빈</h1>
 <hr />
 <h2 id="세종과학고-8기"><strong>세종과학고 8기</strong></h2>
 <div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
@@ -30,10 +41,5 @@
 <h3 id="반갑꾸릉내">반갑꾸릉내</h3>
 <hr />
 <blockquote>
-  <p>철은 무거우니까 들지 말자</p>
-  <blockquote>
-    <p>어차피 인생은 굴러먹다가 가는 뜬구름 같은</p>
-  </blockquote>
-</blockquote>
-
-<p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/0cbd500e-4fdc-46c8-863b-91678c20dd2a" alt="test" /></p>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="Cpp" /><category term="Cpp" /><summary type="html"><![CDATA[이건 아마도 미리보기 같은거]]></summary></entry><entry><title type="html">Test2</title><link href="http://localhost:4000/cpp/test2/" rel="alternate" type="text/html" title="Test2" /><published>2020-05-25T00:00:00+09:00</published><updated>2020-05-25T00:00:00+09:00</updated><id>http://localhost:4000/cpp/test2</id><content type="html" xml:base="http://localhost:4000/cpp/test2/"><![CDATA[<p><code class="language-plaintext highlighter-rouge">원래 힘으로 돌아가려는 힘 벡터</code></p>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="Cpp" /><category term="Cpp" /><summary type="html"><![CDATA[test2]]></summary></entry></feed>
+  <p>어차피 인생은 굴러먹다가 가는 뜬구름 같은</p>
+</blockquote>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="Algorithm" /><category term="BOJ" /><category term="Programmers" /><summary type="html"><![CDATA[이건 아마도 미리보기 같은거]]></summary></entry></feed>

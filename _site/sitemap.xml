@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/cpp/test2/</loc>
-<lastmod>2020-05-25T00:00:00+09:00</lastmod>
-</url>
-<url>
 <loc>http://localhost:4000/cpp/test/</loc>
 <lastmod>2023-05-29T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/cpp/test3/</loc>
+<loc>http://localhost:4000/algorithm/test/</loc>
 <lastmod>2023-05-29T00:00:00+09:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/about/</loc>
-<lastmod>2023-05-26T20:43:35+09:00</lastmod>
+<loc>http://localhost:4000/algorithm/test2/</loc>
+<lastmod>2023-05-29T00:00:00+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/categories/</loc>
@@ -27,6 +23,10 @@
 <url>
 <loc>http://localhost:4000/</loc>
 <lastmod>2023-05-26T20:43:35+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/introduce/</loc>
+<lastmod>2023-05-30T00:27:25+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/tags/</loc>

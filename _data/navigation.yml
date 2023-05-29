@@ -3,7 +3,7 @@ main:
   - title: "Home"
     url: https://ihmmaru99.github.io
   - title: "Introduce"
-    url: /about/
+    url: /introduce/
   - title: "Category"
     url: /categories/
   # - title: "Tags"
