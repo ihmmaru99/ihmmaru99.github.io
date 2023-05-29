@@ -348,11 +348,11 @@ body {
   border-radius: $border-radius;
   background-color: #81BEF7;
   font-family: $sans-serif;
-  color: #FAFAFA;
+  color: $primary-color;
 
   &:hover {
     text-decoration: none;
-    color: mix(#848484, #FAFAFA, 20%);
+    color: mix(#fff, #FAFAFA, 40%);
   }
 }
 
@@ -366,11 +366,11 @@ body {
   border-radius: $border-radius;
   background-color: #2E9AFE;
   font-family: $sans-serif;
-  color: #FAFAFA;
+  color: $primary-color;
 
   &:hover {
     text-decoration: none;
-    color: mix(#fff, #4D5357, 80%);
+    color: mix(#fff, #FAFAFA, 80%);
   }
 }
 
