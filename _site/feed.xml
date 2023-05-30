@@ -1,45 +1,101 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-30T01:47:17+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IhmMaru99의 잡동사니</title><subtitle>ihmmaru99&apos;s blog</subtitle><author><name>임정빈 (Ihm Jeong-Bin)</name></author><entry><title type="html">[C++] 테스트입니다.</title><link href="http://localhost:4000/algorithm/test/" rel="alternate" type="text/html" title="[C++] 테스트입니다." /><published>2023-05-25T00:00:00+09:00</published><updated>2023-05-29T00:00:00+09:00</updated><id>http://localhost:4000/algorithm/test</id><content type="html" xml:base="http://localhost:4000/algorithm/test/"><![CDATA[<h1 id="임정빈">임정빈</h1>
-<hr />
-<h2 id="세종과학고-8기"><strong>세종과학고 8기</strong></h2>
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello World"</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-<h2 id="한양대학교-미래자동차공학과-18학번"><strong>한양대학교 미래자동차공학과 18학번</strong></h2>
-<h3 id="반갑꼬리">반갑꼬리</h3>
-<hr />
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-30T10:51:24+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IhmMaru99의 잡동사니</title><subtitle>ihmmaru99&apos;s blog</subtitle><author><name>임정빈 (Ihm Jeong-Bin)</name></author><entry><title type="html">[프로그래머스] Lv3. 빙고</title><link href="http://localhost:4000/programmers/bingo/" rel="alternate" type="text/html" title="[프로그래머스] Lv3. 빙고" /><published>2023-05-29T00:00:00+09:00</published><updated>2023-05-30T00:00:00+09:00</updated><id>http://localhost:4000/programmers/bingo</id><content type="html" xml:base="http://localhost:4000/programmers/bingo/"><![CDATA[<h1 id="빙고">빙고</h1>
 <blockquote>
-  <p>철은 무거우니까 들지 말자</p>
+  <p>Lv3</p>
 </blockquote>
 
-<p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/0cbd500e-4fdc-46c8-863b-91678c20dd2a" alt="test" /></p>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="Algorithm" /><category term="Cpp" /><summary type="html"><![CDATA[이건 아마도 미리보기 같은거]]></summary></entry><entry><title type="html">[C++] 테스트입니다</title><link href="http://localhost:4000/boj/test/" rel="alternate" type="text/html" title="[C++] 테스트입니다" /><published>2023-05-25T00:00:00+09:00</published><updated>2023-05-29T00:00:00+09:00</updated><id>http://localhost:4000/boj/test</id><content type="html" xml:base="http://localhost:4000/boj/test/"><![CDATA[<h1 id="임정빈">임정빈</h1>
-<hr />
-<h2 id="세종과학고-8기"><strong>세종과학고 8기</strong></h2>
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello World"</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
-<span class="p">}</span>
+<h2 id="문제">문제</h2>
+<p>빙고는 NxN 크기의 게임 보드 칸에 1부터 NxN까지의 자연수를 중복 없이 하나씩 적은 후 숫자를 하나씩 지워나가는 게임입니다. 이때, 가로, 세로, 대각선 방향으로 한 줄에 적힌 숫자를 모두 지울 경우 빙고를 1개 만들었다고 합니다.
+다음은 4X4 크기의 게임 보드를 이용해 게임을 진행한 예시입니다.
+<img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/e13b5836-b275-4bcc-83b3-f5c62c8842f3" alt="빙고2_rlkqli" /><br />
+위와 같이 각 칸에 숫자가 적혀 있을 때, 위 게임 보드에서 순서대로 지운 숫자가 [14,3,2,4,13,1,16,11,5,15]인 경우 아래와 같이 빙고 3개가 만들어집니다.
+<img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/e31e056b-e0e3-4cbb-9600-e13b15ca87cb" alt="빙고_xibpii" /><br />
+빙고 게임 보드에 적힌 숫자가 담겨있는 배열 board, 게임 보드에서 순서대로 지운 숫자가 들어있는 배열 nums가 매개변수로 주어질 때, board에서 nums에 들어있는 숫자를 모두 지우면 몇 개의 빙고가 만들어지는지 return하도록 solution함수를 완성해주세요.</p>
+<h2 id="제한사항">제한사항</h2>
+<ul>
+  <li>board는 게임 보드 칸에 적힌 숫자를 뜻하는 NxN크기의 2차원 배열이며, N은 2 이상 500이하의 자연수입니다.</li>
+  <li>board의 각 칸에는 1 이상 NxN이하의 자연수가 중복 없이 하나씩 들어있습니다.</li>
+  <li>nums는 board에서 지울 숫자가 들어있는 배열이며, 길이는 1 이상 NxN이하입니다.</li>
+  <li>nums에 들어있는 숫자는 1 이상 NxN이하의 자연수이며, 중복된 수가 들어있지 않습니다.</li>
+</ul>
+
+<h2 id="입출력-예">입출력 예</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">board</th>
+      <th style="text-align: center">nums</th>
+      <th style="text-align: center">result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">[[11,13,15,16],[12,1,4,3],[10,2,7,8],[5,14,6,9]]</td>
+      <td style="text-align: center">[14,3,2,4,13,1,16,11,5,15]</td>
+      <td style="text-align: center">3</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">[[6,15,17,14,23],[5,12,16,13,25],[21,4,2,1,22],[10,20,3,18,8],[11,9,19,24,7]]</td>
+      <td style="text-align: center">[15,7,2,25,9,16,12,18,5,4,10,13,20]</td>
+      <td style="text-align: center">2</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="입출력-예-설명">입출력 예 설명</h2>
+<h3 id="입출력-예-1">입출력 예 #1</h3>
+<p>문제의 예시와 같습니다.</p>
+
+<h3 id="입출력-예-2">입출력 예 #2</h3>
+<p>다음 그림과 같이 2개의 빙고가 만들어집니다.<br />
+<img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/23910330-0879-42d6-80dd-f3f962323200" alt="빙고3_l1bqza" /></p>
+
+<h2 id="결과">결과</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">board</span><span class="p">,</span> <span class="n">nums</span><span class="p">):</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="nb">map</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">[</span><span class="mi">0</span><span class="p">]))]</span>
+    <span class="n">nums</span> <span class="o">=</span> <span class="nf">set</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">)):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+            <span class="k">if</span> <span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+                <span class="nb">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">cnt</span> <span class="o">=</span> <span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">)</span>
+    <span class="n">answer</span> <span class="o">+=</span> <span class="nf">len</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">map</span> <span class="k">if</span> <span class="nf">sum</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">])</span>
+    <span class="n">answer</span> <span class="o">+=</span> <span class="nf">len</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">zip</span><span class="p">(</span><span class="o">*</span><span class="nb">map</span><span class="p">)</span> <span class="k">if</span> <span class="nf">sum</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">])</span>
+    <span class="n">answer</span> <span class="o">+=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">sum</span><span class="p">(</span><span class="nb">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">cnt</span><span class="p">))</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">)</span>
+    <span class="n">answer</span> <span class="o">+=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">sum</span><span class="p">(</span><span class="nb">map</span><span class="p">[</span><span class="n">cnt</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">cnt</span><span class="p">))</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">)</span>
+        
+    <span class="k">return</span> <span class="n">answer</span>
 </code></pre></div></div>
-<h2 id="한양대학교-미래자동차공학과-18학번"><strong>한양대학교 미래자동차공학과 18학번</strong></h2>
-<h3 id="반갑꾸릉내">반갑꾸릉내</h3>
+<h3 id="문제-풀이">문제 풀이</h3>
 <hr />
 <blockquote>
-  <p>어차피 인생은 굴러먹다가 가는 뜬구름 같은</p>
-</blockquote>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="BOJ" /><category term="BOJ" /><category term="Programmers" /><summary type="html"><![CDATA[이건 아마도 미리보기 같은거]]></summary></entry><entry><title type="html">[C++] 테스트입니다</title><link href="http://localhost:4000/programmers/test2/" rel="alternate" type="text/html" title="[C++] 테스트입니다" /><published>2023-05-25T00:00:00+09:00</published><updated>2023-05-29T00:00:00+09:00</updated><id>http://localhost:4000/programmers/test2</id><content type="html" xml:base="http://localhost:4000/programmers/test2/"><![CDATA[<h1 id="임정빈">임정빈</h1>
-<hr />
-<h2 id="세종과학고-8기"><strong>세종과학고 8기</strong></h2>
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">"Hello World"</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
-<span class="p">}</span>
+  <p>board를 통해서 받아온 빙고판과 nums를 통해서 받아온 선택된 숫자들을 통해서 선택된 숫자가 적힌 정보를 받아올 수 있는 map이라는 2차원 배열을 생성하고 생성한 배열에서 한 행, 열, 대각선에 대한 빙고 여부를 판단한다.</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">map</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">[</span><span class="mi">0</span><span class="p">]))]</span>
 </code></pre></div></div>
-<h2 id="한양대학교-미래자동차공학과-18학번"><strong>한양대학교 미래자동차공학과 18학번</strong></h2>
-<h3 id="반갑꾸릉내">반갑꾸릉내</h3>
-<hr />
-<blockquote>
-  <p>어차피 인생은 굴러먹다가 가는 뜬구름 같은</p>
-</blockquote>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="Programmers" /><category term="BOJ" /><category term="Programmers" /><summary type="html"><![CDATA[이건 아마도 미리보기 같은거]]></summary></entry></feed>
+<p>board의 데이터와 nums의 데이터를 통해서 선택된 숫자들을 알 수 있도록 하는 배열을 생성한다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">nums</span> <span class="o">=</span> <span class="nf">set</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">)):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+        <span class="k">if</span> <span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+            <span class="nb">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+</code></pre></div></div>
+<p>nums를 배열로 입력을 받는데 이를 set으로 변경한다. 이유는 시간복잡도에 따른 알고리즘의 실행시간을 줄이기 위함이다. 배열 안에 해당 원소가 존재하는지 여부를 판단하기 위한 알고리즘의 시간복잡도는 list의 경우 \(O(n)\) 이고 set의 데이터형에서 시간복잡도는 \(O(1)\) 이다. 만약 아래의 for문을 돌게 되었을 때 nums의 자료형이 list라면 시간복잡도가 \(O(n^3)\)이 되기 때문에 set으로 변경해서 for문의 시간복잡도를 \(O(n^2)\)으로 줄여준다.
+<br />
+board 데이터와 nums의 데이터를 비교해서 만약 같다면 board의 해당 위치의 값을 0에서 1로 변경해서 선택된 숫자임을 나타낸다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cnt</span> <span class="o">=</span> <span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">)</span>
+<span class="n">answer</span> <span class="o">+=</span> <span class="nf">len</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">map</span> <span class="k">if</span> <span class="nf">sum</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">])</span>
+<span class="n">answer</span> <span class="o">+=</span> <span class="nf">len</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">zip</span><span class="p">(</span><span class="o">*</span><span class="nb">map</span><span class="p">)</span> <span class="k">if</span> <span class="nf">sum</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">])</span>
+<span class="n">answer</span> <span class="o">+=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">sum</span><span class="p">(</span><span class="nb">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">cnt</span><span class="p">))</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">)</span>
+<span class="n">answer</span> <span class="o">+=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">sum</span><span class="p">(</span><span class="nb">map</span><span class="p">[</span><span class="n">cnt</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">cnt</span><span class="p">))</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">)</span>
+        
+<span class="k">return</span> <span class="n">answer</span>
+</code></pre></div></div>
+<p>cnt는 한 줄이 빙고가 되었는지 확인할 때 사용하였다. 한줄이 다 선택됐다면 빙고가 완성되었다는 것인데 이는 map의 배열에서 한 행, 한 열 또는 대각선의 값이 모두 1로 채워졌다는 의미이다. 그렇다면 map의 한 줄의 데이터를 다 더하면 cnt와 같게 된다는 것을 의미한다. 이를 확인해서 answer에 더해주고 최종 answer를 return한다.</p>
+
+<h2 id="채점-결과">채점 결과</h2>
+<p><img width="139" alt="스크린샷 2023-05-30 10 38 22" src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/4cec01eb-5ac8-48cb-ba04-7138e762429e" /></p>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="Programmers" /><category term="Algorithm" /><category term="Coding Test" /><category term="Python" /><summary type="html"><![CDATA[빙고 Lv3]]></summary></entry></feed>

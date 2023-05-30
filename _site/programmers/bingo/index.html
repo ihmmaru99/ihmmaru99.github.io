@@ -1,0 +1,674 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.19.2 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <!--폰트 : "Nanum Gothic Coding", "Coming Soon"-->
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Nanum+Gothic+Coding&display=swap">
+    
+    <!--폰트 : "Iropke Batang"-->
+    <link rel="preload" as="style" href="https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css">
+
+    <!--폰트 : "Cafe24Oneprettynight"-->
+    
+    <!--main.scss 조금이라도 빨리 로드 되길.. preload-->
+    <link rel="preload" as="style" href="/assets/css/main.css">
+
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>[프로그래머스] Lv3. 빙고 - IhmMaru99의 잡동사니</title>
+<meta name="description" content="빙고    Lv3">
+
+
+  <meta name="author" content="임정빈 (Ihm Jeong-Bin)">
+  
+  <meta property="article:author" content="임정빈 (Ihm Jeong-Bin)">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="IhmMaru99의 잡동사니">
+<meta property="og:title" content="[프로그래머스] Lv3. 빙고">
+<meta property="og:url" content="http://localhost:4000/programmers/bingo/">
+
+
+  <meta property="og:description" content="빙고    Lv3">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2023-05-29T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="2023-05-30T00:00:00+09:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/programmers/bingo/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "임정빈 (Ihm Jeong-Bin)",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="IhmMaru99의 잡동사니 Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+<link rel="apple-touch-icon" sizes="57x57" href="/assets/logo.ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/assets/logo.ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/logo.ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/logo.ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/logo.ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/assets/logo.ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/assets/logo.ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/assets/logo.ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/logo.ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/assets/logo.ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/logo.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/assets/logo.ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/logo.ico/favicon-16x16.png">
+<link rel="manifest" href="/assets/logo.ico/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<!-- end custom head snippets -->
+
+    <!-- 스크롤바 커스터마이징 -->
+    <style> 
+      ::-webkit-scrollbar{width: 16px;}
+      ::-webkit-scrollbar-track {background-color:#4b4f52; border-radius: 16px;}
+      ::-webkit-scrollbar-thumb {background-color:#5e6265; border-radius: 16px;}
+      ::-webkit-scrollbar-thumb:hover {background: #ffd24c;}
+      ::-webkit-scrollbar-button:start:decrement,::-webkit-scrollbar-button:end:increment 
+      {
+          width:12px;height:12px;background:transparent;}
+
+      
+    </style>
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          IhmMaru99의 잡동사니
+          <span class="site-subtitle">잡다한 모든 것의 기록</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="https://ihmmaru99.github.io">홈</a>
+            </li><li class="masthead__menu-item">
+              <a href="/introduce/">소개</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">카테고리</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">글 목록</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/image/profile/IhmJB_drawing.jpeg" alt="임정빈 (Ihm Jeong-Bin)" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">임정빈 (Ihm Jeong-Bin)</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p><strong>자율주행 소프트웨어 엔지니어(진)</strong></p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">내 정보</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Korea</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:ihmmaru99@gmail.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/ihmmaru99" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://instagram.com/ihmmaru99" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i><span class="label">Instagram</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+
+  
+    <!--전체 글 수를 세기 위한 연산. sum 변수에 전체 글 수 저장-->
+
+
+
+<nav class="nav__list">
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">글 목록</label>
+  <ul class="nav__items" id="category_tag_menu">
+      <!--전체 글 수-->
+      <li>
+            📂 <span style="font-family:'TheJamsil5Bold';"><font size="3em">전체 글 수</font></style> <span style="font-family:''TheJamsil5Bold';"><font size="3em">1</font></style> <span style="font-family:'TheJamsil5Bold';"><font size="3em">개</font></style> 
+      </li>
+      <li>
+        <span class="nav__sub-title">Autonomous Driving</span>
+        <!--
+        <span class="nav__sub-title">C/C++/C#</span>
+            <ul>
+                
+                    
+                
+            </ul>
+        -->
+        <span class="nav__sub-title">Coding Test</span>
+            <ul>
+                
+                    
+                
+            </ul>
+            <ul>
+                
+                    
+                
+            </ul>
+            <ul>
+                
+                    
+                        <li><a href="/categories/programmers" class="">프로그래머스 (1)</a></li>
+                    
+                
+            </ul>
+      </li>
+  </ul>
+</nav>
+  
+
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[프로그래머스] Lv3. 빙고">
+    <meta itemprop="description" content="빙고  Lv3">
+    <meta itemprop="datePublished" content="2023-05-29T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2023-05-30T00:00:00+09:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">[프로그래머스] Lv3. 빙고
+</h1>
+          
+            <p class="page__meta"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Date:</strong> <time datetime="2023-05-29T00:00:00+09:00">2023.05.29</time>&nbsp&nbsp&nbsp<strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-05-30">2023.05.30</time></p>
+          
+          
+            <font size="3em">
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#programmers" class="page__taxonomy-item-category" rel="tag">Programmers</a>
+    
+    </span>
+  </p>
+
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#coding-test" class="page__taxonomy-item-tag" rel="tag">Coding Test</a><span class="sep"> </span>
+    
+      
+      
+      <a href="/tags/#python" class="page__taxonomy-item-tag" rel="tag">Python</a><span class="sep"> </span>
+    
+      
+      
+      <a href="/tags/#algorithm" class="page__taxonomy-item-tag" rel="tag">Algorithm</a>
+    
+    </span>
+  </p>
+</font>
+          
+        </header>
+      
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#빙고">빙고</a>
+    <ul>
+      <li><a href="#문제">문제</a></li>
+      <li><a href="#제한사항">제한사항</a></li>
+      <li><a href="#입출력-예">입출력 예</a></li>
+      <li><a href="#입출력-예-설명">입출력 예 설명</a>
+        <ul>
+          <li><a href="#입출력-예-1">입출력 예 #1</a></li>
+          <li><a href="#입출력-예-2">입출력 예 #2</a></li>
+        </ul>
+      </li>
+      <li><a href="#결과">결과</a>
+        <ul>
+          <li><a href="#문제-풀이">문제 풀이</a></li>
+        </ul>
+      </li>
+      <li><a href="#채점-결과">채점 결과</a></li>
+    </ul>
+  </li>
+</ul>
+            </nav>
+          </aside>
+        
+        <h1 id="빙고">빙고</h1>
+<blockquote>
+  <p>Lv3</p>
+</blockquote>
+
+<h2 id="문제">문제</h2>
+<p>빙고는 NxN 크기의 게임 보드 칸에 1부터 NxN까지의 자연수를 중복 없이 하나씩 적은 후 숫자를 하나씩 지워나가는 게임입니다. 이때, 가로, 세로, 대각선 방향으로 한 줄에 적힌 숫자를 모두 지울 경우 빙고를 1개 만들었다고 합니다.
+다음은 4X4 크기의 게임 보드를 이용해 게임을 진행한 예시입니다.
+<img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/e13b5836-b275-4bcc-83b3-f5c62c8842f3" alt="빙고2_rlkqli" /><br />
+위와 같이 각 칸에 숫자가 적혀 있을 때, 위 게임 보드에서 순서대로 지운 숫자가 [14,3,2,4,13,1,16,11,5,15]인 경우 아래와 같이 빙고 3개가 만들어집니다.
+<img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/e31e056b-e0e3-4cbb-9600-e13b15ca87cb" alt="빙고_xibpii" /><br />
+빙고 게임 보드에 적힌 숫자가 담겨있는 배열 board, 게임 보드에서 순서대로 지운 숫자가 들어있는 배열 nums가 매개변수로 주어질 때, board에서 nums에 들어있는 숫자를 모두 지우면 몇 개의 빙고가 만들어지는지 return하도록 solution함수를 완성해주세요.</p>
+<h2 id="제한사항">제한사항</h2>
+<ul>
+  <li>board는 게임 보드 칸에 적힌 숫자를 뜻하는 NxN크기의 2차원 배열이며, N은 2 이상 500이하의 자연수입니다.</li>
+  <li>board의 각 칸에는 1 이상 NxN이하의 자연수가 중복 없이 하나씩 들어있습니다.</li>
+  <li>nums는 board에서 지울 숫자가 들어있는 배열이며, 길이는 1 이상 NxN이하입니다.</li>
+  <li>nums에 들어있는 숫자는 1 이상 NxN이하의 자연수이며, 중복된 수가 들어있지 않습니다.</li>
+</ul>
+
+<h2 id="입출력-예">입출력 예</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">board</th>
+      <th style="text-align: center">nums</th>
+      <th style="text-align: center">result</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">[[11,13,15,16],[12,1,4,3],[10,2,7,8],[5,14,6,9]]</td>
+      <td style="text-align: center">[14,3,2,4,13,1,16,11,5,15]</td>
+      <td style="text-align: center">3</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">[[6,15,17,14,23],[5,12,16,13,25],[21,4,2,1,22],[10,20,3,18,8],[11,9,19,24,7]]</td>
+      <td style="text-align: center">[15,7,2,25,9,16,12,18,5,4,10,13,20]</td>
+      <td style="text-align: center">2</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="입출력-예-설명">입출력 예 설명</h2>
+<h3 id="입출력-예-1">입출력 예 #1</h3>
+<p>문제의 예시와 같습니다.</p>
+
+<h3 id="입출력-예-2">입출력 예 #2</h3>
+<p>다음 그림과 같이 2개의 빙고가 만들어집니다.<br />
+<img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/23910330-0879-42d6-80dd-f3f962323200" alt="빙고3_l1bqza" /></p>
+
+<h2 id="결과">결과</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">board</span><span class="p">,</span> <span class="n">nums</span><span class="p">):</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="nb">map</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">[</span><span class="mi">0</span><span class="p">]))]</span>
+    <span class="n">nums</span> <span class="o">=</span> <span class="nf">set</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">)):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+            <span class="k">if</span> <span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+                <span class="nb">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">cnt</span> <span class="o">=</span> <span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">)</span>
+    <span class="n">answer</span> <span class="o">+=</span> <span class="nf">len</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">map</span> <span class="k">if</span> <span class="nf">sum</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">])</span>
+    <span class="n">answer</span> <span class="o">+=</span> <span class="nf">len</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">zip</span><span class="p">(</span><span class="o">*</span><span class="nb">map</span><span class="p">)</span> <span class="k">if</span> <span class="nf">sum</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">])</span>
+    <span class="n">answer</span> <span class="o">+=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">sum</span><span class="p">(</span><span class="nb">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">cnt</span><span class="p">))</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">)</span>
+    <span class="n">answer</span> <span class="o">+=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">sum</span><span class="p">(</span><span class="nb">map</span><span class="p">[</span><span class="n">cnt</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">cnt</span><span class="p">))</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">)</span>
+        
+    <span class="k">return</span> <span class="n">answer</span>
+</code></pre></div></div>
+<h3 id="문제-풀이">문제 풀이</h3>
+<hr />
+<blockquote>
+  <p>board를 통해서 받아온 빙고판과 nums를 통해서 받아온 선택된 숫자들을 통해서 선택된 숫자가 적힌 정보를 받아올 수 있는 map이라는 2차원 배열을 생성하고 생성한 배열에서 한 행, 열, 대각선에 대한 빙고 여부를 판단한다.</p>
+</blockquote>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">map</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">[</span><span class="mi">0</span><span class="p">]))]</span>
+</code></pre></div></div>
+<p>board의 데이터와 nums의 데이터를 통해서 선택된 숫자들을 알 수 있도록 하는 배열을 생성한다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">nums</span> <span class="o">=</span> <span class="nf">set</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">)):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+        <span class="k">if</span> <span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+            <span class="nb">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+</code></pre></div></div>
+<p>nums를 배열로 입력을 받는데 이를 set으로 변경한다. 이유는 시간복잡도에 따른 알고리즘의 실행시간을 줄이기 위함이다. 배열 안에 해당 원소가 존재하는지 여부를 판단하기 위한 알고리즘의 시간복잡도는 list의 경우 \(O(n)\) 이고 set의 데이터형에서 시간복잡도는 \(O(1)\) 이다. 만약 아래의 for문을 돌게 되었을 때 nums의 자료형이 list라면 시간복잡도가 \(O(n^3)\)이 되기 때문에 set으로 변경해서 for문의 시간복잡도를 \(O(n^2)\)으로 줄여준다.
+<br />
+board 데이터와 nums의 데이터를 비교해서 만약 같다면 board의 해당 위치의 값을 0에서 1로 변경해서 선택된 숫자임을 나타낸다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">cnt</span> <span class="o">=</span> <span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">)</span>
+<span class="n">answer</span> <span class="o">+=</span> <span class="nf">len</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">map</span> <span class="k">if</span> <span class="nf">sum</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">])</span>
+<span class="n">answer</span> <span class="o">+=</span> <span class="nf">len</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">zip</span><span class="p">(</span><span class="o">*</span><span class="nb">map</span><span class="p">)</span> <span class="k">if</span> <span class="nf">sum</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">])</span>
+<span class="n">answer</span> <span class="o">+=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">sum</span><span class="p">(</span><span class="nb">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">cnt</span><span class="p">))</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">)</span>
+<span class="n">answer</span> <span class="o">+=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">sum</span><span class="p">(</span><span class="nb">map</span><span class="p">[</span><span class="n">cnt</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">cnt</span><span class="p">))</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">)</span>
+        
+<span class="k">return</span> <span class="n">answer</span>
+</code></pre></div></div>
+<p>cnt는 한 줄이 빙고가 되었는지 확인할 때 사용하였다. 한줄이 다 선택됐다면 빙고가 완성되었다는 것인데 이는 map의 배열에서 한 행, 한 열 또는 대각선의 값이 모두 1로 채워졌다는 의미이다. 그렇다면 map의 한 줄의 데이터를 다 더하면 cnt와 같게 된다는 것을 의미한다. 이를 확인해서 answer에 더해주고 최종 answer를 return한다.</p>
+
+<h2 id="채점-결과">채점 결과</h2>
+<p><img width="139" alt="스크린샷 2023-05-30 10 38 22" src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/4cec01eb-5ac8-48cb-ba04-7138e762429e" /></p>
+
+
+        
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        
+        <p></p>
+        <h5 class="page__meta-title"><span style="font-family:'TheJamsil5Bold'; color:#0174DF;">Programmers</span> <span style="font-family:'TheJamsil5Bold';"> 카테고리 내 다른 글 보러가기 </span></h5>
+        <!--
+
+-->
+
+
+
+
+  
+  	
+  	
+  	
+  	
+  	
+
+
+  <a href="#" class="pagination_prev_next--pager disabled-first-child">첫 번째 글입니다</a>
+  <a href="#" class="pagination_prev_next--pager disabled-last-child ">가장 최근 글입니다</a>
+
+
+<!--
+
+
+
+-->
+
+
+        <p></p>
+
+        <!-- archive 중간 광고 -->
+        <ins class="adsbygoogle"
+             style="display:block"
+            data-ad-client="ca-pub-6111782407607310"
+            data-ad-slot="5458515780"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </section>
+      <footer class="page__meta">
+        
+        
+      </footer>
+    </div>
+
+    
+
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">최근 글</h4>
+      <div class="grid__wrapper">
+        
+          
+            
+      </div>
+    </div>
+  
+</div>
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>내 정보:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://github.com/ihmmaru99" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://instagram.com/ihmmaru99" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 임정빈 (Ihm Jeong-Bin). Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    <aside class="sidebar__top">
+      <a href="#site-nav"> <i class="fas fa-angle-double-up fa-2x"></i></a>
+    </aside>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+
+
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" defer
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+
+
+  </body>
+</html>

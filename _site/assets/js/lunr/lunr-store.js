@@ -1,19 +1,7 @@
 var store = [{
-        "title": "[C++] 테스트입니다.",
-        "excerpt":"임정빈   세종과학고 8기  #include &lt;iostream&gt; using namespace std; int main(){   cout &lt;&lt; \"Hello World\" &lt;&lt; '\\n'; }  한양대학교 미래자동차공학과 18학번  반갑꼬리      철은 무거우니까 들지 말자       ","categories": ["Algorithm"],
-        "tags": ["Cpp"],
-        "url": "/algorithm/test/",
-        "teaser": null
-      },{
-        "title": "[C++] 테스트입니다",
-        "excerpt":"임정빈   세종과학고 8기  #include &lt;iostream&gt; using namespace std; int main(){   cout &lt;&lt; \"Hello World\" &lt;&lt; '\\n'; }  한양대학교 미래자동차공학과 18학번  반갑꾸릉내      어차피 인생은 굴러먹다가 가는 뜬구름 같은    ","categories": ["BOJ"],
-        "tags": ["BOJ","Programmers"],
-        "url": "/boj/test/",
-        "teaser": null
-      },{
-        "title": "[C++] 테스트입니다",
-        "excerpt":"임정빈   세종과학고 8기  #include &lt;iostream&gt; using namespace std; int main(){   cout &lt;&lt; \"Hello World\" &lt;&lt; '\\n'; }  한양대학교 미래자동차공학과 18학번  반갑꾸릉내      어차피 인생은 굴러먹다가 가는 뜬구름 같은    ","categories": ["Programmers"],
-        "tags": ["BOJ","Programmers"],
-        "url": "/programmers/test2/",
+        "title": "[프로그래머스] Lv3. 빙고",
+        "excerpt":"빙고 Lv3 문제 빙고는 NxN 크기의 게임 보드 칸에 1부터 NxN까지의 자연수를 중복 없이 하나씩 적은 후 숫자를 하나씩 지워나가는 게임입니다. 이때, 가로, 세로, 대각선 방향으로 한 줄에 적힌 숫자를 모두 지울 경우 빙고를 1개 만들었다고 합니다. 다음은 4X4 크기의 게임 보드를 이용해 게임을 진행한 예시입니다. 위와 같이 각 칸에...","categories": ["Programmers"],
+        "tags": ["Algorithm","Coding Test","Python"],
+        "url": "/programmers/bingo/",
         "teaser": null
       }]
