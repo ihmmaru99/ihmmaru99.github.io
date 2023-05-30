@@ -4,4 +4,10 @@ var store = [{
         "tags": ["Algorithm","Coding Test","Python"],
         "url": "/programmers/bingo/",
         "teaser": null
+      },{
+        "title": "[백준][13305] 주유소",
+        "excerpt":"주유소 난이도 실버 3 문제 어떤 나라에 N개의 도시가 있다. 이 도시들은 일직선 도로 위에 있다. 편의상 일직선을 수평 방향으로 두자. 제일 왼쪽의 도시에서 제일 오른쪽의 도시로 자동차를 이용하여 이동하려고 한다. 인접한 두 도시 사이의 도로들은 서로 길이가 다를 수 있다. 도로 길이의 단위는 km를 사용한다. 처음 출발할 때 자동차에는...","categories": ["BOJ"],
+        "tags": ["Algorithm","Coding Test","C++"],
+        "url": "/boj/13305/",
+        "teaser": null
       }]
