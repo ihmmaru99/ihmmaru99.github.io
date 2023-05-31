@@ -2,8 +2,7 @@
 permalink: /introduce/
 title: "소개"
 layout: introduce
-toc: true
-toc_label: "프로필"
+toc: false
 sidebar_main: true
 ---
 # 소개
