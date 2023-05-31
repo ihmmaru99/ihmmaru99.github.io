@@ -1,91 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-31T20:22:19+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IhmMaru99의 잡동사니</title><subtitle>ihmmaru99&apos;s blog</subtitle><author><name>임정빈 (Ihm Jeong-Bin)</name></author><entry><title type="html">[백준][13305] 주유소</title><link href="http://localhost:4000/boj/13305/" rel="alternate" type="text/html" title="[백준][13305] 주유소" /><published>2023-05-30T00:00:00+09:00</published><updated>2023-05-30T00:00:00+09:00</updated><id>http://localhost:4000/boj/13305</id><content type="html" xml:base="http://localhost:4000/boj/13305/"><![CDATA[<h1 id="주유소">주유소</h1>
-<h2 id="난이도">난이도</h2>
-<blockquote>
-  <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/40f259a0-6d4e-4cfa-a954-225e9b42961f" alt="8" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 3</span></p>
-</blockquote>
-
-<h2 id="문제">문제</h2>
-<p>어떤 나라에 N개의 도시가 있다. 이 도시들은 일직선 도로 위에 있다. 편의상 일직선을 수평 방향으로 두자. 제일 왼쪽의 도시에서 제일 오른쪽의 도시로 자동차를 이용하여 이동하려고 한다. 인접한 두 도시 사이의 도로들은 서로 길이가 다를 수 있다. 도로 길이의 단위는 km를 사용한다.</p>
-
-<p>처음 출발할 때 자동차에는 기름이 없어서 주유소에서 기름을 넣고 출발하여야 한다. 기름통의 크기는 무제한이어서 얼마든지 많은 기름을 넣을 수 있다. 도로를 이용하여 이동할 때 1km마다 1리터의 기름을 사용한다. 각 도시에는 단 하나의 주유소가 있으며, 도시 마다 주유소의 리터당 가격은 다를 수 있다. 가격의 단위는 원을 사용한다.</p>
-
-<p>예를 들어, 이 나라에 다음 그림처럼 4개의 도시가 있다고 하자. 원 안에 있는 숫자는 그 도시에 있는 주유소의 리터당 가격이다. 도로 위에 있는 숫자는 도로의 길이를 표시한 것이다.<br />
-<img width="274" alt="1" src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/10e90ea8-b6af-4091-b2ea-ec13596f7f3d" /><br />
-제일 왼쪽 도시에서 6리터의 기름을 넣고, 더 이상의 주유 없이 제일 오른쪽 도시까지 이동하면 총 비용은 30원이다. 만약 제일 왼쪽 도시에서 2리터의 기름을 넣고(2×5 = 10원) 다음 번 도시까지 이동한 후 3리터의 기름을 넣고(3×2 = 6원) 다음 도시에서 1리터의 기름을 넣어(1×4 = 4원) 제일 오른쪽 도시로 이동하면, 총 비용은 20원이다. 또 다른 방법으로 제일 왼쪽 도시에서 2리터의 기름을 넣고(2×5 = 10원) 다음 번 도시까지 이동한 후 4리터의 기름을 넣고(4×2 = 8원) 제일 오른쪽 도시까지 이동하면, 총 비용은 18원이다.</p>
-
-<p>각 도시에 있는 주유소의 기름 가격과, 각 도시를 연결하는 도로의 길이를 입력으로 받아 제일 왼쪽 도시에서 제일 오른쪽 도시로 이동하는 최소의 비용을 계산하는 프로그램을 작성하시오.</p>
-<h2 id="입력">입력</h2>
-<p>표준 입력으로 다음 정보가 주어진다. 첫 번째 줄에는 도시의 개수를 나타내는 정수 N(2 ≤ N ≤ 100,000)이 주어진다. 다음 줄에는 인접한 두 도시를 연결하는 도로의 길이가 제일 왼쪽 도로부터 N-1개의 자연수로 주어진다. 다음 줄에는 주유소의 리터당 가격이 제일 왼쪽 도시부터 순서대로 N개의 자연수로 주어진다. 제일 왼쪽 도시부터 제일 오른쪽 도시까지의 거리는 1이상 1,000,000,000 이하의 자연수이다. 리터당 가격은 1 이상 1,000,000,000 이하의 자연수이다.</p>
-<h2 id="출력">출력</h2>
-<p>표준 출력으로 제일 왼쪽 도시에서 제일 오른쪽 도시로 가는 최소 비용을 출력한다.</p>
-<h2 id="서브태스크">서브태스크</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>번호</th>
-      <th>배점</th>
-      <th>제한</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>17</td>
-      <td>모든 주유소의 리터당 가격은 1원이다.</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>41</td>
-      <td>2 ≤ N ≤ 1,000, 제일 왼쪽 도시부터 제일 오른쪽 도시까지의 거리는 최대 10,000, 리터 당 가격은 최대 10,000이다.</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>42</td>
-      <td>원래의 제약조건 이외에 아무 제약조건이 없다.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="결과">결과</h2>
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
-</span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-
-<span class="kt">int</span> <span class="n">dist</span><span class="p">[</span><span class="mi">100000</span><span class="p">];</span>
-<span class="kt">int</span> <span class="n">cost</span><span class="p">[</span><span class="mi">100000</span><span class="p">];</span>
-
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-    <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
-    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
-    <span class="kt">long</span> <span class="kt">long</span> <span class="n">cnt</span><span class="p">,</span> <span class="n">now</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-        <span class="kt">int</span> <span class="n">a</span><span class="p">;</span>
-        <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">dist</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-        
-    <span class="p">}</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-        <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">cost</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-    <span class="p">}</span>
-    <span class="n">now</span> <span class="o">=</span> <span class="n">cost</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
-    <span class="n">cnt</span> <span class="o">=</span> <span class="n">now</span> <span class="o">*</span> <span class="n">dist</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">now</span> <span class="o">&gt;</span> <span class="n">cost</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-            <span class="n">now</span> <span class="o">=</span> <span class="n">cost</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-        <span class="n">cnt</span> <span class="o">+=</span> <span class="n">now</span> <span class="o">*</span> <span class="n">dist</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-    <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">cnt</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-<h3 id="문제풀이">문제풀이</h3>
-<blockquote>
-  <p>첫 번째 주유수에서 다음 주유소로 가기 위해서는 무조건 처음에는 무조건 주유를 해야 한다. 이후 부터는 다음 주유소에서 주유할 때와 비교해서 만약 다음 주유수에서 주유하는 것이 더 나은 결과라면 다음 주유소에서 주유하고 아니라면 이전 주유소에서 주유하고 온다.</p>
-</blockquote>
-
-<h2 id="결과-1">결과</h2>
-<p><img width="732" alt="스크린샷 2023-05-30 19 15 37" src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/c67a70e4-460c-4e7a-a28b-c0305a1c7c1a" /></p>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[주유소 난이도 실버 3]]></summary></entry><entry><title type="html">[백준][2468] 안전 영역</title><link href="http://localhost:4000/boj/2468/" rel="alternate" type="text/html" title="[백준][2468] 안전 영역" /><published>2023-05-30T00:00:00+09:00</published><updated>2023-05-31T18:47:38+09:00</updated><id>http://localhost:4000/boj/2468</id><content type="html" xml:base="http://localhost:4000/boj/2468/"><![CDATA[<h1 id="안전-영역">안전 영역</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-31T20:32:05+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IhmMaru99의 잡동사니</title><subtitle>ihmmaru99&apos;s blog</subtitle><author><name>임정빈 (Ihm Jeong-Bin)</name></author><entry><title type="html">[백준][2468] 안전 영역</title><link href="http://localhost:4000/boj/2468/" rel="alternate" type="text/html" title="[백준][2468] 안전 영역" /><published>2023-05-31T00:00:00+09:00</published><updated>2023-05-31T00:00:00+09:00</updated><id>http://localhost:4000/boj/2468</id><content type="html" xml:base="http://localhost:4000/boj/2468/"><![CDATA[<h1 id="안전-영역">안전 영역</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
   <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/1725e8ac-be34-44d1-a4db-174d0a2cd0dd" alt="10" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 1</span></p>
@@ -111,6 +24,8 @@
 <p>첫째 줄에 장마철에 물에 잠기지 않는 안전한 영역의 최대 개수를 출력한다.</p>
 
 <h2 id="결과">결과</h2>
+<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/2468/2468.cpp">2468 - 안전 영역</a></p>
+
 <div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 #include</span> <span class="cpf">&lt;queue&gt;</span><span class="cp">
 #include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp">
@@ -187,7 +102,96 @@
 </blockquote>
 
 <h2 id="결과-1">결과</h2>
-<p><img width="734" alt="스크린샷 2023-05-31 18 46 44" src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/3688be97-7bc7-4448-8a3f-f78c48a4b167" /></p>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[안전 영역 난이도 실버 1]]></summary></entry><entry><title type="html">[프로그래머스] Lv3. 빙고</title><link href="http://localhost:4000/programmers/bingo/" rel="alternate" type="text/html" title="[프로그래머스] Lv3. 빙고" /><published>2023-05-29T00:00:00+09:00</published><updated>2023-05-30T00:00:00+09:00</updated><id>http://localhost:4000/programmers/bingo</id><content type="html" xml:base="http://localhost:4000/programmers/bingo/"><![CDATA[<h1 id="빙고">빙고</h1>
+<p><img width="734" alt="스크린샷 2023-05-31 18 46 44" src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/3688be97-7bc7-4448-8a3f-f78c48a4b167" /></p>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[안전 영역 난이도 실버 1]]></summary></entry><entry><title type="html">[백준][13305] 주유소</title><link href="http://localhost:4000/boj/13305/" rel="alternate" type="text/html" title="[백준][13305] 주유소" /><published>2023-05-30T00:00:00+09:00</published><updated>2023-05-30T00:00:00+09:00</updated><id>http://localhost:4000/boj/13305</id><content type="html" xml:base="http://localhost:4000/boj/13305/"><![CDATA[<h1 id="주유소">주유소</h1>
+<h2 id="난이도">난이도</h2>
+<blockquote>
+  <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/40f259a0-6d4e-4cfa-a954-225e9b42961f" alt="8" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 3</span></p>
+</blockquote>
+
+<h2 id="문제">문제</h2>
+<p>어떤 나라에 N개의 도시가 있다. 이 도시들은 일직선 도로 위에 있다. 편의상 일직선을 수평 방향으로 두자. 제일 왼쪽의 도시에서 제일 오른쪽의 도시로 자동차를 이용하여 이동하려고 한다. 인접한 두 도시 사이의 도로들은 서로 길이가 다를 수 있다. 도로 길이의 단위는 km를 사용한다.</p>
+
+<p>처음 출발할 때 자동차에는 기름이 없어서 주유소에서 기름을 넣고 출발하여야 한다. 기름통의 크기는 무제한이어서 얼마든지 많은 기름을 넣을 수 있다. 도로를 이용하여 이동할 때 1km마다 1리터의 기름을 사용한다. 각 도시에는 단 하나의 주유소가 있으며, 도시 마다 주유소의 리터당 가격은 다를 수 있다. 가격의 단위는 원을 사용한다.</p>
+
+<p>예를 들어, 이 나라에 다음 그림처럼 4개의 도시가 있다고 하자. 원 안에 있는 숫자는 그 도시에 있는 주유소의 리터당 가격이다. 도로 위에 있는 숫자는 도로의 길이를 표시한 것이다.<br />
+<img width="274" alt="1" src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/10e90ea8-b6af-4091-b2ea-ec13596f7f3d" /><br />
+제일 왼쪽 도시에서 6리터의 기름을 넣고, 더 이상의 주유 없이 제일 오른쪽 도시까지 이동하면 총 비용은 30원이다. 만약 제일 왼쪽 도시에서 2리터의 기름을 넣고(2×5 = 10원) 다음 번 도시까지 이동한 후 3리터의 기름을 넣고(3×2 = 6원) 다음 도시에서 1리터의 기름을 넣어(1×4 = 4원) 제일 오른쪽 도시로 이동하면, 총 비용은 20원이다. 또 다른 방법으로 제일 왼쪽 도시에서 2리터의 기름을 넣고(2×5 = 10원) 다음 번 도시까지 이동한 후 4리터의 기름을 넣고(4×2 = 8원) 제일 오른쪽 도시까지 이동하면, 총 비용은 18원이다.</p>
+
+<p>각 도시에 있는 주유소의 기름 가격과, 각 도시를 연결하는 도로의 길이를 입력으로 받아 제일 왼쪽 도시에서 제일 오른쪽 도시로 이동하는 최소의 비용을 계산하는 프로그램을 작성하시오.</p>
+<h2 id="입력">입력</h2>
+<p>표준 입력으로 다음 정보가 주어진다. 첫 번째 줄에는 도시의 개수를 나타내는 정수 N(2 ≤ N ≤ 100,000)이 주어진다. 다음 줄에는 인접한 두 도시를 연결하는 도로의 길이가 제일 왼쪽 도로부터 N-1개의 자연수로 주어진다. 다음 줄에는 주유소의 리터당 가격이 제일 왼쪽 도시부터 순서대로 N개의 자연수로 주어진다. 제일 왼쪽 도시부터 제일 오른쪽 도시까지의 거리는 1이상 1,000,000,000 이하의 자연수이다. 리터당 가격은 1 이상 1,000,000,000 이하의 자연수이다.</p>
+<h2 id="출력">출력</h2>
+<p>표준 출력으로 제일 왼쪽 도시에서 제일 오른쪽 도시로 가는 최소 비용을 출력한다.</p>
+<h2 id="서브태스크">서브태스크</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>번호</th>
+      <th>배점</th>
+      <th>제한</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>17</td>
+      <td>모든 주유소의 리터당 가격은 1원이다.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>41</td>
+      <td>2 ≤ N ≤ 1,000, 제일 왼쪽 도시부터 제일 오른쪽 도시까지의 거리는 최대 10,000, 리터 당 가격은 최대 10,000이다.</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>42</td>
+      <td>원래의 제약조건 이외에 아무 제약조건이 없다.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="결과">결과</h2>
+<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/13305/13305.cpp">13305 - 주유소</a></p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="n">dist</span><span class="p">[</span><span class="mi">100000</span><span class="p">];</span>
+<span class="kt">int</span> <span class="n">cost</span><span class="p">[</span><span class="mi">100000</span><span class="p">];</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+    <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
+    <span class="kt">long</span> <span class="kt">long</span> <span class="n">cnt</span><span class="p">,</span> <span class="n">now</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="kt">int</span> <span class="n">a</span><span class="p">;</span>
+        <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">dist</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+        
+    <span class="p">}</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">cost</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+    <span class="p">}</span>
+    <span class="n">now</span> <span class="o">=</span> <span class="n">cost</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+    <span class="n">cnt</span> <span class="o">=</span> <span class="n">now</span> <span class="o">*</span> <span class="n">dist</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">if</span><span class="p">(</span><span class="n">now</span> <span class="o">&gt;</span> <span class="n">cost</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+            <span class="n">now</span> <span class="o">=</span> <span class="n">cost</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+        <span class="n">cnt</span> <span class="o">+=</span> <span class="n">now</span> <span class="o">*</span> <span class="n">dist</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+    <span class="p">}</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">cnt</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<h3 id="문제풀이">문제풀이</h3>
+<blockquote>
+  <p>첫 번째 주유수에서 다음 주유소로 가기 위해서는 무조건 처음에는 무조건 주유를 해야 한다. 이후 부터는 다음 주유소에서 주유할 때와 비교해서 만약 다음 주유수에서 주유하는 것이 더 나은 결과라면 다음 주유소에서 주유하고 아니라면 이전 주유소에서 주유하고 온다.</p>
+</blockquote>
+
+<h2 id="결과-1">결과</h2>
+<p><img width="732" alt="스크린샷 2023-05-30 19 15 37" src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/c67a70e4-460c-4e7a-a28b-c0305a1c7c1a" /></p>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[주유소 난이도 실버 3]]></summary></entry><entry><title type="html">[프로그래머스] Lv3. 빙고</title><link href="http://localhost:4000/programmers/bingo/" rel="alternate" type="text/html" title="[프로그래머스] Lv3. 빙고" /><published>2023-05-29T00:00:00+09:00</published><updated>2023-05-30T00:00:00+09:00</updated><id>http://localhost:4000/programmers/bingo</id><content type="html" xml:base="http://localhost:4000/programmers/bingo/"><![CDATA[<h1 id="빙고">빙고</h1>
 <blockquote>
   <p>Lv3</p>
 </blockquote>
