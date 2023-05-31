@@ -1,6 +1,7 @@
 ---
 permalink: /introduce/
 title: "소개"
+layout: introduce
 toc: true
 toc_label: "프로필"
 sidebar_main: true
@@ -16,15 +17,15 @@ sidebar_main: true
 # 경력
 ---
 <img src="https://github.com/ihmmaru99/ihmmaru99/assets/109266664/d284c760-df41-4b58-ac5a-d30c908dbf0b" width="25px" height="25px">
-<b>세종과학고등학교 8기 졸업 (2015.03 ~ 2018.02)</b><br>
+세종과학고등학교 8기 졸업 (2015.03 ~ 2018.02)<br>
 <img src="https://github.com/ihmmaru99/ihmmaru99/assets/109266664/7963b194-4583-4323-a431-70da592d682f" width="25px" height="25px">
-<b>한양대학교 미래자동차공학과 18학번 (2018.03 ~ ) </b><br>
+한양대학교 미래자동차공학과 18학번 (2018.03 ~ )<br>
 <img src="https://github.com/ihmmaru99/BOJ/assets/109266664/0003dfed-b57e-44e2-baa5-de9e4a0e1695" width="25px" height="25px">
-<b>대한민국 공군 병장 만기전역 (2019.09 ~ 2021.06)</b><br>
+대한민국 공군 병장 만기전역 (2019.09 ~ 2021.06)<br>
 <img src="https://github.com/ihmmaru99/ihmmaru99/assets/109266664/081bfcf2-c7a5-4cf5-94d5-f14bd7dcf558" width="50px" height="25px">
-<b>42 서울 라피신 참여 (2022.08 ~ 2022.09)</b><br>
+42 서울 라피신 참여 (2022.08 ~ 2022.09)<br>
 <img src="https://github.com/ihmmaru99/ihmmaru99/assets/109266664/8f16482b-dc76-4715-a882-5727d9e98157" width="25px" height="25px">
-<b>프로그래머스 자율주행 인지 데브코스 (2023.03 ~ )</b><br>
+프로그래머스 자율주행 인지 데브코스 (2023.03 ~ )<br>
 
 # SNS
 ---
