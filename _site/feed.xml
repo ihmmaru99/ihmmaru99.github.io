@@ -1,4 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-31T20:32:05+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IhmMaru99의 잡동사니</title><subtitle>ihmmaru99&apos;s blog</subtitle><author><name>임정빈 (Ihm Jeong-Bin)</name></author><entry><title type="html">[백준][2468] 안전 영역</title><link href="http://localhost:4000/boj/2468/" rel="alternate" type="text/html" title="[백준][2468] 안전 영역" /><published>2023-05-31T00:00:00+09:00</published><updated>2023-05-31T00:00:00+09:00</updated><id>http://localhost:4000/boj/2468</id><content type="html" xml:base="http://localhost:4000/boj/2468/"><![CDATA[<h1 id="안전-영역">안전 영역</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-31T21:08:54+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IhmMaru99의 잡동사니</title><subtitle>ihmmaru99&apos;s blog</subtitle><author><name>임정빈 (Ihm Jeong-Bin)</name></author><entry><title type="html">[백준][1946] 신입 사원 (작성 중)</title><link href="http://localhost:4000/boj/1946/" rel="alternate" type="text/html" title="[백준][1946] 신입 사원 (작성 중)" /><published>2023-05-31T00:00:00+09:00</published><updated>2023-05-31T00:00:00+09:00</updated><id>http://localhost:4000/boj/1946</id><content type="html" xml:base="http://localhost:4000/boj/1946/"><![CDATA[<h1 id="신입-사원">신입 사원</h1>
+<h2 id="난이도">난이도</h2>
+<blockquote>
+  <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/1725e8ac-be34-44d1-a4db-174d0a2cd0dd" alt="10" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 1</span></p>
+</blockquote>
+
+<h2 id="문제">문제</h2>
+
+<h2 id="입력">입력</h2>
+
+<h2 id="출력">출력</h2>
+
+<h2 id="결과">결과</h2>
+
+<h3 id="문제풀이">문제풀이</h3>
+
+<h2 id="채점-결과">채점 결과</h2>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[신입 사원 난이도 실버 1]]></summary></entry><entry><title type="html">[백준][2468] 안전 영역 (작성 중)</title><link href="http://localhost:4000/boj/2468/" rel="alternate" type="text/html" title="[백준][2468] 안전 영역 (작성 중)" /><published>2023-05-31T00:00:00+09:00</published><updated>2023-05-31T00:00:00+09:00</updated><id>http://localhost:4000/boj/2468</id><content type="html" xml:base="http://localhost:4000/boj/2468/"><![CDATA[<h1 id="안전-영역">안전 영역</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
   <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/1725e8ac-be34-44d1-a4db-174d0a2cd0dd" alt="10" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 1</span></p>
@@ -101,8 +117,8 @@
 
 </blockquote>
 
-<h2 id="결과-1">결과</h2>
-<p><img width="734" alt="스크린샷 2023-05-31 18 46 44" src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/3688be97-7bc7-4448-8a3f-f78c48a4b167" /></p>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[안전 영역 난이도 실버 1]]></summary></entry><entry><title type="html">[백준][13305] 주유소</title><link href="http://localhost:4000/boj/13305/" rel="alternate" type="text/html" title="[백준][13305] 주유소" /><published>2023-05-30T00:00:00+09:00</published><updated>2023-05-30T00:00:00+09:00</updated><id>http://localhost:4000/boj/13305</id><content type="html" xml:base="http://localhost:4000/boj/13305/"><![CDATA[<h1 id="주유소">주유소</h1>
+<h2 id="채점-결과">채점 결과</h2>
+<p><img width="734" alt="스크린샷 2023-05-31 18 46 44" src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/3688be97-7bc7-4448-8a3f-f78c48a4b167" /></p>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[안전 영역 난이도 실버 1]]></summary></entry><entry><title type="html">[백준][13305] 주유소</title><link href="http://localhost:4000/boj/13305/" rel="alternate" type="text/html" title="[백준][13305] 주유소" /><published>2023-05-30T00:00:00+09:00</published><updated>2023-05-31T00:00:00+09:00</updated><id>http://localhost:4000/boj/13305</id><content type="html" xml:base="http://localhost:4000/boj/13305/"><![CDATA[<h1 id="주유소">주유소</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
   <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/40f259a0-6d4e-4cfa-a954-225e9b42961f" alt="8" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 3</span></p>
@@ -190,7 +206,7 @@
   <p>첫 번째 주유수에서 다음 주유소로 가기 위해서는 무조건 처음에는 무조건 주유를 해야 한다. 이후 부터는 다음 주유소에서 주유할 때와 비교해서 만약 다음 주유수에서 주유하는 것이 더 나은 결과라면 다음 주유소에서 주유하고 아니라면 이전 주유소에서 주유하고 온다.</p>
 </blockquote>
 
-<h2 id="결과-1">결과</h2>
+<h2 id="채점-결과">채점 결과</h2>
 <p><img width="732" alt="스크린샷 2023-05-30 19 15 37" src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/c67a70e4-460c-4e7a-a28b-c0305a1c7c1a" /></p>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[주유소 난이도 실버 3]]></summary></entry><entry><title type="html">[프로그래머스] Lv3. 빙고</title><link href="http://localhost:4000/programmers/bingo/" rel="alternate" type="text/html" title="[프로그래머스] Lv3. 빙고" /><published>2023-05-29T00:00:00+09:00</published><updated>2023-05-30T00:00:00+09:00</updated><id>http://localhost:4000/programmers/bingo</id><content type="html" xml:base="http://localhost:4000/programmers/bingo/"><![CDATA[<h1 id="빙고">빙고</h1>
 <blockquote>
   <p>Lv3</p>
