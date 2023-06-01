@@ -11,11 +11,39 @@
             <span style="font-family:'TheJamsil';"><font size="3em">전체 글 수</font></style> <span style="font-family:''TheJamsil';"><font size="3em">{{sum}}</font></style> <span style="font-family:'TheJamsil';"><font size="3em">개</font></style> 
       </li>
       <li>
-        <span class="nav__sub-title">AI</span>
+        <span class="nav__sub-title">AE</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "AI" %}
-                        <li><a href="/categories/ai" class="">인공지능 ({{category[1].size}})</a></li>
+                    {% if category[0] == "Microprocessor" %}
+                        <li><a href="/categories/microprocessor" class="">마이크로프로세서및응용시스템 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "DL" %}
+                        <li><a href="/categories/dl" class="">디지털논리설계 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Robotics" %}
+                        <li><a href="/categories/robotics" class="">AI로봇공학 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "VS" %}
+                        <li><a href="/categories/vs" class="">차량센서 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "VP" %}
+                        <li><a href="/categories/vp" class="">차량제품개발론 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -23,29 +51,29 @@
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Perception" %}
-                        <li><a href="/categories/perception" class="">Perception ({{category[1].size}})</a></li>
+                        <li><a href="/categories/perception" class="">인지 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Planning" %}
-                        <li><a href="/categories/planning" class="">Planning ({{category[1].size}})</a></li>
+                        <li><a href="/categories/planning" class="">판단 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
             <ul>
                 {% for category in site.categories %}
                     {% if category[0] == "Control" %}
-                        <li><a href="/categories/control" class="">Control ({{category[1].size}})</a></li>
+                        <li><a href="/categories/control" class="">제어 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
         <span class="nav__sub-title">Coding Test</span>
             <ul>
                 {% for category in site.categories %}
-                    {% if category[0] == "Algorithm" %}
-                        <li><a href="/categories/algorithm" class="">알고리즘 구현 ({{category[1].size}})</a></li>
+                    {% if category[0] == "Algorithm_Implementation" %}
+                        <li><a href="/categories/algorithm_implemetation" class="">알고리즘 구현 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>
@@ -66,8 +94,50 @@
             <span class="nav__sub-title">CS</span>
             <ul>
                 {% for category in site.categories %}
+                    {% if category[0] == "AI" %}
+                        <li><a href="/categories/ai" class="">인공지능 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "Algorithm" %}
+                        <li><a href="/categories/algorithm" class="">알고리즘및문제해결기법 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "CE" %}
+                        <li><a href="/categories/ce" class="">소프트웨어공학 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                     {% if category[0] == "CS" %}
-                        <li><a href="/categories/cs" class="">CS ({{category[1].size}})</a></li>
+                        <li><a href="/categories/cs" class="">컴퓨터구조론 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "DB" %}
+                        <li><a href="/categories/db" class="">데이터베이스시스템및응용 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "DS" %}
+                        <li><a href="/categories/ds" class="">자료구조론 ({{category[1].size}})</a></li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                    {% if category[0] == "OS" %}
+                        <li><a href="/categories/os" class="">운영체제 ({{category[1].size}})</a></li>
                     {% endif %}
                 {% endfor %}
             </ul>

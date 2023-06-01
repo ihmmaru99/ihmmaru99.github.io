@@ -12,7 +12,7 @@ var store = [{
         "teaser": null
       },{
         "title": "[백준][1946] 신입 사원 (작성 중)",
-        "excerpt":"신입 사원  난이도       실버 1    문제   입력   출력   결과   문제풀이   채점 결과  ","categories": ["BOJ"],
+        "excerpt":"신입 사원 난이도 실버 1 문제 입력 출력 결과 1946 - 신입 사원 #include &lt;iostream&gt; #include &lt;vector&gt; #include &lt;algorithm&gt; #include &lt;cstring&gt; using namespace std; int t, n; vector&lt;pair&lt;int,int&gt;&gt; v; int main(){ cin &gt;&gt; t; for(int i=0; i&lt;t; i++){ cin &gt;&gt; n; for(int j=0; j&lt;n; j++){ int a, b; cin &gt;&gt;...","categories": ["BOJ"],
         "tags": ["Algorithm","Coding Test","C++"],
         "url": "/boj/1946/",
         "teaser": null
@@ -21,5 +21,11 @@ var store = [{
         "excerpt":"안전 영역 난이도 실버 1 문제 재난방재청에서는 많은 비가 내리는 장마철에 대비해서 다음과 같은 일을 계획하고 있다. 먼저 어떤 지역의 높이 정보를 파악한다. 그 다음에 그 지역에 많은 비가 내렸을 때 물에 잠기지 않는 안전한 영역이 최대로 몇 개가 만들어 지는 지를 조사하려고 한다. 이때, 문제를 간단하게 하기 위하여, 장마철에...","categories": ["BOJ"],
         "tags": ["Algorithm","Coding Test","C++"],
         "url": "/boj/2468/",
+        "teaser": null
+      },{
+        "title": "[백준][1149] RGB 거리 (작성 중)",
+        "excerpt":"RGB 거리 난이도 실버 1 문제 RGB거리에는 집이 N개 있다. 거리는 선분으로 나타낼 수 있고, 1번 집부터 N번 집이 순서대로 있다. 집은 빨강, 초록, 파랑 중 하나의 색으로 칠해야 한다. 각각의 집을 빨강, 초록, 파랑으로 칠하는 비용이 주어졌을 때, 아래 규칙을 만족하면서 모든 집을 칠하는 비용의 최솟값을 구해보자. 1번 집의...","categories": ["BOJ"],
+        "tags": ["Algorithm","Coding Test","C++"],
+        "url": "/boj/1149/",
         "teaser": null
       }]

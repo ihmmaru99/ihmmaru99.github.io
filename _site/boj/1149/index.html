@@ -22,8 +22,8 @@
 
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[백준][1946] 신입 사원 (작성 중) - IhmMaru99의 잡동사니</title>
-<meta name="description" content="신입 사원 난이도      실버 1">
+<!-- begin _includes/seo.html --><title>[백준][1149] RGB 거리 (작성 중) - IhmMaru99의 잡동사니</title>
+<meta name="description" content="RGB 거리 난이도      실버 1">
 
 
   <meta name="author" content="임정빈 (Ihm Jeong-Bin)">
@@ -35,32 +35,32 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="IhmMaru99의 잡동사니">
-<meta property="og:title" content="[백준][1946] 신입 사원 (작성 중)">
-<meta property="og:url" content="http://localhost:4000/boj/1946/">
+<meta property="og:title" content="[백준][1149] RGB 거리 (작성 중)">
+<meta property="og:url" content="http://localhost:4000/boj/1149/">
 
 
-  <meta property="og:description" content="신입 사원 난이도      실버 1">
-
-
-
+  <meta property="og:description" content="RGB 거리 난이도      실버 1">
 
 
 
 
-  <meta property="article:published_time" content="2023-05-31T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2023-05-31T00:00:00+09:00">
+  <meta property="article:published_time" content="2023-06-01T00:00:00+09:00">
 
 
 
-  
+  <meta property="article:modified_time" content="2023-06-01T00:00:00+09:00">
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/boj/1946/">
+
+<link rel="canonical" href="http://localhost:4000/boj/1149/">
 
 
 
@@ -454,18 +454,18 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[백준][1946] 신입 사원 (작성 중)">
-    <meta itemprop="description" content="신입 사원난이도    실버 1">
-    <meta itemprop="datePublished" content="2023-05-31T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2023-05-31T00:00:00+09:00">
+    <meta itemprop="headline" content="[백준][1149] RGB 거리 (작성 중)">
+    <meta itemprop="description" content="RGB 거리난이도    실버 1">
+    <meta itemprop="datePublished" content="2023-06-01T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2023-06-01T00:00:00+09:00">
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">[백준][1946] 신입 사원 (작성 중)
+          <h1 id="page-title" class="page__title" itemprop="headline">[백준][1149] RGB 거리 (작성 중)
 </h1>
           
-            <p class="page__meta"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Date:</strong> <time datetime="2023-05-31T00:00:00+09:00">2023.05.31</time>&nbsp&nbsp&nbsp<strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-05-31">2023.05.31</time></p>
+            <p class="page__meta"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Date:</strong> <time datetime="2023-06-01T00:00:00+09:00">2023.06.01</time>&nbsp&nbsp&nbsp<strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-06-1">2023.06.01</time></p>
           
           
             <font size="3em">
@@ -520,7 +520,7 @@
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
               <ul class="toc__menu">
-  <li><a href="#신입-사원">신입 사원</a>
+  <li><a href="#rgb-거리">RGB 거리</a>
     <ul>
       <li><a href="#난이도">난이도</a></li>
       <li><a href="#문제">문제</a></li>
@@ -538,52 +538,51 @@
             </nav>
           </aside>
         
-        <h1 id="신입-사원">신입 사원</h1>
+        <h1 id="rgb-거리">RGB 거리</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
   <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/1725e8ac-be34-44d1-a4db-174d0a2cd0dd" alt="10" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 1</span></p>
 </blockquote>
 
 <h2 id="문제">문제</h2>
+<p>RGB거리에는 집이 N개 있다. 거리는 선분으로 나타낼 수 있고, 1번 집부터 N번 집이 순서대로 있다.</p>
+
+<p>집은 빨강, 초록, 파랑 중 하나의 색으로 칠해야 한다. 각각의 집을 빨강, 초록, 파랑으로 칠하는 비용이 주어졌을 때, 아래 규칙을 만족하면서 모든 집을 칠하는 비용의 최솟값을 구해보자.</p>
+
+<ul>
+  <li>1번 집의 색은 2번 집의 색과 같지 않아야 한다.</li>
+  <li>N번 집의 색은 N-1번 집의 색과 같지 않아야 한다.</li>
+  <li>i(2 ≤ i ≤ N-1)번 집의 색은 i-1번, i+1번 집의 색과 같지 않아야 한다.</li>
+</ul>
 
 <h2 id="입력">입력</h2>
-
+<p>첫째 줄에 집의 수 N(2 ≤ N ≤ 1,000)이 주어진다. 둘째 줄부터 N개의 줄에는 각 집을 빨강, 초록, 파랑으로 칠하는 비용이 1번 집부터 한 줄에 하나씩 주어진다. 집을 칠하는 비용은 1,000보다 작거나 같은 자연수이다.</p>
 <h2 id="출력">출력</h2>
-
+<p>첫째 줄에 모든 집을 칠하는 비용의 최솟값을 출력한다.</p>
 <h2 id="결과">결과</h2>
-<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/1946/1946.cpp">1946 - 신입 사원</a></p>
+
+<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/1149/1149.cpp">1149 - RGB</a></p>
 <div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
 #include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;cstring&gt;</span><span class="cp">
 </span>
 <span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-
-<span class="kt">int</span> <span class="n">t</span><span class="p">,</span> <span class="n">n</span><span class="p">;</span>
-<span class="n">vector</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">v</span><span class="p">;</span>
-
+ 
+<span class="kt">int</span> <span class="n">d</span><span class="p">[</span><span class="mi">1001</span><span class="p">][</span><span class="mi">4</span><span class="p">];</span>
+<span class="kt">int</span> <span class="n">c</span><span class="p">[</span><span class="mi">1001</span><span class="p">][</span><span class="mi">1001</span><span class="p">];</span>
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">t</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">t</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-        <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
-            <span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">;</span>
-            <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">a</span> <span class="o">&gt;&gt;</span> <span class="n">b</span><span class="p">;</span>
-            <span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">make_pair</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">));</span>
-        <span class="p">}</span>
-        <span class="n">sort</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
-        <span class="kt">int</span> <span class="n">check</span> <span class="o">=</span> <span class="n">v</span><span class="p">.</span><span class="n">front</span><span class="p">().</span><span class="n">second</span><span class="p">;</span>
-        <span class="kt">int</span> <span class="n">cnt</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">check</span> <span class="o">&gt;</span> <span class="n">v</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">second</span><span class="p">){</span>
-                <span class="n">check</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">second</span><span class="p">;</span>
-                <span class="n">cnt</span><span class="o">++</span><span class="p">;</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">cnt</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
-        <span class="n">v</span><span class="p">.</span><span class="n">clear</span><span class="p">();</span>
+    <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span>
+            <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>
+ 
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="n">d</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">];</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="n">d</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">min</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">]);</span> 
+        <span class="n">d</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">min</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">]);</span>
+        <span class="n">d</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="n">min</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]);</span>
     <span class="p">}</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">min</span><span class="p">({</span><span class="n">d</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="mi">2</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="mi">3</span><span class="p">]});</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
@@ -600,12 +599,11 @@
 
   <nav class="pagination">
     
-      <a href="/boj/13305/" class="pagination--pager" title="[백준][13305] 주유소
+      <a href="/boj/2468/" class="pagination--pager" title="[백준][2468] 안전 영역 (작성 중)
 ">이전</a>
     
     
-      <a href="/boj/2468/" class="pagination--pager" title="[백준][2468] 안전 영역 (작성 중)
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 
@@ -613,10 +611,6 @@
 
 
 
-
-  
-
-  
 
   
   	
@@ -628,10 +622,10 @@
 
   <nav class="pagination_prev_next">
     
-      <a href="/boj/13305/" class="pagination_prev_next--pager"><span class="prev_next">이전 글  &nbsp</span>[백준][13305] 주유소</a>
+      <a href="/boj/2468/" class="pagination_prev_next--pager"><span class="prev_next">이전 글  &nbsp</span>[백준][2468] 안전 영역 (작성 중)</a>
     
     
-      <a href="/boj/2468/" class="pagination_prev_next--pager"><span class="prev_next">다음 글  &nbsp  </span>[백준][2468] 안전 영역 (작성 중)</a>
+      <a href="#" class="pagination_prev_next--pager disabled-last-child ">가장 최근 글입니다</a>
     
   </nav>
 
@@ -678,10 +672,10 @@
     <article class="archive-item">
         <div>
             <span>
-              <a href="/boj/1149/">[백준][1149] RGB 거리 (작성 중)</a>
+              <a href="/boj/2468/">[백준][2468] 안전 영역 (작성 중)</a>
             </span>
             <small> 
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.06.01
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.05.31
               <!--Archive page 용-: (post -> page)-->
 <!--page__taxonomy.html에서 가져 옴-->
         
@@ -714,7 +708,7 @@
     <article class="archive-item">
         <div>
             <span>
-              <a href="/boj/2468/">[백준][2468] 안전 영역 (작성 중)</a>
+              <a href="/boj/1946/">[백준][1946] 신입 사원 (작성 중)</a>
             </span>
             <small> 
               <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.05.31
