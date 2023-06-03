@@ -1,4 +1,171 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-01T13:39:25+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IhmMaru99의 잡동사니</title><subtitle>ihmmaru99&apos;s blog</subtitle><author><name>임정빈 (Ihm Jeong-Bin)</name></author><entry><title type="html">[백준][1149] RGB 거리 (작성 중)</title><link href="http://localhost:4000/boj/1149/" rel="alternate" type="text/html" title="[백준][1149] RGB 거리 (작성 중)" /><published>2023-06-01T00:00:00+09:00</published><updated>2023-06-01T00:00:00+09:00</updated><id>http://localhost:4000/boj/1149</id><content type="html" xml:base="http://localhost:4000/boj/1149/"><![CDATA[<h1 id="rgb-거리">RGB 거리</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-03T15:15:13+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IhmMaru99의 잡동사니</title><subtitle>ihmmaru99&apos;s blog</subtitle><author><name>임정빈</name></author><entry><title type="html">[백준][2583] 영역 구하기 (작성 중)</title><link href="http://localhost:4000/boj/2583/" rel="alternate" type="text/html" title="[백준][2583] 영역 구하기 (작성 중)" /><published>2023-06-03T00:00:00+09:00</published><updated>2023-06-03T00:00:00+09:00</updated><id>http://localhost:4000/boj/2583</id><content type="html" xml:base="http://localhost:4000/boj/2583/"><![CDATA[<h1 id="영역-구하기">영역 구하기</h1>
+
+<h2 id="난이도">난이도</h2>
+<blockquote>
+  <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/1725e8ac-be34-44d1-a4db-174d0a2cd0dd" alt="10" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 1</span></p>
+</blockquote>
+
+<h2 id="문제">문제</h2>
+<p>눈금의 간격이 1인 M×N(M,N≤100)크기의 모눈종이가 있다. 이 모눈종이 위에 눈금에 맞추어 K개의 직사각형을 그릴 때, 이들 K개의 직사각형의 내부를 제외한 나머지 부분이 몇 개의 분리된 영역으로 나누어진다.</p>
+
+<p>예를 들어 M=5, N=7 인 모눈종이 위에 &lt;그림 1&gt;과 같이 직사각형 3개를 그렸다면, 그 나머지 영역은 &lt;그림 2&gt;와 같이 3개의 분리된 영역으로 나누어지게 된다.<br />
+<img src="https://github.com/ihmmaru99/BOJ/assets/109266664/6e62a52b-9353-4c40-8c3a-3ba389e8f458" alt="zzJD2aQyF5Rm4IlOt" /><br />
+&lt;그림 2&gt;와 같이 분리된 세 영역의 넓이는 각각 1, 7, 13이 된다.</p>
+
+<p>M, N과 K 그리고 K개의 직사각형의 좌표가 주어질 때, K개의 직사각형 내부를 제외한 나머지 부분이 몇 개의 분리된 영역으로 나누어지는지, 그리고 분리된 각 영역의 넓이가 얼마인지를 구하여 이를 출력하는 프로그램을 작성하시오.</p>
+<h2 id="입력">입력</h2>
+<p>첫째 줄에 M과 N, 그리고 K가 빈칸을 사이에 두고 차례로 주어진다. M, N, K는 모두 100 이하의 자연수이다. 둘째 줄부터 K개의 줄에는 한 줄에 하나씩 직사각형의 왼쪽 아래 꼭짓점의 x, y좌표값과 오른쪽 위 꼭짓점의 x, y좌표값이 빈칸을 사이에 두고 차례로 주어진다. 모눈종이의 왼쪽 아래 꼭짓점의 좌표는 (0,0)이고, 오른쪽 위 꼭짓점의 좌표는(N,M)이다. 입력되는 K개의 직사각형들이 모눈종이 전체를 채우는 경우는 없다.</p>
+<h2 id="출력">출력</h2>
+<p>첫째 줄에 분리되어 나누어지는 영역의 개수를 출력한다. 둘째 줄에는 각 영역의 넓이를 오름차순으로 정렬하여 빈칸을 사이에 두고 출력한다.</p>
+
+<h2 id="결과">결과</h2>
+<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/2583/2583.cpp">2583 - 영역 구하기</a></p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;queue&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp">
+</span>
+<span class="cp"># define MAX 100
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">bool</span> <span class="n">visited</span><span class="p">[</span><span class="n">MAX</span><span class="p">][</span><span class="n">MAX</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="nb">false</span><span class="p">,</span> <span class="p">};</span>
+<span class="n">queue</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">q</span><span class="p">;</span>
+<span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">result</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">m</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">k</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">dx</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">};</span>
+<span class="kt">int</span> <span class="n">dy</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">};</span>
+
+<span class="kt">void</span> <span class="nf">bfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">y</span><span class="p">,</span> <span class="kt">int</span> <span class="n">x</span><span class="p">){</span>
+    <span class="n">visited</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">make_pair</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">x</span><span class="p">));</span>
+    <span class="kt">int</span> <span class="n">cnt</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">()){</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">().</span><span class="n">first</span><span class="p">;</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">().</span><span class="n">second</span><span class="p">;</span>
+        <span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="kt">int</span> <span class="n">ny</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="n">dy</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+            <span class="kt">int</span> <span class="n">nx</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">dx</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">ny</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">ny</span> <span class="o">&lt;</span> <span class="n">m</span> <span class="o">&amp;&amp;</span> <span class="n">nx</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">nx</span> <span class="o">&lt;</span> <span class="n">n</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">visited</span><span class="p">[</span><span class="n">ny</span><span class="p">][</span><span class="n">nx</span><span class="p">]){</span>
+                <span class="n">visited</span><span class="p">[</span><span class="n">ny</span><span class="p">][</span><span class="n">nx</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+                <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">make_pair</span><span class="p">(</span><span class="n">ny</span><span class="p">,</span><span class="n">nx</span><span class="p">));</span>
+                <span class="n">cnt</span><span class="o">++</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="n">result</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">cnt</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">m</span> <span class="o">&gt;&gt;</span> <span class="n">n</span> <span class="o">&gt;&gt;</span> <span class="n">k</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">k</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="kt">int</span> <span class="n">x_start</span><span class="p">,</span> <span class="n">y_start</span><span class="p">,</span> <span class="n">x_end</span><span class="p">,</span> <span class="n">y_end</span><span class="p">;</span>
+        <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">x_start</span> <span class="o">&gt;&gt;</span> <span class="n">y_start</span> <span class="o">&gt;&gt;</span> <span class="n">x_end</span> <span class="o">&gt;&gt;</span> <span class="n">y_end</span><span class="p">;</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="n">y_start</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span><span class="n">y_end</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="n">x_start</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">x_end</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
+                <span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">m</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]){</span>
+                <span class="n">bfs</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">);</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">result</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
+    <span class="n">sort</span><span class="p">(</span><span class="n">result</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">result</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">result</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">result</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="sc">' '</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="풀이">풀이</h3>
+
+<h3 id="채점-결과">채점 결과</h3>
+<p><img width="732" alt="스크린샷 2023-06-03 15 14 28" src="https://github.com/ihmmaru99/BOJ/assets/109266664/db0694bc-b909-42a2-87b2-960bccf5817f" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[영역 구하기]]></summary></entry><entry><title type="html">[백준][7562] 나이트의 이동 (작성 중)</title><link href="http://localhost:4000/boj/7562/" rel="alternate" type="text/html" title="[백준][7562] 나이트의 이동 (작성 중)" /><published>2023-06-02T00:00:00+09:00</published><updated>2023-06-02T00:00:00+09:00</updated><id>http://localhost:4000/boj/7562</id><content type="html" xml:base="http://localhost:4000/boj/7562/"><![CDATA[<h1 id="나이트의-이동">나이트의 이동</h1>
+
+<h2 id="난이도">난이도</h2>
+<blockquote>
+  <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/1725e8ac-be34-44d1-a4db-174d0a2cd0dd" alt="10" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 1</span></p>
+</blockquote>
+
+<h2 id="문제">문제</h2>
+<p>체스판 위에 한 나이트가 놓여져 있다. 나이트가 한 번에 이동할 수 있는 칸은 아래 그림에 나와있다. 나이트가 이동하려고 하는 칸이 주어진다. 나이트는 몇 번 움직이면 이 칸으로 이동할 수 있을까?<br />
+<img width="150" alt="knight" src="https://github.com/ihmmaru99/BOJ/assets/109266664/a1ca905c-c353-4be9-ba9a-2b7ce5f6fe0f" /></p>
+
+<h2 id="입력">입력</h2>
+<p>입력의 첫째 줄에는 테스트 케이스의 개수가 주어진다.</p>
+
+<p>각 테스트 케이스는 세 줄로 이루어져 있다. 첫째 줄에는 체스판의 한 변의 길이 l(4 ≤ l ≤ 300)이 주어진다. 체스판의 크기는 l × l이다. 체스판의 각 칸은 두 수의 쌍 {0, …, l-1} × {0, …, l-1}로 나타낼 수 있다. 둘째 줄과 셋째 줄에는 나이트가 현재 있는 칸, 나이트가 이동하려고 하는 칸이 주어진다.</p>
+
+<h2 id="출력">출력</h2>
+<p>각 테스트 케이스마다 나이트가 최소 몇 번만에 이동할 수 있는지 출력한다.</p>
+
+<h2 id="결과">결과</h2>
+<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/7562/7562.cpp">7562 - 나이트의 이동</a></p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;queue&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;cstring&gt;</span><span class="cp">
+</span>
+<span class="cp"># define MAX 300
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="n">l</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">x_end</span><span class="p">,</span> <span class="n">y_end</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">field</span><span class="p">[</span><span class="n">MAX</span><span class="p">][</span><span class="n">MAX</span><span class="p">];</span>
+<span class="kt">bool</span> <span class="n">visited</span><span class="p">[</span><span class="n">MAX</span><span class="p">][</span><span class="n">MAX</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="nb">false</span><span class="p">,</span> <span class="p">};</span>
+<span class="kt">int</span> <span class="n">dx</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span> <span class="p">};</span>
+<span class="kt">int</span> <span class="n">dy</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span> <span class="p">};</span>
+
+<span class="kt">void</span> <span class="nf">bfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span>
+	<span class="n">queue</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;&gt;</span><span class="n">q</span><span class="p">;</span>
+	<span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">make_pair</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">));</span>
+	<span class="n">visited</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+	<span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span> <span class="p">{</span>
+		<span class="n">x</span> <span class="o">=</span> <span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">().</span><span class="n">first</span><span class="p">;</span>
+		<span class="n">y</span> <span class="o">=</span> <span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">().</span><span class="n">second</span><span class="p">;</span>
+		<span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
+		<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="n">i</span> <span class="o">&lt;</span> <span class="mi">8</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+			<span class="kt">int</span> <span class="n">nx</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">dx</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+			<span class="kt">int</span> <span class="n">ny</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="n">dy</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">nx</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">ny</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">nx</span> <span class="o">&gt;=</span> <span class="n">l</span> <span class="o">||</span> <span class="n">ny</span> <span class="o">&gt;=</span> <span class="n">l</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">visited</span><span class="p">[</span><span class="n">nx</span><span class="p">][</span><span class="n">ny</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span> <span class="o">||</span> <span class="n">field</span><span class="p">[</span><span class="n">nx</span><span class="p">][</span><span class="n">ny</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
+			<span class="n">field</span><span class="p">[</span><span class="n">nx</span><span class="p">][</span><span class="n">ny</span><span class="p">]</span> <span class="o">=</span> <span class="n">field</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+			<span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">({</span> <span class="n">nx</span><span class="p">,</span><span class="n">ny</span> <span class="p">});</span>
+			<span class="n">visited</span><span class="p">[</span><span class="n">nx</span><span class="p">][</span><span class="n">ny</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">nx</span> <span class="o">==</span> <span class="n">x_end</span> <span class="o">&amp;&amp;</span> <span class="n">ny</span> <span class="o">==</span> <span class="n">y_end</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+	<span class="n">ios_base</span><span class="o">::</span><span class="n">sync_with_stdio</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
+	<span class="n">cin</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
+	<span class="n">cout</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
+
+	<span class="kt">int</span> <span class="n">tc</span><span class="p">;</span>
+	<span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">tc</span><span class="p">;</span>
+	<span class="k">while</span> <span class="p">(</span><span class="n">tc</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">l</span><span class="p">;</span>
+		<span class="kt">int</span> <span class="n">x0</span><span class="p">,</span> <span class="n">y0</span><span class="p">;</span>
+		<span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">x0</span> <span class="o">&gt;&gt;</span> <span class="n">y0</span> <span class="o">&gt;&gt;</span> <span class="n">x_end</span> <span class="o">&gt;&gt;</span> <span class="n">y_end</span><span class="p">;</span>
+		<span class="n">field</span><span class="p">[</span><span class="n">x0</span><span class="p">][</span><span class="n">y0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+		<span class="n">bfs</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span><span class="n">y0</span><span class="p">);</span>
+		<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">field</span><span class="p">[</span><span class="n">x_end</span><span class="p">][</span><span class="n">y_end</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
+		<span class="n">memset</span><span class="p">(</span><span class="n">visited</span><span class="p">,</span> <span class="nb">false</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">visited</span><span class="p">));</span>
+		<span class="n">memset</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">field</span><span class="p">));</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="풀이">풀이</h3>
+
+<h2 id="채점-결과">채점 결과</h2>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[나이트의 이동]]></summary></entry><entry><title type="html">[백준][1149] RGB 거리 (작성 중)</title><link href="http://localhost:4000/boj/1149/" rel="alternate" type="text/html" title="[백준][1149] RGB 거리 (작성 중)" /><published>2023-06-01T00:00:00+09:00</published><updated>2023-06-01T00:00:00+09:00</updated><id>http://localhost:4000/boj/1149</id><content type="html" xml:base="http://localhost:4000/boj/1149/"><![CDATA[<h1 id="rgb-거리">RGB 거리</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
   <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/1725e8ac-be34-44d1-a4db-174d0a2cd0dd" alt="10" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 1</span></p>
@@ -48,7 +215,7 @@
 
 <h3 id="풀이">풀이</h3>
 
-<h2 id="채점-결과">채점 결과</h2>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[RGB 거리 난이도 실버 1]]></summary></entry><entry><title type="html">[백준][1946] 신입 사원 (작성 중)</title><link href="http://localhost:4000/boj/1946/" rel="alternate" type="text/html" title="[백준][1946] 신입 사원 (작성 중)" /><published>2023-05-31T00:00:00+09:00</published><updated>2023-05-31T00:00:00+09:00</updated><id>http://localhost:4000/boj/1946</id><content type="html" xml:base="http://localhost:4000/boj/1946/"><![CDATA[<h1 id="신입-사원">신입 사원</h1>
+<h2 id="채점-결과">채점 결과</h2>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[RGB 거리 난이도 실버 1]]></summary></entry><entry><title type="html">[백준][1946] 신입 사원 (작성 중)</title><link href="http://localhost:4000/boj/1946/" rel="alternate" type="text/html" title="[백준][1946] 신입 사원 (작성 중)" /><published>2023-05-31T00:00:00+09:00</published><updated>2023-05-31T00:00:00+09:00</updated><id>http://localhost:4000/boj/1946</id><content type="html" xml:base="http://localhost:4000/boj/1946/"><![CDATA[<h1 id="신입-사원">신입 사원</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
   <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/1725e8ac-be34-44d1-a4db-174d0a2cd0dd" alt="10" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 1</span></p>
@@ -99,7 +266,7 @@
 
 <h3 id="풀이">풀이</h3>
 
-<h2 id="채점-결과">채점 결과</h2>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[신입 사원 난이도 실버 1]]></summary></entry><entry><title type="html">[백준][2468] 안전 영역 (작성 중)</title><link href="http://localhost:4000/boj/2468/" rel="alternate" type="text/html" title="[백준][2468] 안전 영역 (작성 중)" /><published>2023-05-31T00:00:00+09:00</published><updated>2023-05-31T00:00:00+09:00</updated><id>http://localhost:4000/boj/2468</id><content type="html" xml:base="http://localhost:4000/boj/2468/"><![CDATA[<h1 id="안전-영역">안전 영역</h1>
+<h2 id="채점-결과">채점 결과</h2>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[신입 사원 난이도 실버 1]]></summary></entry><entry><title type="html">[백준][2468] 안전 영역 (작성 중)</title><link href="http://localhost:4000/boj/2468/" rel="alternate" type="text/html" title="[백준][2468] 안전 영역 (작성 중)" /><published>2023-05-31T00:00:00+09:00</published><updated>2023-05-31T00:00:00+09:00</updated><id>http://localhost:4000/boj/2468</id><content type="html" xml:base="http://localhost:4000/boj/2468/"><![CDATA[<h1 id="안전-영역">안전 영역</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
   <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/1725e8ac-be34-44d1-a4db-174d0a2cd0dd" alt="10" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 1</span></p>
@@ -203,7 +370,7 @@
 </blockquote>
 
 <h2 id="채점-결과">채점 결과</h2>
-<p><img width="734" alt="스크린샷 2023-05-31 18 46 44" src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/3688be97-7bc7-4448-8a3f-f78c48a4b167" /></p>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[안전 영역 난이도 실버 1]]></summary></entry><entry><title type="html">[백준][13305] 주유소</title><link href="http://localhost:4000/boj/13305/" rel="alternate" type="text/html" title="[백준][13305] 주유소" /><published>2023-05-30T00:00:00+09:00</published><updated>2023-05-31T00:00:00+09:00</updated><id>http://localhost:4000/boj/13305</id><content type="html" xml:base="http://localhost:4000/boj/13305/"><![CDATA[<h1 id="주유소">주유소</h1>
+<p><img width="734" alt="스크린샷 2023-05-31 18 46 44" src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/3688be97-7bc7-4448-8a3f-f78c48a4b167" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[안전 영역 난이도 실버 1]]></summary></entry><entry><title type="html">[백준][13305] 주유소</title><link href="http://localhost:4000/boj/13305/" rel="alternate" type="text/html" title="[백준][13305] 주유소" /><published>2023-05-30T00:00:00+09:00</published><updated>2023-05-31T00:00:00+09:00</updated><id>http://localhost:4000/boj/13305</id><content type="html" xml:base="http://localhost:4000/boj/13305/"><![CDATA[<h1 id="주유소">주유소</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
   <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/40f259a0-6d4e-4cfa-a954-225e9b42961f" alt="8" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 3</span></p>
@@ -292,7 +459,7 @@
 </blockquote>
 
 <h2 id="채점-결과">채점 결과</h2>
-<p><img width="732" alt="스크린샷 2023-05-30 19 15 37" src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/c67a70e4-460c-4e7a-a28b-c0305a1c7c1a" /></p>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[주유소 난이도 실버 3]]></summary></entry><entry><title type="html">[프로그래머스] Lv3. 빙고</title><link href="http://localhost:4000/programmers/bingo/" rel="alternate" type="text/html" title="[프로그래머스] Lv3. 빙고" /><published>2023-05-29T00:00:00+09:00</published><updated>2023-05-30T00:00:00+09:00</updated><id>http://localhost:4000/programmers/bingo</id><content type="html" xml:base="http://localhost:4000/programmers/bingo/"><![CDATA[<h1 id="빙고">빙고</h1>
+<p><img width="732" alt="스크린샷 2023-05-30 19 15 37" src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/c67a70e4-460c-4e7a-a28b-c0305a1c7c1a" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[주유소 난이도 실버 3]]></summary></entry><entry><title type="html">[프로그래머스] Lv3. 빙고</title><link href="http://localhost:4000/programmers/bingo/" rel="alternate" type="text/html" title="[프로그래머스] Lv3. 빙고" /><published>2023-05-29T00:00:00+09:00</published><updated>2023-05-30T00:00:00+09:00</updated><id>http://localhost:4000/programmers/bingo</id><content type="html" xml:base="http://localhost:4000/programmers/bingo/"><![CDATA[<h1 id="빙고">빙고</h1>
 <blockquote>
   <p>Lv3</p>
 </blockquote>
@@ -392,4 +559,4 @@ board 데이터와 nums의 데이터를 비교해서 만약 같다면 board의 �
 <p>cnt는 한 줄이 빙고가 되었는지 확인할 때 사용하였다. 한줄이 다 선택됐다면 빙고가 완성되었다는 것인데 이는 map의 배열에서 한 행, 한 열 또는 대각선의 값이 모두 1로 채워졌다는 의미이다. 그렇다면 map의 한 줄의 데이터를 다 더하면 cnt와 같게 된다는 것을 의미한다. 이를 확인해서 answer에 더해주고 최종 answer를 return한다.</p>
 
 <h2 id="채점-결과">채점 결과</h2>
-<p><img width="139" alt="스크린샷 2023-05-30 10 38 22" src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/4cec01eb-5ac8-48cb-ba04-7138e762429e" /></p>]]></content><author><name>임정빈 (Ihm Jeong-Bin)</name></author><category term="Programmers" /><category term="Algorithm" /><category term="Coding Test" /><category term="Python" /><summary type="html"><![CDATA[빙고 Lv3]]></summary></entry></feed>
+<p><img width="139" alt="스크린샷 2023-05-30 10 38 22" src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/4cec01eb-5ac8-48cb-ba04-7138e762429e" /></p>]]></content><author><name>임정빈</name></author><category term="Programmers" /><category term="Algorithm" /><category term="Coding Test" /><category term="Python" /><summary type="html"><![CDATA[빙고 Lv3]]></summary></entry></feed>
