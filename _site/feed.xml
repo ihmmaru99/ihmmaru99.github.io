@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-03T15:15:13+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IhmMaru99의 잡동사니</title><subtitle>ihmmaru99&apos;s blog</subtitle><author><name>임정빈</name></author><entry><title type="html">[백준][2583] 영역 구하기 (작성 중)</title><link href="http://localhost:4000/boj/2583/" rel="alternate" type="text/html" title="[백준][2583] 영역 구하기 (작성 중)" /><published>2023-06-03T00:00:00+09:00</published><updated>2023-06-03T00:00:00+09:00</updated><id>http://localhost:4000/boj/2583</id><content type="html" xml:base="http://localhost:4000/boj/2583/"><![CDATA[<h1 id="영역-구하기">영역 구하기</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-04T19:43:12+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IhmMaru99의 잡동사니</title><subtitle>ihmmaru99&apos;s blog</subtitle><author><name>임정빈</name></author><entry><title type="html">[백준][16953] A → B</title><link href="http://localhost:4000/boj/16953/" rel="alternate" type="text/html" title="[백준][16953] A → B" /><published>2023-06-04T00:00:00+09:00</published><updated>2023-06-04T00:00:00+09:00</updated><id>http://localhost:4000/boj/16953</id><content type="html" xml:base="http://localhost:4000/boj/16953/"><![CDATA[<h1 id="a--b">A → B</h1>
+<h2 id="난이도">난이도</h2>
+<p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/05e4b069-bd56-4060-913f-a3b773faccf4" alt="9" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 2</span></p>
+
+<h2 id="문제">문제</h2>
+<p>정수 A를 B로 바꾸려고 한다. 가능한 연산은 다음과 같은 두 가지이다.</p>
+<ul>
+  <li>2를 곱한다.</li>
+  <li>1을 수의 가장 오른쪽에 추가한다.</li>
+</ul>
+
+<p>A를 B로 바꾸는데 필요한 연산의 최솟값을 구해보자.</p>
+
+<h2 id="입력">입력</h2>
+<p>첫째 줄에 A, B (1 ≤ A &lt; B ≤ \(10^9\))가 주어진다.</p>
+
+<h2 id="출력">출력</h2>
+<p>A를 B로 바꾸는데 필요한 연산의 최솟값에 1을 더한 값을 출력한다. 만들 수 없는 경우에는 -1을 출력한다.</p>
+
+<h2 id="결과">결과</h2>
+<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/16953/16953.cpp">16953 - A → B</a></p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp">
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">check</span> <span class="o">=</span> <span class="mi">10000</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="nf">dfs</span><span class="p">(</span><span class="kt">long</span> <span class="kt">long</span> <span class="n">num</span><span class="p">,</span> <span class="kt">int</span> <span class="n">cnt</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">==</span> <span class="n">b</span><span class="p">){</span>
+        <span class="n">check</span> <span class="o">=</span> <span class="n">min</span><span class="p">(</span><span class="n">check</span><span class="p">,</span> <span class="n">cnt</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">dfs</span><span class="p">(</span><span class="n">num</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="n">cnt</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+    <span class="n">dfs</span><span class="p">(</span><span class="n">num</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">cnt</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">a</span> <span class="o">&gt;&gt;</span> <span class="n">b</span><span class="p">;</span>
+    <span class="n">dfs</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">check</span> <span class="o">==</span> <span class="mi">10000</span><span class="p">)</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+    <span class="k">else</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">check</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="풀이">풀이</h2>
+<blockquote>
+  <p>문제에서 가능한 경우의 수를 모두 dfs를 통해서 확인한다. 가능한 경우는 현재의 수에서 x2를 하거나 뒤에 1을 붙이는 것인데 이런 과정 속에서 가장 빠르게 목표로 도달하는지 확인하고 만약 불가능하다면 -1을 출력하도록 한다.</p>
+</blockquote>
+
+<h2 id="채점-결과">채점 결과</h2>
+<p><img width="732" alt="스크린샷 2023-06-04 19 00 24" src="https://github.com/ihmmaru99/BOJ/assets/109266664/2dbf7957-2109-4a9b-a340-638c3532affd" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[A → B 난이도 실버 2]]></summary></entry><entry><title type="html">[백준][2583] 영역 구하기</title><link href="http://localhost:4000/boj/2583/" rel="alternate" type="text/html" title="[백준][2583] 영역 구하기" /><published>2023-06-03T00:00:00+09:00</published><updated>2023-06-03T00:00:00+09:00</updated><id>http://localhost:4000/boj/2583</id><content type="html" xml:base="http://localhost:4000/boj/2583/"><![CDATA[<h1 id="영역-구하기">영역 구하기</h1>
 
 <h2 id="난이도">난이도</h2>
 <blockquote>
@@ -84,9 +138,12 @@
 </code></pre></div></div>
 
 <h3 id="풀이">풀이</h3>
+<blockquote>
+  <p>우리가 확인하고자 하는 것은 영역의 개수와 크기이다. 입력으로 들어온 부분은 나누는 부분이기 때문에 이미 방문했다고 판단해서 visited을 방문했다고 갱신한다. 그 이후 방문하지 않았다고 하는 부분을 bfs를 통해서 확인하면서 넓이를 확인한다. 넓이를 result vector에 넣고 오름차순으로 정렬한다. 정렬된 result의 size와 각 값을 출력하도록 한다.</p>
+</blockquote>
 
 <h3 id="채점-결과">채점 결과</h3>
-<p><img width="732" alt="스크린샷 2023-06-03 15 14 28" src="https://github.com/ihmmaru99/BOJ/assets/109266664/db0694bc-b909-42a2-87b2-960bccf5817f" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[영역 구하기]]></summary></entry><entry><title type="html">[백준][7562] 나이트의 이동 (작성 중)</title><link href="http://localhost:4000/boj/7562/" rel="alternate" type="text/html" title="[백준][7562] 나이트의 이동 (작성 중)" /><published>2023-06-02T00:00:00+09:00</published><updated>2023-06-02T00:00:00+09:00</updated><id>http://localhost:4000/boj/7562</id><content type="html" xml:base="http://localhost:4000/boj/7562/"><![CDATA[<h1 id="나이트의-이동">나이트의 이동</h1>
+<p><img width="732" alt="스크린샷 2023-06-03 15 14 28" src="https://github.com/ihmmaru99/BOJ/assets/109266664/db0694bc-b909-42a2-87b2-960bccf5817f" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[영역 구하기]]></summary></entry><entry><title type="html">[백준][7562] 나이트의 이동</title><link href="http://localhost:4000/boj/7562/" rel="alternate" type="text/html" title="[백준][7562] 나이트의 이동" /><published>2023-06-02T00:00:00+09:00</published><updated>2023-06-03T15:16:00+09:00</updated><id>http://localhost:4000/boj/7562</id><content type="html" xml:base="http://localhost:4000/boj/7562/"><![CDATA[<h1 id="나이트의-이동">나이트의 이동</h1>
 
 <h2 id="난이도">난이도</h2>
 <blockquote>
@@ -164,8 +221,12 @@
 </code></pre></div></div>
 
 <h3 id="풀이">풀이</h3>
+<blockquote>
+  <p>나이트가 갈 수 있는 위치의 경우의 수는 8가지이다. 갈 수 있는 경우의 수에 대한 이동 값을 dx, dy에 저장한다. 그리고 갈 수 있는 경우의 수를 파악해서 bfs 알고리즘을 돌린다. map 배열을 초기에 0으로 모두 채우고 해당 배열에서 말이 이동한 횟수를 기록해둔다. 그리고 만약 원하는 위치에 이동했다면 bfs를 종료하도록 한다. 그리고 해당 위치에 도달했을 때 이동한 거리가 적혀있는 map의 해당 위치의 인덱스 값에 적혀있는 값을 출력하도록 한다.</p>
+</blockquote>
 
-<h2 id="채점-결과">채점 결과</h2>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[나이트의 이동]]></summary></entry><entry><title type="html">[백준][1149] RGB 거리 (작성 중)</title><link href="http://localhost:4000/boj/1149/" rel="alternate" type="text/html" title="[백준][1149] RGB 거리 (작성 중)" /><published>2023-06-01T00:00:00+09:00</published><updated>2023-06-01T00:00:00+09:00</updated><id>http://localhost:4000/boj/1149</id><content type="html" xml:base="http://localhost:4000/boj/1149/"><![CDATA[<h1 id="rgb-거리">RGB 거리</h1>
+<h2 id="채점-결과">채점 결과</h2>
+<p><img width="732" alt="스크린샷 2023-06-04 19 15 34" src="https://github.com/ihmmaru99/BOJ/assets/109266664/98abf7dd-3631-48bc-8a8c-4aec904684cb" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[나이트의 이동]]></summary></entry><entry><title type="html">[백준][1149] RGB 거리</title><link href="http://localhost:4000/boj/1149/" rel="alternate" type="text/html" title="[백준][1149] RGB 거리" /><published>2023-06-01T00:00:00+09:00</published><updated>2023-06-04T00:00:00+09:00</updated><id>http://localhost:4000/boj/1149</id><content type="html" xml:base="http://localhost:4000/boj/1149/"><![CDATA[<h1 id="rgb-거리">RGB 거리</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
   <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/1725e8ac-be34-44d1-a4db-174d0a2cd0dd" alt="10" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 1</span></p>
@@ -214,18 +275,29 @@
 </code></pre></div></div>
 
 <h3 id="풀이">풀이</h3>
+<blockquote>
+  <p>브루트포스를 통해서 각 값에서 다음 집을 칠할 때 가장 낮은 값으로 칠할 수 있는 경우의 수를 찾는다. 각 값을 더해주면서 값을 찾고 찾은 값 중에서 가장 작은 값을 더해주면서 값을 반환하고 반환된 값을 출력한다.</p>
+</blockquote>
 
-<h2 id="채점-결과">채점 결과</h2>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[RGB 거리 난이도 실버 1]]></summary></entry><entry><title type="html">[백준][1946] 신입 사원 (작성 중)</title><link href="http://localhost:4000/boj/1946/" rel="alternate" type="text/html" title="[백준][1946] 신입 사원 (작성 중)" /><published>2023-05-31T00:00:00+09:00</published><updated>2023-05-31T00:00:00+09:00</updated><id>http://localhost:4000/boj/1946</id><content type="html" xml:base="http://localhost:4000/boj/1946/"><![CDATA[<h1 id="신입-사원">신입 사원</h1>
+<h2 id="채점-결과">채점 결과</h2>
+<p><img width="732" alt="스크린샷 2023-06-04 19 39 02" src="https://github.com/ihmmaru99/BOJ/assets/109266664/b905459f-f152-4ab1-91c8-668f8237c152" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[RGB 거리 난이도 실버 1]]></summary></entry><entry><title type="html">[백준][1946] 신입 사원</title><link href="http://localhost:4000/boj/1946/" rel="alternate" type="text/html" title="[백준][1946] 신입 사원" /><published>2023-05-31T00:00:00+09:00</published><updated>2023-06-04T00:00:00+09:00</updated><id>http://localhost:4000/boj/1946</id><content type="html" xml:base="http://localhost:4000/boj/1946/"><![CDATA[<h1 id="신입-사원">신입 사원</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
   <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/1725e8ac-be34-44d1-a4db-174d0a2cd0dd" alt="10" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 1</span></p>
 </blockquote>
 
 <h2 id="문제">문제</h2>
+<p>언제나 최고만을 지향하는 굴지의 대기업 진영 주식회사가 신규 사원 채용을 실시한다. 인재 선발 시험은 1차 서류심사와 2차 면접시험으로 이루어진다. 최고만을 지향한다는 기업의 이념에 따라 그들은 최고의 인재들만을 사원으로 선발하고 싶어 한다.</p>
+
+<p>그래서 진영 주식회사는, 다른 모든 지원자와 비교했을 때 서류심사 성적과 면접시험 성적 중 적어도 하나가 다른 지원자보다 떨어지지 않는 자만 선발한다는 원칙을 세웠다. 즉, 어떤 지원자 A의 성적이 다른 어떤 지원자 B의 성적에 비해 서류 심사 결과와 면접 성적이 모두 떨어진다면 A는 결코 선발되지 않는다.</p>
+
+<p>이러한 조건을 만족시키면서, 진영 주식회사가 이번 신규 사원 채용에서 선발할 수 있는 신입사원의 최대 인원수를 구하는 프로그램을 작성하시오.</p>
 
 <h2 id="입력">입력</h2>
+<p>첫째 줄에는 테스트 케이스의 개수 T(1 ≤ T ≤ 20)가 주어진다. 각 테스트 케이스의 첫째 줄에 지원자의 숫자 N(1 ≤ N ≤ 100,000)이 주어진다. 둘째 줄부터 N개 줄에는 각각의 지원자의 서류심사 성적, 면접 성적의 순위가 공백을 사이에 두고 한 줄에 주어진다. 두 성적 순위는 모두 1위부터 N위까지 동석차 없이 결정된다고 가정한다.</p>
 
 <h2 id="출력">출력</h2>
+<p>각 테스트 케이스에 대해서 진영 주식회사가 선발할 수 있는 신입사원의 최대 인원수를 한 줄에 하나씩 출력한다.</p>
 
 <h2 id="결과">결과</h2>
 <p><a href="https://github.com/ihmmaru99/BOJ/blob/main/1946/1946.cpp">1946 - 신입 사원</a></p>
@@ -264,9 +336,34 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<h3 id="풀이">풀이</h3>
+<h3 id="1차-풀이">1차 풀이</h3>
+<blockquote>
+  <p>문제에서 처음 값을 기준으로 정렬하고 두번째 값을 비교하면서 비교한 다음 만약 두번째 값이 위에 첫번째 값보다 크다면 뽑히지 못하기 때문에 이를 이용해서 뽑을 수 있는 신입사원의 수를 계산했다.</p>
+</blockquote>
 
-<h2 id="채점-결과">채점 결과</h2>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[신입 사원 난이도 실버 1]]></summary></entry><entry><title type="html">[백준][2468] 안전 영역 (작성 중)</title><link href="http://localhost:4000/boj/2468/" rel="alternate" type="text/html" title="[백준][2468] 안전 영역 (작성 중)" /><published>2023-05-31T00:00:00+09:00</published><updated>2023-05-31T00:00:00+09:00</updated><id>http://localhost:4000/boj/2468</id><content type="html" xml:base="http://localhost:4000/boj/2468/"><![CDATA[<h1 id="안전-영역">안전 영역</h1>
+<p>이렇게 풀었을 때 예제 입력 1은 통과했으나 예제 입력 2는 통과하지 못했다. 만약 두번째 값이 처음으로 비교하기로 정한 값의 두번째 값보다 크다면 이제는 새로운 값을 가지고서 비교를 했어야 하는데 이를 갱신하는 코드를 아래와 같이 추가하지 않았기 때문에 정확히 출력하지 못했다.</p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">check</span> <span class="o">&gt;</span> <span class="n">v</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">second</span><span class="p">){</span>
+                <span class="n">cnt</span><span class="o">++</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="2차-풀이">2차 풀이</h3>
+<blockquote>
+  <p>두번 째 케이스에서 ‘7 3’은 갱신하지 않고 맨 윗순위 사람과만 비교하면 ‘1 4’를 통과하지만 실제로는 ‘4 2’가 존재하기 때문에 뽑히지 못한다. 이런 경우를 위해서 check를 설정해서 새롭게 비교할 값을 갱신하도록 했다.</p>
+</blockquote>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">check</span> <span class="o">&gt;</span> <span class="n">v</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">second</span><span class="p">){</span>
+                <span class="n">check</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">second</span><span class="p">;</span>
+                <span class="n">cnt</span><span class="o">++</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="채점-결과">채점 결과</h2>
+<p><img width="732" alt="스크린샷 2023-06-04 19 09 45" src="https://github.com/ihmmaru99/BOJ/assets/109266664/e28e0595-bc8b-495f-99d1-8e5762b810b3" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[신입 사원 난이도 실버 1]]></summary></entry><entry><title type="html">[백준][2468] 안전 영역</title><link href="http://localhost:4000/boj/2468/" rel="alternate" type="text/html" title="[백준][2468] 안전 영역" /><published>2023-05-31T00:00:00+09:00</published><updated>2023-06-04T00:00:00+09:00</updated><id>http://localhost:4000/boj/2468</id><content type="html" xml:base="http://localhost:4000/boj/2468/"><![CDATA[<h1 id="안전-영역">안전 영역</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
   <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/1725e8ac-be34-44d1-a4db-174d0a2cd0dd" alt="10" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 1</span></p>
@@ -366,7 +463,7 @@
 </code></pre></div></div>
 <h3 id="풀이">풀이</h3>
 <blockquote>
-
+  <p>각 맵의 데이터를 입력받고 입력받은 맵에서 어떤 높이 값을 지정해야 물에 잠기지 않는 안전 영역의 개수가 최대가 되는지 확인하기 위해서 입력받은 맵 데이터에서 최소 높이와 최대 높이를 지정한다. 해당하는 최소 높이와 최대 높이까지 bfs 알고리즘을 통해서 안전영역의 개수를 확인한다. 그리고 높이를 바꿔가면서 계산을 해야 되기 때문에 방문기록을 저장한 visited 배열을 bfs를 통해서 안전 영역을 확인했을 때마다 초기화해준다.</p>
 </blockquote>
 
 <h2 id="채점-결과">채점 결과</h2>
