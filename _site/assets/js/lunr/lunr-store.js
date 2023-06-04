@@ -46,4 +46,10 @@ var store = [{
         "tags": ["Algorithm","Coding Test","C++"],
         "url": "/boj/16953/",
         "teaser": null
+      },{
+        "title": "[프로그래머스] Lv2. 신고 결과 받기",
+        "excerpt":"신고 결과 받기 문제 설명 신입사원 무지는 게시판 불량 이용자를 신고하고 처리 결과를 메일로 발송하는 시스템을 개발하려 합니다. 무지가 개발하려는 시스템은 다음과 같습니다. 각 유저는 한 번에 한 명의 유저를 신고할 수 있습니다. 신고 횟수에 제한은 없습니다. 서로 다른 유저를 계속해서 신고할 수 있습니다. 한 유저를 여러 번 신고할 수도...","categories": ["Programmers"],
+        "tags": ["Algorithm","Coding Test","C++"],
+        "url": "/programmers/singo/",
+        "teaser": null
       }]
