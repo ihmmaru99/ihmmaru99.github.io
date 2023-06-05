@@ -52,4 +52,10 @@ var store = [{
         "tags": ["Algorithm","Coding Test","C++"],
         "url": "/programmers/singo/",
         "teaser": null
+      },{
+        "title": "[백준][1303] 전쟁 - 전투",
+        "excerpt":"전쟁 - 전투 난이도 실버 1 문제 전쟁은 어느덧 전면전이 시작되었다. 결국 전투는 난전이 되었고, 우리 병사와 적국 병사가 섞여 싸우게 되었다. 그러나 당신의 병사들은 흰색 옷을 입고, 적국의 병사들은 파란색 옷을 입었기 때문에 서로가 적인지 아군인지는 구분할 수 있다. 문제는 같은 팀의 병사들은 모이면 모일수록 강해진다는 사실이다. N명이 뭉쳐있을...","categories": ["BOJ"],
+        "tags": ["Algorithm","Coding Test","C++"],
+        "url": "/boj/1303/",
+        "teaser": null
       }]

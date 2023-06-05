@@ -1,58 +1,93 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-04T20:01:16+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IhmMaru99의 잡동사니</title><subtitle>ihmmaru99&apos;s blog</subtitle><author><name>임정빈</name></author><entry><title type="html">[백준][16953] A → B</title><link href="http://localhost:4000/boj/16953/" rel="alternate" type="text/html" title="[백준][16953] A → B" /><published>2023-06-04T00:00:00+09:00</published><updated>2023-06-04T00:00:00+09:00</updated><id>http://localhost:4000/boj/16953</id><content type="html" xml:base="http://localhost:4000/boj/16953/"><![CDATA[<h1 id="a--b">A → B</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-05T10:55:43+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IhmMaru99의 잡동사니</title><subtitle>ihmmaru99&apos;s blog</subtitle><author><name>임정빈</name></author><entry><title type="html">[백준][1303] 전쟁 - 전투</title><link href="http://localhost:4000/boj/1303/" rel="alternate" type="text/html" title="[백준][1303] 전쟁 - 전투" /><published>2023-06-05T00:00:00+09:00</published><updated>2023-06-05T00:00:00+09:00</updated><id>http://localhost:4000/boj/1303</id><content type="html" xml:base="http://localhost:4000/boj/1303/"><![CDATA[<h1 id="전쟁---전투">전쟁 - 전투</h1>
+
 <h2 id="난이도">난이도</h2>
-<p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/05e4b069-bd56-4060-913f-a3b773faccf4" alt="9" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 2</span></p>
+<blockquote>
+  <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/1725e8ac-be34-44d1-a4db-174d0a2cd0dd" alt="10" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 1</span></p>
+</blockquote>
 
 <h2 id="문제">문제</h2>
-<p>정수 A를 B로 바꾸려고 한다. 가능한 연산은 다음과 같은 두 가지이다.</p>
-<ul>
-  <li>2를 곱한다.</li>
-  <li>1을 수의 가장 오른쪽에 추가한다.</li>
-</ul>
+<p>전쟁은 어느덧 전면전이 시작되었다. 결국 전투는 난전이 되었고, 우리 병사와 적국 병사가 섞여 싸우게 되었다. 그러나 당신의 병사들은 흰색 옷을 입고, 적국의 병사들은 파란색 옷을 입었기 때문에 서로가 적인지 아군인지는 구분할 수 있다. 문제는 같은 팀의 병사들은 모이면 모일수록 강해진다는 사실이다.</p>
 
-<p>A를 B로 바꾸는데 필요한 연산의 최솟값을 구해보자.</p>
+<p>N명이 뭉쳐있을 때는 N2의 위력을 낼 수 있다. 과연 지금 난전의 상황에서는 누가 승리할 것인가? 단, 같은 팀의 병사들이 대각선으로만 인접한 경우는 뭉쳐 있다고 보지 않는다.</p>
 
 <h2 id="입력">입력</h2>
-<p>첫째 줄에 A, B (1 ≤ A &lt; B ≤ \(10^9\))가 주어진다.</p>
+<p>첫째 줄에는 전쟁터의 가로 크기 N, 세로 크기 M(1 ≤ N, M ≤ 100)이 주어진다. 그 다음 두 번째 줄에서 M+1번째 줄에는 각각 (X, Y)에 있는 병사들의 옷색이 띄어쓰기 없이 주어진다. 모든 자리에는 병사가 한 명 있다. B는 파란색, W는 흰색이다. 당신의 병사와 적국의 병사는 한 명 이상 존재한다.</p>
 
 <h2 id="출력">출력</h2>
-<p>A를 B로 바꾸는데 필요한 연산의 최솟값에 1을 더한 값을 출력한다. 만들 수 없는 경우에는 -1을 출력한다.</p>
+<p>첫 번째 줄에 당신의 병사의 위력의 합과 적국의 병사의 위력의 합을 출력한다.</p>
 
 <h2 id="결과">결과</h2>
-<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/16953/16953.cpp">16953 - A → B</a></p>
+<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/1303/1303.cpp">1303 - 전쟁-전투</a></p>
 <div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;queue&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;cmath&gt;</span><span class="cp">
+</span>
+<span class="cp"># define MAX 100
 </span>
 <span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 
-<span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">check</span> <span class="o">=</span> <span class="mi">10000</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">;</span>
 
-<span class="kt">void</span> <span class="nf">dfs</span><span class="p">(</span><span class="kt">long</span> <span class="kt">long</span> <span class="n">num</span><span class="p">,</span> <span class="kt">int</span> <span class="n">cnt</span><span class="p">){</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">==</span> <span class="n">b</span><span class="p">){</span>
-        <span class="n">check</span> <span class="o">=</span> <span class="n">min</span><span class="p">(</span><span class="n">check</span><span class="p">,</span> <span class="n">cnt</span><span class="p">);</span>
+<span class="kt">char</span> <span class="n">map</span><span class="p">[</span><span class="n">MAX</span><span class="p">][</span><span class="n">MAX</span><span class="p">];</span>
+<span class="kt">bool</span> <span class="n">visited</span><span class="p">[</span><span class="n">MAX</span><span class="p">][</span><span class="n">MAX</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="nb">false</span><span class="p">,</span> <span class="p">};</span>
+<span class="kt">int</span> <span class="n">w</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">b</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+<span class="n">queue</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">q</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="n">dx</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">};</span>
+<span class="kt">int</span> <span class="n">dy</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">};</span>
+
+<span class="kt">void</span> <span class="nf">bfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">,</span> <span class="kt">char</span> <span class="n">c</span><span class="p">){</span>
+    <span class="n">visited</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+    <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">make_pair</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">));</span>
+    <span class="kt">int</span> <span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">cnt</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">()){</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">().</span><span class="n">first</span><span class="p">;</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">().</span><span class="n">second</span><span class="p">;</span>
+        <span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">4</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+            <span class="kt">int</span> <span class="n">ny</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="n">dy</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+            <span class="kt">int</span> <span class="n">nx</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">dx</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">nx</span> <span class="o">&gt;=</span><span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">nx</span> <span class="o">&lt;</span> <span class="n">m</span> <span class="o">&amp;&amp;</span> <span class="n">ny</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">ny</span> <span class="o">&lt;</span><span class="n">n</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">visited</span><span class="p">[</span><span class="n">nx</span><span class="p">][</span><span class="n">ny</span><span class="p">]</span> <span class="o">&amp;&amp;</span> <span class="n">map</span><span class="p">[</span><span class="n">nx</span><span class="p">][</span><span class="n">ny</span><span class="p">]</span> <span class="o">==</span> <span class="n">c</span><span class="p">){</span>
+                <span class="n">cnt</span><span class="o">++</span><span class="p">;</span>
+                <span class="n">visited</span><span class="p">[</span><span class="n">nx</span><span class="p">][</span><span class="n">ny</span><span class="p">]</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+                <span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">make_pair</span><span class="p">(</span><span class="n">nx</span><span class="p">,</span><span class="n">ny</span><span class="p">));</span>               
+            <span class="p">}</span>
+        <span class="p">}</span>
     <span class="p">}</span>
-    <span class="n">dfs</span><span class="p">(</span><span class="n">num</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="n">cnt</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
-    <span class="n">dfs</span><span class="p">(</span><span class="n">num</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">cnt</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">c</span> <span class="o">==</span> <span class="sc">'W'</span><span class="p">){</span>
+        <span class="n">w</span> <span class="o">+=</span> <span class="n">pow</span><span class="p">(</span><span class="n">cnt</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="k">else</span><span class="p">{</span>
+        <span class="n">b</span> <span class="o">+=</span> <span class="n">pow</span><span class="p">(</span><span class="n">cnt</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span>
+    <span class="p">}</span>
 <span class="p">}</span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">a</span> <span class="o">&gt;&gt;</span> <span class="n">b</span><span class="p">;</span>
-    <span class="n">dfs</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">check</span> <span class="o">==</span> <span class="mi">10000</span><span class="p">)</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-    <span class="k">else</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">check</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span> <span class="o">&gt;&gt;</span> <span class="n">m</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">m</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
+            <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">m</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">visited</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">])</span>
+            <span class="n">bfs</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">,</span> <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">w</span> <span class="o">&lt;&lt;</span> <span class="sc">' '</span> <span class="o">&lt;&lt;</span> <span class="n">b</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<h2 id="풀이">풀이</h2>
+<h3 id="풀이">풀이</h3>
 <blockquote>
-  <p>문제에서 가능한 경우의 수를 모두 dfs를 통해서 확인한다. 가능한 경우는 현재의 수에서 x2를 하거나 뒤에 1을 붙이는 것인데 이런 과정 속에서 가장 빠르게 목표로 도달하는지 확인하고 만약 불가능하다면 -1을 출력하도록 한다.</p>
+  <p>bfs 문제이다. 이 때 입력받은 값이 B인지 W인지 확인하면서 각각의 값을 더해주어야 한다. 이는 bfs 함수 내에서 현재 bfs를 통해서 검사하고 있는 값이 W인지 B인지를 확인해서 더해줄 수 있도록 한다. 이 문제에서 계속 ‘틀렸습니다’를 마주했는데 컴퓨터가 인식하는 좌표계와 우리가 인식하는 좌표계는 서로 다르기 때문에 이를 일치시키기 위해서 입력되는 값의 인덱스를 정확히 정의해주어야 한다. 좌표계를 맞추어준 다음에 문제를 정확히 풀이할 수 있었다.</p>
 </blockquote>
 
 <h2 id="채점-결과">채점 결과</h2>
-<p><img width="732" alt="스크린샷 2023-06-04 19 00 24" src="https://github.com/ihmmaru99/BOJ/assets/109266664/2dbf7957-2109-4a9b-a340-638c3532affd" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[A → B 난이도 실버 2]]></summary></entry><entry><title type="html">[프로그래머스] Lv2. 신고 결과 받기</title><link href="http://localhost:4000/programmers/singo/" rel="alternate" type="text/html" title="[프로그래머스] Lv2. 신고 결과 받기" /><published>2023-06-04T00:00:00+09:00</published><updated>2023-06-04T00:00:00+09:00</updated><id>http://localhost:4000/programmers/singo</id><content type="html" xml:base="http://localhost:4000/programmers/singo/"><![CDATA[<h1 id="신고-결과-받기">신고 결과 받기</h1>
+<p><img width="1147" alt="스크린샷 2023-06-05 10 49 10" src="https://github.com/ihmmaru99/BOJ/assets/109266664/da741c01-23ac-4627-8c32-8f2aea68e015" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[전쟁 - 전투]]></summary></entry><entry><title type="html">[프로그래머스] Lv2. 신고 결과 받기</title><link href="http://localhost:4000/programmers/singo/" rel="alternate" type="text/html" title="[프로그래머스] Lv2. 신고 결과 받기" /><published>2023-06-04T00:00:00+09:00</published><updated>2023-06-04T00:00:00+09:00</updated><id>http://localhost:4000/programmers/singo</id><content type="html" xml:base="http://localhost:4000/programmers/singo/"><![CDATA[<h1 id="신고-결과-받기">신고 결과 받기</h1>
 
 <h2 id="문제-설명">문제 설명</h2>
 <p>신입사원 무지는 게시판 불량 이용자를 신고하고 처리 결과를 메일로 발송하는 시스템을 개발하려 합니다. 무지가 개발하려는 시스템은 다음과 같습니다.</p>
@@ -238,7 +273,61 @@
 
 <h2 id="채점-결과">채점 결과</h2>
 <p><img width="350" alt="스크린샷 2023-06-04 19 56 20" src="https://github.com/ihmmaru99/BOJ/assets/109266664/cfb23d2b-152f-4e7e-a79e-f0518227526d" /><br />
-<img width="143" alt="스크린샷 2023-06-04 19 56 45" src="https://github.com/ihmmaru99/BOJ/assets/109266664/81276390-bc49-4c04-987f-0a2c2ebd395a" /></p>]]></content><author><name>임정빈</name></author><category term="Programmers" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[신고 결과 받기]]></summary></entry><entry><title type="html">[백준][2583] 영역 구하기</title><link href="http://localhost:4000/boj/2583/" rel="alternate" type="text/html" title="[백준][2583] 영역 구하기" /><published>2023-06-03T00:00:00+09:00</published><updated>2023-06-03T00:00:00+09:00</updated><id>http://localhost:4000/boj/2583</id><content type="html" xml:base="http://localhost:4000/boj/2583/"><![CDATA[<h1 id="영역-구하기">영역 구하기</h1>
+<img width="143" alt="스크린샷 2023-06-04 19 56 45" src="https://github.com/ihmmaru99/BOJ/assets/109266664/81276390-bc49-4c04-987f-0a2c2ebd395a" /></p>]]></content><author><name>임정빈</name></author><category term="Programmers" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[신고 결과 받기]]></summary></entry><entry><title type="html">[백준][16953] A → B</title><link href="http://localhost:4000/boj/16953/" rel="alternate" type="text/html" title="[백준][16953] A → B" /><published>2023-06-04T00:00:00+09:00</published><updated>2023-06-04T00:00:00+09:00</updated><id>http://localhost:4000/boj/16953</id><content type="html" xml:base="http://localhost:4000/boj/16953/"><![CDATA[<h1 id="a--b">A → B</h1>
+<h2 id="난이도">난이도</h2>
+<p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/05e4b069-bd56-4060-913f-a3b773faccf4" alt="9" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 2</span></p>
+
+<h2 id="문제">문제</h2>
+<p>정수 A를 B로 바꾸려고 한다. 가능한 연산은 다음과 같은 두 가지이다.</p>
+<ul>
+  <li>2를 곱한다.</li>
+  <li>1을 수의 가장 오른쪽에 추가한다.</li>
+</ul>
+
+<p>A를 B로 바꾸는데 필요한 연산의 최솟값을 구해보자.</p>
+
+<h2 id="입력">입력</h2>
+<p>첫째 줄에 A, B (1 ≤ A &lt; B ≤ \(10^9\))가 주어진다.</p>
+
+<h2 id="출력">출력</h2>
+<p>A를 B로 바꾸는데 필요한 연산의 최솟값에 1을 더한 값을 출력한다. 만들 수 없는 경우에는 -1을 출력한다.</p>
+
+<h2 id="결과">결과</h2>
+<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/16953/16953.cpp">16953 - A → B</a></p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp">
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">;</span>
+<span class="kt">int</span> <span class="n">check</span> <span class="o">=</span> <span class="mi">10000</span><span class="p">;</span>
+
+<span class="kt">void</span> <span class="nf">dfs</span><span class="p">(</span><span class="kt">long</span> <span class="kt">long</span> <span class="n">num</span><span class="p">,</span> <span class="kt">int</span> <span class="n">cnt</span><span class="p">){</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">num</span> <span class="o">==</span> <span class="n">b</span><span class="p">){</span>
+        <span class="n">check</span> <span class="o">=</span> <span class="n">min</span><span class="p">(</span><span class="n">check</span><span class="p">,</span> <span class="n">cnt</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="n">dfs</span><span class="p">(</span><span class="n">num</span> <span class="o">*</span> <span class="mi">2</span><span class="p">,</span> <span class="n">cnt</span><span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+    <span class="n">dfs</span><span class="p">(</span><span class="n">num</span> <span class="o">*</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">cnt</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">a</span> <span class="o">&gt;&gt;</span> <span class="n">b</span><span class="p">;</span>
+    <span class="n">dfs</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">check</span> <span class="o">==</span> <span class="mi">10000</span><span class="p">)</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="o">-</span><span class="mi">1</span><span class="p">;</span>
+    <span class="k">else</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">check</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="풀이">풀이</h2>
+<blockquote>
+  <p>문제에서 가능한 경우의 수를 모두 dfs를 통해서 확인한다. 가능한 경우는 현재의 수에서 x2를 하거나 뒤에 1을 붙이는 것인데 이런 과정 속에서 가장 빠르게 목표로 도달하는지 확인하고 만약 불가능하다면 -1을 출력하도록 한다.</p>
+</blockquote>
+
+<h2 id="채점-결과">채점 결과</h2>
+<p><img width="732" alt="스크린샷 2023-06-04 19 00 24" src="https://github.com/ihmmaru99/BOJ/assets/109266664/2dbf7957-2109-4a9b-a340-638c3532affd" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[A → B 난이도 실버 2]]></summary></entry><entry><title type="html">[백준][2583] 영역 구하기</title><link href="http://localhost:4000/boj/2583/" rel="alternate" type="text/html" title="[백준][2583] 영역 구하기" /><published>2023-06-03T00:00:00+09:00</published><updated>2023-06-03T00:00:00+09:00</updated><id>http://localhost:4000/boj/2583</id><content type="html" xml:base="http://localhost:4000/boj/2583/"><![CDATA[<h1 id="영역-구하기">영역 구하기</h1>
 
 <h2 id="난이도">난이도</h2>
 <blockquote>
