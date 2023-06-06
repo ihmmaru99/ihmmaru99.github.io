@@ -64,4 +64,10 @@ var store = [{
         "tags": ["Algorithm","DFS","DP","C++"],
         "url": "/boj/9095/",
         "teaser": null
+      },{
+        "title": "[백준][1991] 트리 순회",
+        "excerpt":"트리 순회 난이도 실버 1 문제 이진 트리를 입력받아 전위 순회(preorder traversal), 중위 순회(inorder traversal), 후위 순회(postorder traversal)한 결과를 출력하는 프로그램을 작성하시오. 예를 들어 위와 같은 이진 트리가 입력되면, 전위 순회한 결과 : ABDCEFG // (루트) (왼쪽 자식) (오른쪽 자식) 중위 순회한 결과 : DBAECFG // (왼쪽 자식) (루트) (오른쪽...","categories": ["BOJ"],
+        "tags": ["Algorithm","C++","Tree"],
+        "url": "/boj/1991/",
+        "teaser": null
       }]
