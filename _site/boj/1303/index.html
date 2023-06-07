@@ -308,7 +308,7 @@
   <ul class="nav__items" id="category_tag_menu">
       <!--전체 글 수-->
       <li>
-            <span style="font-family:'TheJamsil';"><font size="3em">전체 글 수</font></style> <span style="font-family:''TheJamsil';"><font size="3em">12</font></style> <span style="font-family:'TheJamsil';"><font size="3em">개</font></style> 
+            <span style="font-family:'TheJamsil';"><font size="3em">전체 글 수</font></style> <span style="font-family:''TheJamsil';"><font size="3em">13</font></style> <span style="font-family:'TheJamsil';"><font size="3em">개</font></style> 
       </li>
       <li>
         <span class="nav__sub-title">AE</span>
@@ -382,7 +382,7 @@
                     
                 
                     
-                        <li><a href="/categories/boj" class="">백준 (10)</a></li>
+                        <li><a href="/categories/boj" class="">백준 (11)</a></li>
                     
                 
             </ul>
@@ -526,11 +526,8 @@
       <li><a href="#문제">문제</a></li>
       <li><a href="#입력">입력</a></li>
       <li><a href="#출력">출력</a></li>
-      <li><a href="#결과">결과</a>
-        <ul>
-          <li><a href="#풀이">풀이</a></li>
-        </ul>
-      </li>
+      <li><a href="#풀이">풀이</a></li>
+      <li><a href="#결과">결과</a></li>
       <li><a href="#채점-결과">채점 결과</a></li>
     </ul>
   </li>
@@ -555,6 +552,11 @@
 
 <h2 id="출력">출력</h2>
 <p>첫 번째 줄에 당신의 병사의 위력의 합과 적국의 병사의 위력의 합을 출력한다.</p>
+
+<h2 id="풀이">풀이</h2>
+<blockquote>
+  <p>bfs 문제이다. 이 때 입력받은 값이 B인지 W인지 확인하면서 각각의 값을 더해주어야 한다. 이는 bfs 함수 내에서 현재 bfs를 통해서 검사하고 있는 값이 W인지 B인지를 확인해서 더해줄 수 있도록 한다. 이 문제에서 계속 ‘틀렸습니다’를 마주했는데 컴퓨터가 인식하는 좌표계와 우리가 인식하는 좌표계는 서로 다르기 때문에 이를 일치시키기 위해서 입력되는 값의 인덱스를 정확히 정의해주어야 한다. 좌표계를 맞추어준 다음에 문제를 정확히 풀이할 수 있었다.</p>
+</blockquote>
 
 <h2 id="결과">결과</h2>
 <p><a href="https://github.com/ihmmaru99/BOJ/blob/main/1303/1303.cpp">1303 - 전쟁-전투</a></p>
@@ -621,11 +623,6 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<h3 id="풀이">풀이</h3>
-<blockquote>
-  <p>bfs 문제이다. 이 때 입력받은 값이 B인지 W인지 확인하면서 각각의 값을 더해주어야 한다. 이는 bfs 함수 내에서 현재 bfs를 통해서 검사하고 있는 값이 W인지 B인지를 확인해서 더해줄 수 있도록 한다. 이 문제에서 계속 ‘틀렸습니다’를 마주했는데 컴퓨터가 인식하는 좌표계와 우리가 인식하는 좌표계는 서로 다르기 때문에 이를 일치시키기 위해서 입력되는 값의 인덱스를 정확히 정의해주어야 한다. 좌표계를 맞추어준 다음에 문제를 정확히 풀이할 수 있었다.</p>
-</blockquote>
-
 <h2 id="채점-결과">채점 결과</h2>
 <p><img width="1147" alt="스크린샷 2023-06-05 10 49 10" src="https://github.com/ihmmaru99/BOJ/assets/109266664/da741c01-23ac-4627-8c32-8f2aea68e015" /></p>
 
@@ -651,6 +648,8 @@
 
 
 
+
+  
 
   
 
@@ -707,6 +706,42 @@
   
   
     <div class="page__related"> <!--site.data.ui-text[site.locale].related_label-->
+        
+          
+
+
+
+<div class="list__item">
+    <article class="archive-item">
+        <div>
+            <span>
+              <a href="/boj/11660/">[백준][11660] 구간 합 구하기 5</a>
+            </span>
+            <small> 
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.06.07
+              <!--Archive page 용-: (post -> page)-->
+<!--page__taxonomy.html에서 가져 옴-->
+        
+        <span class="page__taxonomy">
+            <span itemprop="keywords"><a href="/categories/#boj" class="page__taxonomy-item-category" rel="tag">BOJ</a>
+                    
+                    
+                    <a href="/tags/#algorithm" class="page__taxonomy-item-tag" rel="tag">Algorithm</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#dp" class="page__taxonomy-item-tag" rel="tag">DP</a>
+                
+            </span>
+        </span>
+            </small>
+        </div>
+      </article>
+</div>
         
           
 
@@ -1012,42 +1047,6 @@
             </span>
             <small> 
               <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.05.31
-              <!--Archive page 용-: (post -> page)-->
-<!--page__taxonomy.html에서 가져 옴-->
-        
-        <span class="page__taxonomy">
-            <span itemprop="keywords"><a href="/categories/#boj" class="page__taxonomy-item-category" rel="tag">BOJ</a>
-                    
-                    
-                    <a href="/tags/#algorithm" class="page__taxonomy-item-tag" rel="tag">Algorithm</a><span class="sep"> </span>
-                
-                    
-                    
-                    <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a><span class="sep"> </span>
-                
-                    
-                    
-                    <a href="/tags/#greedy" class="page__taxonomy-item-tag" rel="tag">Greedy</a>
-                
-            </span>
-        </span>
-            </small>
-        </div>
-      </article>
-</div>
-        
-          
-
-
-
-<div class="list__item">
-    <article class="archive-item">
-        <div>
-            <span>
-              <a href="/boj/13305/">[백준][13305] 주유소</a>
-            </span>
-            <small> 
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.05.30
               <!--Archive page 용-: (post -> page)-->
 <!--page__taxonomy.html에서 가져 옴-->
         

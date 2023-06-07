@@ -308,7 +308,7 @@
   <ul class="nav__items" id="category_tag_menu">
       <!--전체 글 수-->
       <li>
-            <span style="font-family:'TheJamsil';"><font size="3em">전체 글 수</font></style> <span style="font-family:''TheJamsil';"><font size="3em">12</font></style> <span style="font-family:'TheJamsil';"><font size="3em">개</font></style> 
+            <span style="font-family:'TheJamsil';"><font size="3em">전체 글 수</font></style> <span style="font-family:''TheJamsil';"><font size="3em">13</font></style> <span style="font-family:'TheJamsil';"><font size="3em">개</font></style> 
       </li>
       <li>
         <span class="nav__sub-title">AE</span>
@@ -382,7 +382,7 @@
                     
                 
                     
-                        <li><a href="/categories/boj" class="">백준 (10)</a></li>
+                        <li><a href="/categories/boj" class="">백준 (11)</a></li>
                     
                 
             </ul>
@@ -531,11 +531,8 @@
           <li><a href="#입출력-예-2">입출력 예 #2</a></li>
         </ul>
       </li>
-      <li><a href="#결과">결과</a>
-        <ul>
-          <li><a href="#풀이">풀이</a></li>
-        </ul>
-      </li>
+      <li><a href="#풀이">풀이</a></li>
+      <li><a href="#결과">결과</a></li>
       <li><a href="#채점-결과">채점 결과</a></li>
     </ul>
   </li>
@@ -595,25 +592,7 @@
 <p>다음 그림과 같이 2개의 빙고가 만들어집니다.<br />
 <img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/23910330-0879-42d6-80dd-f3f962323200" alt="빙고3_l1bqza" /></p>
 
-<h2 id="결과">결과</h2>
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">board</span><span class="p">,</span> <span class="n">nums</span><span class="p">):</span>
-    <span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="nb">map</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">[</span><span class="mi">0</span><span class="p">]))]</span>
-    <span class="n">nums</span> <span class="o">=</span> <span class="nf">set</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">)):</span>
-        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
-            <span class="k">if</span> <span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
-                <span class="nb">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="n">cnt</span> <span class="o">=</span> <span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">)</span>
-    <span class="n">answer</span> <span class="o">+=</span> <span class="nf">len</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">map</span> <span class="k">if</span> <span class="nf">sum</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">])</span>
-    <span class="n">answer</span> <span class="o">+=</span> <span class="nf">len</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">zip</span><span class="p">(</span><span class="o">*</span><span class="nb">map</span><span class="p">)</span> <span class="k">if</span> <span class="nf">sum</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">])</span>
-    <span class="n">answer</span> <span class="o">+=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">sum</span><span class="p">(</span><span class="nb">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">cnt</span><span class="p">))</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">)</span>
-    <span class="n">answer</span> <span class="o">+=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">sum</span><span class="p">(</span><span class="nb">map</span><span class="p">[</span><span class="n">cnt</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">cnt</span><span class="p">))</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">)</span>
-        
-    <span class="k">return</span> <span class="n">answer</span>
-</code></pre></div></div>
-<h3 id="풀이">풀이</h3>
-<hr />
+<h2 id="풀이">풀이</h2>
 <blockquote>
   <p>board를 통해서 받아온 빙고판과 nums를 통해서 받아온 선택된 숫자들을 통해서 선택된 숫자가 적힌 정보를 받아올 수 있는 map이라는 2차원 배열을 생성하고 생성한 배열에서 한 행, 열, 대각선에 대한 빙고 여부를 판단한다.</p>
 </blockquote>
@@ -641,6 +620,24 @@ board 데이터와 nums의 데이터를 비교해서 만약 같다면 board의 �
 <span class="k">return</span> <span class="n">answer</span>
 </code></pre></div></div>
 <p>cnt는 한 줄이 빙고가 되었는지 확인할 때 사용하였다. 한줄이 다 선택됐다면 빙고가 완성되었다는 것인데 이는 map의 배열에서 한 행, 한 열 또는 대각선의 값이 모두 1로 채워졌다는 의미이다. 그렇다면 map의 한 줄의 데이터를 다 더하면 cnt와 같게 된다는 것을 의미한다. 이를 확인해서 answer에 더해주고 최종 answer를 return한다.</p>
+
+<h2 id="결과">결과</h2>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">board</span><span class="p">,</span> <span class="n">nums</span><span class="p">):</span>
+    <span class="n">answer</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="nb">map</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">[</span><span class="mi">0</span><span class="p">]))]</span>
+    <span class="n">nums</span> <span class="o">=</span> <span class="nf">set</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">)):</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+            <span class="k">if</span> <span class="n">board</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="ow">in</span> <span class="n">nums</span><span class="p">:</span>
+                <span class="nb">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="n">cnt</span> <span class="o">=</span> <span class="nf">len</span><span class="p">(</span><span class="n">board</span><span class="p">)</span>
+    <span class="n">answer</span> <span class="o">+=</span> <span class="nf">len</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">map</span> <span class="k">if</span> <span class="nf">sum</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">])</span>
+    <span class="n">answer</span> <span class="o">+=</span> <span class="nf">len</span><span class="p">([</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">zip</span><span class="p">(</span><span class="o">*</span><span class="nb">map</span><span class="p">)</span> <span class="k">if</span> <span class="nf">sum</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">])</span>
+    <span class="n">answer</span> <span class="o">+=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">sum</span><span class="p">(</span><span class="nb">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">cnt</span><span class="p">))</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">)</span>
+    <span class="n">answer</span> <span class="o">+=</span> <span class="nf">int</span><span class="p">(</span><span class="nf">sum</span><span class="p">(</span><span class="nb">map</span><span class="p">[</span><span class="n">cnt</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">cnt</span><span class="p">))</span> <span class="o">==</span> <span class="n">cnt</span><span class="p">)</span>
+        
+    <span class="k">return</span> <span class="n">answer</span>
+</code></pre></div></div>
 
 <h2 id="채점-결과">채점 결과</h2>
 <p><img width="139" alt="스크린샷 2023-05-30 10 38 22" src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/4cec01eb-5ac8-48cb-ba04-7138e762429e" /></p>
@@ -721,6 +718,42 @@ board 데이터와 nums의 데이터를 비교해서 만약 같다면 board의 �
   
   
     <div class="page__related"> <!--site.data.ui-text[site.locale].related_label-->
+        
+          
+
+
+
+<div class="list__item">
+    <article class="archive-item">
+        <div>
+            <span>
+              <a href="/boj/11660/">[백준][11660] 구간 합 구하기 5</a>
+            </span>
+            <small> 
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.06.07
+              <!--Archive page 용-: (post -> page)-->
+<!--page__taxonomy.html에서 가져 옴-->
+        
+        <span class="page__taxonomy">
+            <span itemprop="keywords"><a href="/categories/#boj" class="page__taxonomy-item-category" rel="tag">BOJ</a>
+                    
+                    
+                    <a href="/tags/#algorithm" class="page__taxonomy-item-tag" rel="tag">Algorithm</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#dp" class="page__taxonomy-item-tag" rel="tag">DP</a>
+                
+            </span>
+        </span>
+            </small>
+        </div>
+      </article>
+</div>
         
           
 
@@ -1042,42 +1075,6 @@ board 데이터와 nums의 데이터를 비교해서 만약 같다면 board의 �
                     
                     
                     <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a>
-                
-            </span>
-        </span>
-            </small>
-        </div>
-      </article>
-</div>
-        
-          
-
-
-
-<div class="list__item">
-    <article class="archive-item">
-        <div>
-            <span>
-              <a href="/boj/1946/">[백준][1946] 신입 사원</a>
-            </span>
-            <small> 
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.05.31
-              <!--Archive page 용-: (post -> page)-->
-<!--page__taxonomy.html에서 가져 옴-->
-        
-        <span class="page__taxonomy">
-            <span itemprop="keywords"><a href="/categories/#boj" class="page__taxonomy-item-category" rel="tag">BOJ</a>
-                    
-                    
-                    <a href="/tags/#algorithm" class="page__taxonomy-item-tag" rel="tag">Algorithm</a><span class="sep"> </span>
-                
-                    
-                    
-                    <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a><span class="sep"> </span>
-                
-                    
-                    
-                    <a href="/tags/#greedy" class="page__taxonomy-item-tag" rel="tag">Greedy</a>
                 
             </span>
         </span>

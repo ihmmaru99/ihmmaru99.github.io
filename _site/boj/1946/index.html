@@ -308,7 +308,7 @@
   <ul class="nav__items" id="category_tag_menu">
       <!--전체 글 수-->
       <li>
-            <span style="font-family:'TheJamsil';"><font size="3em">전체 글 수</font></style> <span style="font-family:''TheJamsil';"><font size="3em">12</font></style> <span style="font-family:'TheJamsil';"><font size="3em">개</font></style> 
+            <span style="font-family:'TheJamsil';"><font size="3em">전체 글 수</font></style> <span style="font-family:''TheJamsil';"><font size="3em">13</font></style> <span style="font-family:'TheJamsil';"><font size="3em">개</font></style> 
       </li>
       <li>
         <span class="nav__sub-title">AE</span>
@@ -382,7 +382,7 @@
                     
                 
                     
-                        <li><a href="/categories/boj" class="">백준 (10)</a></li>
+                        <li><a href="/categories/boj" class="">백준 (11)</a></li>
                     
                 
             </ul>
@@ -526,12 +526,9 @@
       <li><a href="#문제">문제</a></li>
       <li><a href="#입력">입력</a></li>
       <li><a href="#출력">출력</a></li>
-      <li><a href="#결과">결과</a>
-        <ul>
-          <li><a href="#1차-풀이">1차 풀이</a></li>
-          <li><a href="#2차-풀이">2차 풀이</a></li>
-        </ul>
-      </li>
+      <li><a href="#1차-풀이">1차 풀이</a></li>
+      <li><a href="#2차-풀이">2차 풀이</a></li>
+      <li><a href="#결과">결과</a></li>
       <li><a href="#채점-결과">채점 결과</a></li>
     </ul>
   </li>
@@ -557,6 +554,32 @@
 
 <h2 id="출력">출력</h2>
 <p>각 테스트 케이스에 대해서 진영 주식회사가 선발할 수 있는 신입사원의 최대 인원수를 한 줄에 하나씩 출력한다.</p>
+
+<h2 id="1차-풀이">1차 풀이</h2>
+<blockquote>
+  <p>문제에서 처음 값을 기준으로 정렬하고 두번째 값을 비교하면서 비교한 다음 만약 두번째 값이 위에 첫번째 값보다 크다면 뽑히지 못하기 때문에 이를 이용해서 뽑을 수 있는 신입사원의 수를 계산했다.</p>
+</blockquote>
+
+<p>이렇게 풀었을 때 예제 입력 1은 통과했으나 예제 입력 2는 통과하지 못했다. 만약 두번째 값이 처음으로 비교하기로 정한 값의 두번째 값보다 크다면 이제는 새로운 값을 가지고서 비교를 했어야 하는데 이를 갱신하는 코드를 아래와 같이 추가하지 않았기 때문에 정확히 출력하지 못했다.</p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">check</span> <span class="o">&gt;</span> <span class="n">v</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">second</span><span class="p">){</span>
+                <span class="n">cnt</span><span class="o">++</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="2차-풀이">2차 풀이</h2>
+<blockquote>
+  <p>두번 째 케이스에서 ‘7 3’은 갱신하지 않고 맨 윗순위 사람과만 비교하면 ‘1 4’를 통과하지만 실제로는 ‘4 2’가 존재하기 때문에 뽑히지 못한다. 이런 경우를 위해서 check를 설정해서 새롭게 비교할 값을 갱신하도록 했다.</p>
+</blockquote>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">check</span> <span class="o">&gt;</span> <span class="n">v</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">second</span><span class="p">){</span>
+                <span class="n">check</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">second</span><span class="p">;</span>
+                <span class="n">cnt</span><span class="o">++</span><span class="p">;</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+</code></pre></div></div>
 
 <h2 id="결과">결과</h2>
 <p><a href="https://github.com/ihmmaru99/BOJ/blob/main/1946/1946.cpp">1946 - 신입 사원</a></p>
@@ -595,32 +618,6 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<h3 id="1차-풀이">1차 풀이</h3>
-<blockquote>
-  <p>문제에서 처음 값을 기준으로 정렬하고 두번째 값을 비교하면서 비교한 다음 만약 두번째 값이 위에 첫번째 값보다 크다면 뽑히지 못하기 때문에 이를 이용해서 뽑을 수 있는 신입사원의 수를 계산했다.</p>
-</blockquote>
-
-<p>이렇게 풀었을 때 예제 입력 1은 통과했으나 예제 입력 2는 통과하지 못했다. 만약 두번째 값이 처음으로 비교하기로 정한 값의 두번째 값보다 크다면 이제는 새로운 값을 가지고서 비교를 했어야 하는데 이를 갱신하는 코드를 아래와 같이 추가하지 않았기 때문에 정확히 출력하지 못했다.</p>
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">check</span> <span class="o">&gt;</span> <span class="n">v</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">second</span><span class="p">){</span>
-                <span class="n">cnt</span><span class="o">++</span><span class="p">;</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-</code></pre></div></div>
-
-<h3 id="2차-풀이">2차 풀이</h3>
-<blockquote>
-  <p>두번 째 케이스에서 ‘7 3’은 갱신하지 않고 맨 윗순위 사람과만 비교하면 ‘1 4’를 통과하지만 실제로는 ‘4 2’가 존재하기 때문에 뽑히지 못한다. 이런 경우를 위해서 check를 설정해서 새롭게 비교할 값을 갱신하도록 했다.</p>
-</blockquote>
-
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code>        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">check</span> <span class="o">&gt;</span> <span class="n">v</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">second</span><span class="p">){</span>
-                <span class="n">check</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">j</span><span class="p">].</span><span class="n">second</span><span class="p">;</span>
-                <span class="n">cnt</span><span class="o">++</span><span class="p">;</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-</code></pre></div></div>
-
 <h2 id="채점-결과">채점 결과</h2>
 <p><img width="732" alt="스크린샷 2023-06-04 19 09 45" src="https://github.com/ihmmaru99/BOJ/assets/109266664/e28e0595-bc8b-495f-99d1-8e5762b810b3" /></p>
 
@@ -646,6 +643,8 @@
 
 
 
+
+  
 
   
 
@@ -714,6 +713,42 @@
   
   
     <div class="page__related"> <!--site.data.ui-text[site.locale].related_label-->
+        
+          
+
+
+
+<div class="list__item">
+    <article class="archive-item">
+        <div>
+            <span>
+              <a href="/boj/11660/">[백준][11660] 구간 합 구하기 5</a>
+            </span>
+            <small> 
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.06.07
+              <!--Archive page 용-: (post -> page)-->
+<!--page__taxonomy.html에서 가져 옴-->
+        
+        <span class="page__taxonomy">
+            <span itemprop="keywords"><a href="/categories/#boj" class="page__taxonomy-item-category" rel="tag">BOJ</a>
+                    
+                    
+                    <a href="/tags/#algorithm" class="page__taxonomy-item-tag" rel="tag">Algorithm</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#dp" class="page__taxonomy-item-tag" rel="tag">DP</a>
+                
+            </span>
+        </span>
+            </small>
+        </div>
+      </article>
+</div>
         
           
 
@@ -1035,42 +1070,6 @@
                     
                     
                     <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a>
-                
-            </span>
-        </span>
-            </small>
-        </div>
-      </article>
-</div>
-        
-          
-
-
-
-<div class="list__item">
-    <article class="archive-item">
-        <div>
-            <span>
-              <a href="/boj/13305/">[백준][13305] 주유소</a>
-            </span>
-            <small> 
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.05.30
-              <!--Archive page 용-: (post -> page)-->
-<!--page__taxonomy.html에서 가져 옴-->
-        
-        <span class="page__taxonomy">
-            <span itemprop="keywords"><a href="/categories/#boj" class="page__taxonomy-item-category" rel="tag">BOJ</a>
-                    
-                    
-                    <a href="/tags/#algorithm" class="page__taxonomy-item-tag" rel="tag">Algorithm</a><span class="sep"> </span>
-                
-                    
-                    
-                    <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a><span class="sep"> </span>
-                
-                    
-                    
-                    <a href="/tags/#greedy" class="page__taxonomy-item-tag" rel="tag">Greedy</a>
                 
             </span>
         </span>

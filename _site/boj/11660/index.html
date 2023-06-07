@@ -22,30 +22,36 @@
 
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>백준 문제 풀이 - IhmMaru99의 잡동사니</title>
-<meta name="description" content="ihmmaru99’s blog">
+<!-- begin _includes/seo.html --><title>[백준][11660] 구간 합 구하기 5 - IhmMaru99의 잡동사니</title>
+<meta name="description" content="구간 합 구하기 5">
 
 
   <meta name="author" content="임정빈">
   
+  <meta property="article:author" content="임정빈">
+  
 
 
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="IhmMaru99의 잡동사니">
-<meta property="og:title" content="백준 문제 풀이">
-<meta property="og:url" content="http://localhost:4000/categories/boj">
+<meta property="og:title" content="[백준][11660] 구간 합 구하기 5">
+<meta property="og:url" content="http://localhost:4000/boj/11660/">
 
 
-  <meta property="og:description" content="ihmmaru99’s blog">
-
-
-
+  <meta property="og:description" content="구간 합 구하기 5">
 
 
 
 
 
+
+
+  <meta property="article:published_time" content="2023-06-07T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="2023-06-07T00:00:00+09:00">
 
 
 
@@ -54,7 +60,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/categories/boj">
+<link rel="canonical" href="http://localhost:4000/boj/11660/">
 
 
 
@@ -133,7 +139,7 @@
     </style>
   </head>
 
-  <body class="layout--archive wide">
+  <body class="layout--single wide">
     <nav class="skip-links">
   <ul>
     <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
@@ -447,43 +453,260 @@
   </div>
 
 
-  <div class="archive">
-    
-      <h1 id="page-title" class="page__title">백준 문제 풀이</h1>
-    
-    <!-- 공백이 포함되어 있는 카테고리 이름의 경우 site.categories.['a b c'] 이런식으로! -->
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="[백준][11660] 구간 합 구하기 5">
+    <meta itemprop="description" content="구간 합 구하기 5">
+    <meta itemprop="datePublished" content="2023-06-07T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2023-06-07T00:00:00+09:00">
 
-<div class="list__item">
-    <article class="archive-item">
-        <div>
-            <span>
-              <a href="/boj/11660/">[백준][11660] 구간 합 구하기 5</a>
-            </span>
-            <small> 
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.06.07
-              <!--Archive page 용-: (post -> page)-->
-<!--page__taxonomy.html에서 가져 옴-->
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">[백준][11660] 구간 합 구하기 5
+</h1>
+          
+            <p class="page__meta"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Date:</strong> <time datetime="2023-06-07T00:00:00+09:00">2023.06.07</time>&nbsp&nbsp&nbsp<strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-06-07">2023.06.07</time></p>
+          
+          
+            <font size="3em">
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#boj" class="page__taxonomy-item-category" rel="tag">BOJ</a>
+    
+    </span>
+  </p>
+
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a><span class="sep"> </span>
+    
+      
+      
+      <a href="/tags/#dp" class="page__taxonomy-item-tag" rel="tag">DP</a><span class="sep"> </span>
+    
+      
+      
+      <a href="/tags/#algorithm" class="page__taxonomy-item-tag" rel="tag">Algorithm</a>
+    
+    </span>
+  </p>
+</font>
+          
+        </header>
+      
+      <section class="page__content" itemprop="text">
         
-        <span class="page__taxonomy">
-            <span itemprop="keywords"><a href="/categories/#boj" class="page__taxonomy-item-category" rel="tag">BOJ</a>
-                    
-                    
-                    <a href="/tags/#algorithm" class="page__taxonomy-item-tag" rel="tag">Algorithm</a><span class="sep"> </span>
-                
-                    
-                    
-                    <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a><span class="sep"> </span>
-                
-                    
-                    
-                    <a href="/tags/#dp" class="page__taxonomy-item-tag" rel="tag">DP</a>
-                
-            </span>
-        </span>
-            </small>
-        </div>
-      </article>
-</div>
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#구간-합-구하기-5">구간 합 구하기 5</a>
+    <ul>
+      <li><a href="#난이도">난이도</a></li>
+      <li><a href="#문제">문제</a></li>
+      <li><a href="#입력">입력</a></li>
+      <li><a href="#출력">출력</a></li>
+      <li><a href="#풀이">풀이</a></li>
+      <li><a href="#결과">결과</a></li>
+      <li><a href="#채점-결과">채점 결과</a></li>
+    </ul>
+  </li>
+</ul>
+            </nav>
+          </aside>
+        
+        <h1 id="구간-합-구하기-5">구간 합 구하기 5</h1>
+
+<h2 id="난이도">난이도</h2>
+<blockquote>
+  <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/1725e8ac-be34-44d1-a4db-174d0a2cd0dd" alt="10" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 1</span></p>
+</blockquote>
+
+<h2 id="문제">문제</h2>
+<p>N×N개의 수가 N×N 크기의 표에 채워져 있다. (x1, y1)부터 (x2, y2)까지 합을 구하는 프로그램을 작성하시오. (x, y)는 x행 y열을 의미한다.</p>
+
+<p>예를 들어, N = 4이고, 표가 아래와 같이 채워져 있는 경우를 살펴보자.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>여기서 (2, 2)부터 (3, 4)까지 합을 구하면 3+4+5+4+5+6 = 27이고, (4, 4)부터 (4, 4)까지 합을 구하면 7이다.</p>
+
+<p>표에 채워져 있는 수와 합을 구하는 연산이 주어졌을 때, 이를 처리하는 프로그램을 작성하시오.</p>
+
+<h2 id="입력">입력</h2>
+<p>첫째 줄에 표의 크기 N과 합을 구해야 하는 횟수 M이 주어진다. (1 ≤ N ≤ 1024, 1 ≤ M ≤ 100,000) 둘째 줄부터 N개의 줄에는 표에 채워져 있는 수가 1행부터 차례대로 주어진다. 다음 M개의 줄에는 네 개의 정수 x1, y1, x2, y2 가 주어지며, (x1, y1)부터 (x2, y2)의 합을 구해 출력해야 한다. 표에 채워져 있는 수는 1,000보다 작거나 같은 자연수이다. (x1 ≤ x2, y1 ≤ y2)</p>
+
+<h2 id="출력">출력</h2>
+<p>총 M줄에 걸쳐 (x1, y1)부터 (x2, y2)까지 합을 구해 출력한다.</p>
+
+<h2 id="풀이">풀이</h2>
+<blockquote>
+  <p>일반적인 구간 합 문제에서는 단순히 for문을 돌린다면 시간초과를 마주하게 된다. 나 또한 마찬가지로 for문을 돌렸으나 시간초과가 되었다. 시간초과를 마주치지 않기 위해서는 DP를 활용해야 한다. DP를 활용해서 각 인덱스에 해당 인덱스까지의 구간합을 적어놓고 필요한 구간만큼의 값을 뽑아낼 수 있도록 한다.</p>
+</blockquote>
+
+<p><img width="404" alt="스크린샷 2023-06-07 16 07 20" src="https://github.com/ihmmaru99/BOJ/assets/109266664/83a10efe-e841-43e3-a86f-50d70f94cc69" /><br />
+다음과 같은 그림에서 노란 구간의 합을 구하기 위해서는 각 맵에 전체의 구간합을 적어준 다음에 색칠되어 있는 전체 영역의 구간합에 - (파랑+초록) - (빨강+초록) + 초록을 하면 노란 영역만의 구간합을 구할 수 있다.</p>
+
+<h2 id="결과">결과</h2>
+<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/11660/11660.cpp">11660 - 구간합구하기5</a></p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span>
+<span class="cp"># define MAX 1025
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="n">map</span><span class="p">[</span><span class="n">MAX</span><span class="p">][</span><span class="n">MAX</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+    <span class="n">ios_base</span><span class="o">::</span><span class="n">sync_with_stdio</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+    <span class="n">cin</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> <span class="n">cout</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+    <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span> <span class="o">&gt;&gt;</span> <span class="n">m</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
+            <span class="kt">int</span> <span class="n">temp</span><span class="p">;</span>
+            <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">temp</span><span class="p">;</span>
+            <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">temp</span> <span class="o">-</span> <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="kt">int</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">x_end</span><span class="p">,</span> <span class="n">y_end</span><span class="p">,</span> <span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">m</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">x</span> <span class="o">&gt;&gt;</span> <span class="n">y</span> <span class="o">&gt;&gt;</span> <span class="n">x_end</span> <span class="o">&gt;&gt;</span> <span class="n">y_end</span><span class="p">;</span>
+        <span class="n">cnt</span> <span class="o">=</span> <span class="n">map</span><span class="p">[</span><span class="n">x_end</span><span class="p">][</span><span class="n">y_end</span><span class="p">]</span> <span class="o">-</span> <span class="n">map</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">y_end</span><span class="p">]</span> <span class="o">-</span> <span class="n">map</span><span class="p">[</span><span class="n">x_end</span><span class="p">][</span><span class="n">y</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">map</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">y</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">cnt</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="채점-결과">채점 결과</h2>
+<p><img width="733" alt="스크린샷 2023-06-07 15 59 33" src="https://github.com/ihmmaru99/BOJ/assets/109266664/60f30917-88bc-436a-87a5-7810479c946a" /></p>
+
+        
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        
+        <p></p>
+        <h5 class="page__meta-title"><span style="font-family:'TheJamsil'; color:#0174DF;">BOJ</span> <span style="font-family:'TheJamsil';"> 카테고리 내 다른 글 보러가기 </span></h5>
+        <!--
+
+  <nav class="pagination">
+    
+      <a href="/boj/1991/" class="pagination--pager" title="[백준][1991] 트리 순회
+">이전</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">다음</a>
+    
+  </nav>
+
+-->
+
+
+
+
+  
+  	
+  	
+  	
+  	
+  	
+
+
+  <nav class="pagination_prev_next">
+    
+      <a href="/boj/1991/" class="pagination_prev_next--pager"><span class="prev_next">이전 글  &nbsp</span>[백준][1991] 트리 순회</a>
+    
+    
+      <a href="#" class="pagination_prev_next--pager disabled-last-child ">가장 최근 글입니다</a>
+    
+  </nav>
+
+
+<!--
+
+
+
+-->
+
+
+        <p></p>
+
+        <!-- archive 중간 광고 -->
+        <ins class="adsbygoogle"
+             style="display:block"
+            data-ad-client="ca-pub-6111782407607310"
+            data-ad-slot="5458515780"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </section>
+      <footer class="page__meta">
+        
+        
+      </footer>
+    </div>
+
+    
+
+  </article>
+
+  
+  
+    <div class="page__related"> <!--site.data.ui-text[site.locale].related_label-->
+        
+          
+
+
 
 <div class="list__item">
     <article class="archive-item">
@@ -516,6 +739,10 @@
         </div>
       </article>
 </div>
+        
+          
+
+
 
 <div class="list__item">
     <article class="archive-item">
@@ -552,6 +779,10 @@
         </div>
       </article>
 </div>
+        
+          
+
+
 
 <div class="list__item">
     <article class="archive-item">
@@ -584,6 +815,46 @@
         </div>
       </article>
 </div>
+        
+          
+
+
+
+<div class="list__item">
+    <article class="archive-item">
+        <div>
+            <span>
+              <a href="/programmers/singo/">[프로그래머스] Lv2. 신고 결과 받기</a>
+            </span>
+            <small> 
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.06.04
+              <!--Archive page 용-: (post -> page)-->
+<!--page__taxonomy.html에서 가져 옴-->
+        
+        <span class="page__taxonomy">
+            <span itemprop="keywords"><a href="/categories/#programmers" class="page__taxonomy-item-category" rel="tag">Programmers</a>
+                    
+                    
+                    <a href="/tags/#algorithm" class="page__taxonomy-item-tag" rel="tag">Algorithm</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#coding-test" class="page__taxonomy-item-tag" rel="tag">Coding Test</a>
+                
+            </span>
+        </span>
+            </small>
+        </div>
+      </article>
+</div>
+        
+          
+
+
 
 <div class="list__item">
     <article class="archive-item">
@@ -616,6 +887,10 @@
         </div>
       </article>
 </div>
+        
+          
+
+
 
 <div class="list__item">
     <article class="archive-item">
@@ -648,6 +923,10 @@
         </div>
       </article>
 </div>
+        
+          
+
+
 
 <div class="list__item">
     <article class="archive-item">
@@ -680,6 +959,10 @@
         </div>
       </article>
 </div>
+        
+          
+
+
 
 <div class="list__item">
     <article class="archive-item">
@@ -712,6 +995,10 @@
         </div>
       </article>
 </div>
+        
+          
+
+
 
 <div class="list__item">
     <article class="archive-item">
@@ -744,6 +1031,10 @@
         </div>
       </article>
 </div>
+        
+          
+
+
 
 <div class="list__item">
     <article class="archive-item">
@@ -776,40 +1067,10 @@
         </div>
       </article>
 </div>
-
-<div class="list__item">
-    <article class="archive-item">
-        <div>
-            <span>
-              <a href="/boj/13305/">[백준][13305] 주유소</a>
-            </span>
-            <small> 
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.05.30
-              <!--Archive page 용-: (post -> page)-->
-<!--page__taxonomy.html에서 가져 옴-->
         
-        <span class="page__taxonomy">
-            <span itemprop="keywords"><a href="/categories/#boj" class="page__taxonomy-item-category" rel="tag">BOJ</a>
-                    
-                    
-                    <a href="/tags/#algorithm" class="page__taxonomy-item-tag" rel="tag">Algorithm</a><span class="sep"> </span>
-                
-                    
-                    
-                    <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a><span class="sep"> </span>
-                
-                    
-                    
-                    <a href="/tags/#greedy" class="page__taxonomy-item-tag" rel="tag">Greedy</a>
-                
-            </span>
-        </span>
-            </small>
-        </div>
-      </article>
-</div>
-
-  </div>
+    </div>
+  
+  
 </div>
     </div>
 
@@ -869,6 +1130,11 @@
 
 
 
+
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" defer
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 
 
   </body>

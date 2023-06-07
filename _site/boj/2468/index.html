@@ -308,7 +308,7 @@
   <ul class="nav__items" id="category_tag_menu">
       <!--전체 글 수-->
       <li>
-            <span style="font-family:'TheJamsil';"><font size="3em">전체 글 수</font></style> <span style="font-family:''TheJamsil';"><font size="3em">12</font></style> <span style="font-family:'TheJamsil';"><font size="3em">개</font></style> 
+            <span style="font-family:'TheJamsil';"><font size="3em">전체 글 수</font></style> <span style="font-family:''TheJamsil';"><font size="3em">13</font></style> <span style="font-family:'TheJamsil';"><font size="3em">개</font></style> 
       </li>
       <li>
         <span class="nav__sub-title">AE</span>
@@ -382,7 +382,7 @@
                     
                 
                     
-                        <li><a href="/categories/boj" class="">백준 (10)</a></li>
+                        <li><a href="/categories/boj" class="">백준 (11)</a></li>
                     
                 
             </ul>
@@ -526,11 +526,8 @@
       <li><a href="#문제">문제</a></li>
       <li><a href="#입력">입력</a></li>
       <li><a href="#출력">출력</a></li>
-      <li><a href="#결과">결과</a>
-        <ul>
-          <li><a href="#풀이">풀이</a></li>
-        </ul>
-      </li>
+      <li><a href="#풀이">풀이</a></li>
+      <li><a href="#결과">결과</a></li>
       <li><a href="#채점-결과">채점 결과</a></li>
     </ul>
   </li>
@@ -562,6 +559,11 @@
 <p>첫째 줄에는 어떤 지역을 나타내는 2차원 배열의 행과 열의 개수를 나타내는 수 N이 입력된다. N은 2 이상 100 이하의 정수이다. 둘째 줄부터 N개의 각 줄에는 2차원 배열의 첫 번째 행부터 N번째 행까지 순서대로 한 행씩 높이 정보가 입력된다. 각 줄에는 각 행의 첫 번째 열부터 N번째 열까지 N개의 높이 정보를 나타내는 자연수가 빈 칸을 사이에 두고 입력된다. 높이는 1이상 100 이하의 정수이다.</p>
 <h2 id="출력">출력</h2>
 <p>첫째 줄에 장마철에 물에 잠기지 않는 안전한 영역의 최대 개수를 출력한다.</p>
+
+<h2 id="풀이">풀이</h2>
+<blockquote>
+  <p>각 맵의 데이터를 입력받고 입력받은 맵에서 어떤 높이 값을 지정해야 물에 잠기지 않는 안전 영역의 개수가 최대가 되는지 확인하기 위해서 입력받은 맵 데이터에서 최소 높이와 최대 높이를 지정한다. 해당하는 최소 높이와 최대 높이까지 bfs 알고리즘을 통해서 안전영역의 개수를 확인한다. 그리고 높이를 바꿔가면서 계산을 해야 되기 때문에 방문기록을 저장한 visited 배열을 bfs를 통해서 안전 영역을 확인했을 때마다 초기화해준다.</p>
+</blockquote>
 
 <h2 id="결과">결과</h2>
 <p><a href="https://github.com/ihmmaru99/BOJ/blob/main/2468/2468.cpp">2468 - 안전 영역</a></p>
@@ -636,10 +638,6 @@
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
-<h3 id="풀이">풀이</h3>
-<blockquote>
-  <p>각 맵의 데이터를 입력받고 입력받은 맵에서 어떤 높이 값을 지정해야 물에 잠기지 않는 안전 영역의 개수가 최대가 되는지 확인하기 위해서 입력받은 맵 데이터에서 최소 높이와 최대 높이를 지정한다. 해당하는 최소 높이와 최대 높이까지 bfs 알고리즘을 통해서 안전영역의 개수를 확인한다. 그리고 높이를 바꿔가면서 계산을 해야 되기 때문에 방문기록을 저장한 visited 배열을 bfs를 통해서 안전 영역을 확인했을 때마다 초기화해준다.</p>
-</blockquote>
 
 <h2 id="채점-결과">채점 결과</h2>
 <p><img width="734" alt="스크린샷 2023-05-31 18 46 44" src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/3688be97-7bc7-4448-8a3f-f78c48a4b167" /></p>
@@ -667,6 +665,8 @@
 
 
 
+
+  
 
   
 
@@ -733,6 +733,42 @@
   
   
     <div class="page__related"> <!--site.data.ui-text[site.locale].related_label-->
+        
+          
+
+
+
+<div class="list__item">
+    <article class="archive-item">
+        <div>
+            <span>
+              <a href="/boj/11660/">[백준][11660] 구간 합 구하기 5</a>
+            </span>
+            <small> 
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.06.07
+              <!--Archive page 용-: (post -> page)-->
+<!--page__taxonomy.html에서 가져 옴-->
+        
+        <span class="page__taxonomy">
+            <span itemprop="keywords"><a href="/categories/#boj" class="page__taxonomy-item-category" rel="tag">BOJ</a>
+                    
+                    
+                    <a href="/tags/#algorithm" class="page__taxonomy-item-tag" rel="tag">Algorithm</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#dp" class="page__taxonomy-item-tag" rel="tag">DP</a>
+                
+            </span>
+        </span>
+            </small>
+        </div>
+      </article>
+</div>
         
           
 
@@ -1038,42 +1074,6 @@
             </span>
             <small> 
               <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.05.31
-              <!--Archive page 용-: (post -> page)-->
-<!--page__taxonomy.html에서 가져 옴-->
-        
-        <span class="page__taxonomy">
-            <span itemprop="keywords"><a href="/categories/#boj" class="page__taxonomy-item-category" rel="tag">BOJ</a>
-                    
-                    
-                    <a href="/tags/#algorithm" class="page__taxonomy-item-tag" rel="tag">Algorithm</a><span class="sep"> </span>
-                
-                    
-                    
-                    <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a><span class="sep"> </span>
-                
-                    
-                    
-                    <a href="/tags/#greedy" class="page__taxonomy-item-tag" rel="tag">Greedy</a>
-                
-            </span>
-        </span>
-            </small>
-        </div>
-      </article>
-</div>
-        
-          
-
-
-
-<div class="list__item">
-    <article class="archive-item">
-        <div>
-            <span>
-              <a href="/boj/13305/">[백준][13305] 주유소</a>
-            </span>
-            <small> 
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.05.30
               <!--Archive page 용-: (post -> page)-->
 <!--page__taxonomy.html에서 가져 옴-->
         

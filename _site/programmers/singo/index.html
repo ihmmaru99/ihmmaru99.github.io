@@ -308,7 +308,7 @@
   <ul class="nav__items" id="category_tag_menu">
       <!--전체 글 수-->
       <li>
-            <span style="font-family:'TheJamsil';"><font size="3em">전체 글 수</font></style> <span style="font-family:''TheJamsil';"><font size="3em">12</font></style> <span style="font-family:'TheJamsil';"><font size="3em">개</font></style> 
+            <span style="font-family:'TheJamsil';"><font size="3em">전체 글 수</font></style> <span style="font-family:''TheJamsil';"><font size="3em">13</font></style> <span style="font-family:'TheJamsil';"><font size="3em">개</font></style> 
       </li>
       <li>
         <span class="nav__sub-title">AE</span>
@@ -382,7 +382,7 @@
                     
                 
                     
-                        <li><a href="/categories/boj" class="">백준 (10)</a></li>
+                        <li><a href="/categories/boj" class="">백준 (11)</a></li>
                     
                 
             </ul>
@@ -524,11 +524,8 @@
     <ul>
       <li><a href="#문제-설명">문제 설명</a></li>
       <li><a href="#제한사항">제한사항</a></li>
-      <li><a href="#결과">결과</a>
-        <ul>
-          <li><a href="#풀이">풀이</a></li>
-        </ul>
-      </li>
+      <li><a href="#풀이">풀이</a></li>
+      <li><a href="#결과">결과</a></li>
       <li><a href="#채점-결과">채점 결과</a></li>
     </ul>
   </li>
@@ -681,6 +678,11 @@
   <li>return 하는 배열은 id_list에 담긴 id 순서대로 각 유저가 받은 결과 메일 수를 담으면 됩니다.</li>
 </ul>
 
+<h2 id="풀이">풀이</h2>
+<blockquote>
+  <p>신고 결과를 받기 위한 map을 하나 설정하고 map에는 각 유저의 이름과 각각의 유저를 구별할 수 있는 번호를 지정해준다. 지정한 map을 통해서 신고 결과를 입력받고 횟수를 센다. 만약 신고 횟수가 지정된 숫자보다 많다면 결과 메일을 보내고 만약 해당 유저가 정지되었다면 해당 유저를 신고한 유저에게 메일을 보내도록 한다.</p>
+</blockquote>
+
 <h2 id="결과">결과</h2>
 <div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp">
 #include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
@@ -715,10 +717,6 @@
     <span class="k">return</span> <span class="n">answer</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
-<h3 id="풀이">풀이</h3>
-<blockquote>
-  <p>신고 결과를 받기 위한 map을 하나 설정하고 map에는 각 유저의 이름과 각각의 유저를 구별할 수 있는 번호를 지정해준다. 지정한 map을 통해서 신고 결과를 입력받고 횟수를 센다. 만약 신고 횟수가 지정된 숫자보다 많다면 결과 메일을 보내고 만약 해당 유저가 정지되었다면 해당 유저를 신고한 유저에게 메일을 보내도록 한다.</p>
-</blockquote>
 
 <h2 id="채점-결과">채점 결과</h2>
 <p><img width="350" alt="스크린샷 2023-06-04 19 56 20" src="https://github.com/ihmmaru99/BOJ/assets/109266664/cfb23d2b-152f-4e7e-a79e-f0518227526d" /><br />
@@ -798,6 +796,42 @@
   
   
     <div class="page__related"> <!--site.data.ui-text[site.locale].related_label-->
+        
+          
+
+
+
+<div class="list__item">
+    <article class="archive-item">
+        <div>
+            <span>
+              <a href="/boj/11660/">[백준][11660] 구간 합 구하기 5</a>
+            </span>
+            <small> 
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.06.07
+              <!--Archive page 용-: (post -> page)-->
+<!--page__taxonomy.html에서 가져 옴-->
+        
+        <span class="page__taxonomy">
+            <span itemprop="keywords"><a href="/categories/#boj" class="page__taxonomy-item-category" rel="tag">BOJ</a>
+                    
+                    
+                    <a href="/tags/#algorithm" class="page__taxonomy-item-tag" rel="tag">Algorithm</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#dp" class="page__taxonomy-item-tag" rel="tag">DP</a>
+                
+            </span>
+        </span>
+            </small>
+        </div>
+      </article>
+</div>
         
           
 
@@ -1103,42 +1137,6 @@
             </span>
             <small> 
               <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.05.31
-              <!--Archive page 용-: (post -> page)-->
-<!--page__taxonomy.html에서 가져 옴-->
-        
-        <span class="page__taxonomy">
-            <span itemprop="keywords"><a href="/categories/#boj" class="page__taxonomy-item-category" rel="tag">BOJ</a>
-                    
-                    
-                    <a href="/tags/#algorithm" class="page__taxonomy-item-tag" rel="tag">Algorithm</a><span class="sep"> </span>
-                
-                    
-                    
-                    <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a><span class="sep"> </span>
-                
-                    
-                    
-                    <a href="/tags/#greedy" class="page__taxonomy-item-tag" rel="tag">Greedy</a>
-                
-            </span>
-        </span>
-            </small>
-        </div>
-      </article>
-</div>
-        
-          
-
-
-
-<div class="list__item">
-    <article class="archive-item">
-        <div>
-            <span>
-              <a href="/boj/13305/">[백준][13305] 주유소</a>
-            </span>
-            <small> 
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.05.30
               <!--Archive page 용-: (post -> page)-->
 <!--page__taxonomy.html에서 가져 옴-->
         
