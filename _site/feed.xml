@@ -1,97 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-07T16:57:32+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IhmMaru99의 잡동사니</title><subtitle>ihmmaru99&apos;s blog</subtitle><author><name>임정빈</name></author><entry><title type="html">[백준][11660] 구간 합 구하기 5</title><link href="http://localhost:4000/boj/11660/" rel="alternate" type="text/html" title="[백준][11660] 구간 합 구하기 5" /><published>2023-06-07T00:00:00+09:00</published><updated>2023-06-07T00:00:00+09:00</updated><id>http://localhost:4000/boj/11660</id><content type="html" xml:base="http://localhost:4000/boj/11660/"><![CDATA[<h1 id="구간-합-구하기-5">구간 합 구하기 5</h1>
-
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-08T14:53:24+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IhmMaru99의 잡동사니</title><subtitle>ihmmaru99&apos;s blog</subtitle><author><name>임정빈</name></author><entry><title type="html">[백준][11726] 2xn 타일링</title><link href="http://localhost:4000/boj/11726/" rel="alternate" type="text/html" title="[백준][11726] 2xn 타일링" /><published>2023-06-08T00:00:00+09:00</published><updated>2023-06-08T00:00:00+09:00</updated><id>http://localhost:4000/boj/11726</id><content type="html" xml:base="http://localhost:4000/boj/11726/"><![CDATA[<h1 id="2xn-타일링">2xn 타일링</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
-  <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/1725e8ac-be34-44d1-a4db-174d0a2cd0dd" alt="10" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 1</span></p>
+  <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/40f259a0-6d4e-4cfa-a954-225e9b42961f" alt="8" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 3</span></p>
 </blockquote>
 
 <h2 id="문제">문제</h2>
-<p>N×N개의 수가 N×N 크기의 표에 채워져 있다. (x1, y1)부터 (x2, y2)까지 합을 구하는 프로그램을 작성하시오. (x, y)는 x행 y열을 의미한다.</p>
+<p>2×n 크기의 직사각형을 1×2, 2×1 타일로 채우는 방법의 수를 구하는 프로그램을 작성하시오.</p>
 
-<p>예를 들어, N = 4이고, 표가 아래와 같이 채워져 있는 경우를 살펴보자.</p>
-
-<table>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
-      <td>7</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>여기서 (2, 2)부터 (3, 4)까지 합을 구하면 3+4+5+4+5+6 = 27이고, (4, 4)부터 (4, 4)까지 합을 구하면 7이다.</p>
-
-<p>표에 채워져 있는 수와 합을 구하는 연산이 주어졌을 때, 이를 처리하는 프로그램을 작성하시오.</p>
+<p>아래 그림은 2×5 크기의 직사각형을 채운 한 가지 방법의 예이다.<br />
+<img src="https://github.com/ihmmaru99/BOJ/assets/109266664/e04b9615-225a-4d1a-97ef-eee0e05a658a" alt="1" /></p>
 
 <h2 id="입력">입력</h2>
-<p>첫째 줄에 표의 크기 N과 합을 구해야 하는 횟수 M이 주어진다. (1 ≤ N ≤ 1024, 1 ≤ M ≤ 100,000) 둘째 줄부터 N개의 줄에는 표에 채워져 있는 수가 1행부터 차례대로 주어진다. 다음 M개의 줄에는 네 개의 정수 x1, y1, x2, y2 가 주어지며, (x1, y1)부터 (x2, y2)의 합을 구해 출력해야 한다. 표에 채워져 있는 수는 1,000보다 작거나 같은 자연수이다. (x1 ≤ x2, y1 ≤ y2)</p>
+<p>첫째 줄에 n이 주어진다. (1 ≤ n ≤ 1,000)</p>
 
 <h2 id="출력">출력</h2>
-<p>총 M줄에 걸쳐 (x1, y1)부터 (x2, y2)까지 합을 구해 출력한다.</p>
+<p>첫째 줄에 2×n 크기의 직사각형을 채우는 방법의 수를 10,007로 나눈 나머지를 출력한다.</p>
 
 <h2 id="풀이">풀이</h2>
 <blockquote>
-  <p>일반적인 구간 합 문제에서는 단순히 for문을 돌린다면 시간초과를 마주하게 된다. 나 또한 마찬가지로 for문을 돌렸으나 시간초과가 되었다. 시간초과를 마주치지 않기 위해서는 DP를 활용해야 한다. DP를 활용해서 각 인덱스에 해당 인덱스까지의 구간합을 적어놓고 필요한 구간만큼의 값을 뽑아낼 수 있도록 한다.</p>
+  <p>DP를 이용해서 문제를 풀이하면 된다. 2x1을 만들 수 있는 경우의 수와 2x2를 만들 수 있는 경우의 수를 더하면 2x3을 만들 수 있는 경우의 수를 알 수 있다. 이를 통해서 점화식을 세워서 값을 배열에 저장해 놓으면 값을 알수 있다.</p>
 </blockquote>
 
-<p><img width="404" alt="스크린샷 2023-06-07 16 07 20" src="https://github.com/ihmmaru99/BOJ/assets/109266664/83a10efe-e841-43e3-a86f-50d70f94cc69" /><br />
-다음과 같은 그림에서 노란 구간의 합을 구하기 위해서는 각 맵에 전체의 구간합을 적어준 다음에 색칠되어 있는 전체 영역의 구간합에 - (파랑+초록) - (빨강+초록) + 초록을 하면 노란 영역만의 구간합을 구할 수 있다.</p>
-
 <h2 id="결과">결과</h2>
-<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/11660/11660.cpp">11660 - 구간합구하기5</a></p>
+<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/11726/11726.cpp">11726 - 2xn 타일링</a></p>
 <div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span>
-<span class="cp"># define MAX 1025
-</span>
 <span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-
-<span class="kt">int</span> <span class="n">map</span><span class="p">[</span><span class="n">MAX</span><span class="p">][</span><span class="n">MAX</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="p">};</span>
+<span class="kt">int</span> <span class="n">dp</span><span class="p">[</span><span class="mi">1001</span><span class="p">];</span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-    <span class="n">ios_base</span><span class="o">::</span><span class="n">sync_with_stdio</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-    <span class="n">cin</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> <span class="n">cout</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-
-    <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">;</span>
-    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span> <span class="o">&gt;&gt;</span> <span class="n">m</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
-            <span class="kt">int</span> <span class="n">temp</span><span class="p">;</span>
-            <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">temp</span><span class="p">;</span>
-            <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">temp</span> <span class="o">-</span> <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span>
-        <span class="p">}</span>
+    <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
+    <span class="n">dp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="n">dp</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">3</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">%</span><span class="mi">10007</span><span class="p">;</span>
     <span class="p">}</span>
-    <span class="kt">int</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">x_end</span><span class="p">,</span> <span class="n">y_end</span><span class="p">,</span> <span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">m</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-        <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">x</span> <span class="o">&gt;&gt;</span> <span class="n">y</span> <span class="o">&gt;&gt;</span> <span class="n">x_end</span> <span class="o">&gt;&gt;</span> <span class="n">y_end</span><span class="p">;</span>
-        <span class="n">cnt</span> <span class="o">=</span> <span class="n">map</span><span class="p">[</span><span class="n">x_end</span><span class="p">][</span><span class="n">y_end</span><span class="p">]</span> <span class="o">-</span> <span class="n">map</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">y_end</span><span class="p">]</span> <span class="o">-</span> <span class="n">map</span><span class="p">[</span><span class="n">x_end</span><span class="p">][</span><span class="n">y</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">map</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">y</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">cnt</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
-    <span class="p">}</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">dp</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
 <h2 id="채점-결과">채점 결과</h2>
-<p><img width="733" alt="스크린샷 2023-06-07 15 59 33" src="https://github.com/ihmmaru99/BOJ/assets/109266664/60f30917-88bc-436a-87a5-7810479c946a" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="C++" /><category term="DP" /><summary type="html"><![CDATA[구간 합 구하기 5]]></summary></entry><entry><title type="html">[백준][14502] 연구소</title><link href="http://localhost:4000/boj/14502/" rel="alternate" type="text/html" title="[백준][14502] 연구소" /><published>2023-06-07T00:00:00+09:00</published><updated>2023-06-07T00:00:00+09:00</updated><id>http://localhost:4000/boj/14502</id><content type="html" xml:base="http://localhost:4000/boj/14502/"><![CDATA[<h1 id="연구소">연구소</h1>
+<p><img width="730" alt="스크린샷 2023-06-08 14 51 42" src="https://github.com/ihmmaru99/BOJ/assets/109266664/91f32128-84bf-43a7-b46b-73be22393bba" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="C++" /><category term="DP" /><summary type="html"><![CDATA[2xn 타일링 난이도 실버 3]]></summary></entry><entry><title type="html">[백준][14502] 연구소</title><link href="http://localhost:4000/boj/14502/" rel="alternate" type="text/html" title="[백준][14502] 연구소" /><published>2023-06-07T00:00:00+09:00</published><updated>2023-06-07T00:00:00+09:00</updated><id>http://localhost:4000/boj/14502</id><content type="html" xml:base="http://localhost:4000/boj/14502/"><![CDATA[<h1 id="연구소">연구소</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
   <p><img src="https://github.com/ihmmaru99/ihmmaru99/assets/109266664/4f74cb65-a628-44e0-8f7f-210cdc98eb6e" alt="12" width="20px&quot;, height=&quot;20px" /> <span style="color:#FFBF00"> 골드 4</span></p>
@@ -254,7 +205,100 @@
 </code></pre></div></div>
 
 <h2 id="채점-결과">채점 결과</h2>
-<p><img width="729" alt="스크린샷 2023-06-07 16 42 40" src="https://github.com/ihmmaru99/BOJ/assets/109266664/30922646-00fc-45aa-9fbe-8711ef6562b2" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="BFS" /><category term="C++" /><summary type="html"><![CDATA[연구소 난이도 골드 4]]></summary></entry><entry><title type="html">[백준][1991] 트리 순회</title><link href="http://localhost:4000/boj/1991/" rel="alternate" type="text/html" title="[백준][1991] 트리 순회" /><published>2023-06-06T00:00:00+09:00</published><updated>2023-06-06T00:00:00+09:00</updated><id>http://localhost:4000/boj/1991</id><content type="html" xml:base="http://localhost:4000/boj/1991/"><![CDATA[<h1 id="트리-순회">트리 순회</h1>
+<p><img width="729" alt="스크린샷 2023-06-07 16 42 40" src="https://github.com/ihmmaru99/BOJ/assets/109266664/30922646-00fc-45aa-9fbe-8711ef6562b2" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="BFS" /><category term="C++" /><summary type="html"><![CDATA[연구소 난이도 골드 4]]></summary></entry><entry><title type="html">[백준][11660] 구간 합 구하기 5</title><link href="http://localhost:4000/boj/11660/" rel="alternate" type="text/html" title="[백준][11660] 구간 합 구하기 5" /><published>2023-06-07T00:00:00+09:00</published><updated>2023-06-07T00:00:00+09:00</updated><id>http://localhost:4000/boj/11660</id><content type="html" xml:base="http://localhost:4000/boj/11660/"><![CDATA[<h1 id="구간-합-구하기-5">구간 합 구하기 5</h1>
+
+<h2 id="난이도">난이도</h2>
+<blockquote>
+  <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/1725e8ac-be34-44d1-a4db-174d0a2cd0dd" alt="10" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 1</span></p>
+</blockquote>
+
+<h2 id="문제">문제</h2>
+<p>N×N개의 수가 N×N 크기의 표에 채워져 있다. (x1, y1)부터 (x2, y2)까지 합을 구하는 프로그램을 작성하시오. (x, y)는 x행 y열을 의미한다.</p>
+
+<p>예를 들어, N = 4이고, 표가 아래와 같이 채워져 있는 경우를 살펴보자.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>여기서 (2, 2)부터 (3, 4)까지 합을 구하면 3+4+5+4+5+6 = 27이고, (4, 4)부터 (4, 4)까지 합을 구하면 7이다.</p>
+
+<p>표에 채워져 있는 수와 합을 구하는 연산이 주어졌을 때, 이를 처리하는 프로그램을 작성하시오.</p>
+
+<h2 id="입력">입력</h2>
+<p>첫째 줄에 표의 크기 N과 합을 구해야 하는 횟수 M이 주어진다. (1 ≤ N ≤ 1024, 1 ≤ M ≤ 100,000) 둘째 줄부터 N개의 줄에는 표에 채워져 있는 수가 1행부터 차례대로 주어진다. 다음 M개의 줄에는 네 개의 정수 x1, y1, x2, y2 가 주어지며, (x1, y1)부터 (x2, y2)의 합을 구해 출력해야 한다. 표에 채워져 있는 수는 1,000보다 작거나 같은 자연수이다. (x1 ≤ x2, y1 ≤ y2)</p>
+
+<h2 id="출력">출력</h2>
+<p>총 M줄에 걸쳐 (x1, y1)부터 (x2, y2)까지 합을 구해 출력한다.</p>
+
+<h2 id="풀이">풀이</h2>
+<blockquote>
+  <p>일반적인 구간 합 문제에서는 단순히 for문을 돌린다면 시간초과를 마주하게 된다. 나 또한 마찬가지로 for문을 돌렸으나 시간초과가 되었다. 시간초과를 마주치지 않기 위해서는 DP를 활용해야 한다. DP를 활용해서 각 인덱스에 해당 인덱스까지의 구간합을 적어놓고 필요한 구간만큼의 값을 뽑아낼 수 있도록 한다.</p>
+</blockquote>
+
+<p><img width="404" alt="스크린샷 2023-06-07 16 07 20" src="https://github.com/ihmmaru99/BOJ/assets/109266664/83a10efe-e841-43e3-a86f-50d70f94cc69" /><br />
+다음과 같은 그림에서 노란 구간의 합을 구하기 위해서는 각 맵에 전체의 구간합을 적어준 다음에 색칠되어 있는 전체 영역의 구간합에 - (파랑+초록) - (빨강+초록) + 초록을 하면 노란 영역만의 구간합을 구할 수 있다.</p>
+
+<h2 id="결과">결과</h2>
+<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/11660/11660.cpp">11660 - 구간합구하기5</a></p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span>
+<span class="cp"># define MAX 1025
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="n">map</span><span class="p">[</span><span class="n">MAX</span><span class="p">][</span><span class="n">MAX</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="p">};</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+    <span class="n">ios_base</span><span class="o">::</span><span class="n">sync_with_stdio</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+    <span class="n">cin</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> <span class="n">cout</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+
+    <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span> <span class="o">&gt;&gt;</span> <span class="n">m</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
+            <span class="kt">int</span> <span class="n">temp</span><span class="p">;</span>
+            <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">temp</span><span class="p">;</span>
+            <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">temp</span> <span class="o">-</span> <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="kt">int</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">x_end</span><span class="p">,</span> <span class="n">y_end</span><span class="p">,</span> <span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">m</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">x</span> <span class="o">&gt;&gt;</span> <span class="n">y</span> <span class="o">&gt;&gt;</span> <span class="n">x_end</span> <span class="o">&gt;&gt;</span> <span class="n">y_end</span><span class="p">;</span>
+        <span class="n">cnt</span> <span class="o">=</span> <span class="n">map</span><span class="p">[</span><span class="n">x_end</span><span class="p">][</span><span class="n">y_end</span><span class="p">]</span> <span class="o">-</span> <span class="n">map</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">y_end</span><span class="p">]</span> <span class="o">-</span> <span class="n">map</span><span class="p">[</span><span class="n">x_end</span><span class="p">][</span><span class="n">y</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">map</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">y</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span>
+        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">cnt</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="채점-결과">채점 결과</h2>
+<p><img width="733" alt="스크린샷 2023-06-07 15 59 33" src="https://github.com/ihmmaru99/BOJ/assets/109266664/60f30917-88bc-436a-87a5-7810479c946a" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="C++" /><category term="DP" /><summary type="html"><![CDATA[구간 합 구하기 5]]></summary></entry><entry><title type="html">[백준][1991] 트리 순회</title><link href="http://localhost:4000/boj/1991/" rel="alternate" type="text/html" title="[백준][1991] 트리 순회" /><published>2023-06-06T00:00:00+09:00</published><updated>2023-06-06T00:00:00+09:00</updated><id>http://localhost:4000/boj/1991</id><content type="html" xml:base="http://localhost:4000/boj/1991/"><![CDATA[<h1 id="트리-순회">트리 순회</h1>
 
 <h2 id="난이도">난이도</h2>
 <blockquote>
@@ -348,7 +392,7 @@
 <p><img src="https://github.com/ihmmaru99/BOJ/assets/109266664/c843215a-ca8a-498e-a9f6-382d15457eff" alt="스크린샷 2023-06-06 20 44 21" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="C++" /><category term="Tree" /><summary type="html"><![CDATA[트리 순회]]></summary></entry><entry><title type="html">[백준][9095] 1,2,3 더하기</title><link href="http://localhost:4000/boj/9095/" rel="alternate" type="text/html" title="[백준][9095] 1,2,3 더하기" /><published>2023-06-05T00:00:00+09:00</published><updated>2023-06-05T00:00:00+09:00</updated><id>http://localhost:4000/boj/9095</id><content type="html" xml:base="http://localhost:4000/boj/9095/"><![CDATA[<h1 id="123-더하기">1,2,3 더하기</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
-  <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/40f259a0-6d4e-4cfa-a954-225e9b42961f" alt="8" width="20px&quot;, height=&quot;20px" /> &lt;span</p>
+  <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/40f259a0-6d4e-4cfa-a954-225e9b42961f" alt="8" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 3</span></p>
 </blockquote>
 
 <h2 id="문제">문제</h2>
@@ -476,7 +520,7 @@
 </code></pre></div></div>
 
 <h2 id="채점-결과">채점 결과</h2>
-<p><img width="733" alt="스크린샷 2023-06-05 16 25 30" src="https://github.com/ihmmaru99/BOJ/assets/109266664/faea924d-71db-475b-b81c-4d9140736b54" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="DFS" /><category term="DP" /><category term="C++" /><summary type="html"><![CDATA[1,2,3 더하기 난이도 &lt;span]]></summary></entry><entry><title type="html">[백준][1303] 전쟁 - 전투</title><link href="http://localhost:4000/boj/1303/" rel="alternate" type="text/html" title="[백준][1303] 전쟁 - 전투" /><published>2023-06-05T00:00:00+09:00</published><updated>2023-06-05T00:00:00+09:00</updated><id>http://localhost:4000/boj/1303</id><content type="html" xml:base="http://localhost:4000/boj/1303/"><![CDATA[<h1 id="전쟁---전투">전쟁 - 전투</h1>
+<p><img width="733" alt="스크린샷 2023-06-05 16 25 30" src="https://github.com/ihmmaru99/BOJ/assets/109266664/faea924d-71db-475b-b81c-4d9140736b54" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="DFS" /><category term="DP" /><category term="C++" /><summary type="html"><![CDATA[1,2,3 더하기 난이도 실버 3]]></summary></entry><entry><title type="html">[백준][1303] 전쟁 - 전투</title><link href="http://localhost:4000/boj/1303/" rel="alternate" type="text/html" title="[백준][1303] 전쟁 - 전투" /><published>2023-06-05T00:00:00+09:00</published><updated>2023-06-05T00:00:00+09:00</updated><id>http://localhost:4000/boj/1303</id><content type="html" xml:base="http://localhost:4000/boj/1303/"><![CDATA[<h1 id="전쟁---전투">전쟁 - 전투</h1>
 
 <h2 id="난이도">난이도</h2>
 <blockquote>
@@ -754,7 +798,9 @@
 <p><img width="350" alt="스크린샷 2023-06-04 19 56 20" src="https://github.com/ihmmaru99/BOJ/assets/109266664/cfb23d2b-152f-4e7e-a79e-f0518227526d" /><br />
 <img width="143" alt="스크린샷 2023-06-04 19 56 45" src="https://github.com/ihmmaru99/BOJ/assets/109266664/81276390-bc49-4c04-987f-0a2c2ebd395a" /></p>]]></content><author><name>임정빈</name></author><category term="Programmers" /><category term="Algorithm" /><category term="Coding Test" /><category term="C++" /><summary type="html"><![CDATA[신고 결과 받기]]></summary></entry><entry><title type="html">[백준][16953] A → B</title><link href="http://localhost:4000/boj/16953/" rel="alternate" type="text/html" title="[백준][16953] A → B" /><published>2023-06-04T00:00:00+09:00</published><updated>2023-06-04T00:00:00+09:00</updated><id>http://localhost:4000/boj/16953</id><content type="html" xml:base="http://localhost:4000/boj/16953/"><![CDATA[<h1 id="a--b">A → B</h1>
 <h2 id="난이도">난이도</h2>
-<p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/05e4b069-bd56-4060-913f-a3b773faccf4" alt="9" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 2</span></p>
+<blockquote>
+  <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/05e4b069-bd56-4060-913f-a3b773faccf4" alt="9" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 2</span></p>
+</blockquote>
 
 <h2 id="문제">문제</h2>
 <p>정수 A를 B로 바꾸려고 한다. 가능한 연산은 다음과 같은 두 가지이다.</p>
@@ -980,59 +1026,4 @@
 </code></pre></div></div>
 
 <h2 id="채점-결과">채점 결과</h2>
-<p><img width="732" alt="스크린샷 2023-06-04 19 15 34" src="https://github.com/ihmmaru99/BOJ/assets/109266664/98abf7dd-3631-48bc-8a8c-4aec904684cb" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="BFS" /><category term="C++" /><summary type="html"><![CDATA[나이트의 이동]]></summary></entry><entry><title type="html">[백준][1149] RGB 거리</title><link href="http://localhost:4000/boj/1149/" rel="alternate" type="text/html" title="[백준][1149] RGB 거리" /><published>2023-06-01T00:00:00+09:00</published><updated>2023-06-04T00:00:00+09:00</updated><id>http://localhost:4000/boj/1149</id><content type="html" xml:base="http://localhost:4000/boj/1149/"><![CDATA[<h1 id="rgb-거리">RGB 거리</h1>
-<h2 id="난이도">난이도</h2>
-<blockquote>
-  <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/1725e8ac-be34-44d1-a4db-174d0a2cd0dd" alt="10" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 1</span></p>
-</blockquote>
-
-<h2 id="문제">문제</h2>
-<p>RGB거리에는 집이 N개 있다. 거리는 선분으로 나타낼 수 있고, 1번 집부터 N번 집이 순서대로 있다.</p>
-
-<p>집은 빨강, 초록, 파랑 중 하나의 색으로 칠해야 한다. 각각의 집을 빨강, 초록, 파랑으로 칠하는 비용이 주어졌을 때, 아래 규칙을 만족하면서 모든 집을 칠하는 비용의 최솟값을 구해보자.</p>
-
-<ul>
-  <li>1번 집의 색은 2번 집의 색과 같지 않아야 한다.</li>
-  <li>N번 집의 색은 N-1번 집의 색과 같지 않아야 한다.</li>
-  <li>i(2 ≤ i ≤ N-1)번 집의 색은 i-1번, i+1번 집의 색과 같지 않아야 한다.</li>
-</ul>
-
-<h2 id="입력">입력</h2>
-<p>첫째 줄에 집의 수 N(2 ≤ N ≤ 1,000)이 주어진다. 둘째 줄부터 N개의 줄에는 각 집을 빨강, 초록, 파랑으로 칠하는 비용이 1번 집부터 한 줄에 하나씩 주어진다. 집을 칠하는 비용은 1,000보다 작거나 같은 자연수이다.</p>
-<h2 id="출력">출력</h2>
-<p>첫째 줄에 모든 집을 칠하는 비용의 최솟값을 출력한다.</p>
-
-<h2 id="풀이">풀이</h2>
-<blockquote>
-  <p>브루트포스를 통해서 각 값에서 다음 집을 칠할 때 가장 낮은 값으로 칠할 수 있는 경우의 수를 찾는다. 각 값을 더해주면서 값을 찾고 찾은 값 중에서 가장 작은 값을 더해주면서 값을 반환하고 반환된 값을 출력한다.</p>
-</blockquote>
-
-<h2 id="결과">결과</h2>
-
-<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/1149/1149.cpp">1149 - RGB</a></p>
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp">
-</span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
- 
-<span class="kt">int</span> <span class="n">d</span><span class="p">[</span><span class="mi">1001</span><span class="p">][</span><span class="mi">4</span><span class="p">];</span>
-<span class="kt">int</span> <span class="n">c</span><span class="p">[</span><span class="mi">1001</span><span class="p">][</span><span class="mi">1001</span><span class="p">];</span>
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-    <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
-    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">)</span>
-            <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">];</span>
- 
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="mi">3</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="n">d</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">i</span><span class="p">];</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-        <span class="n">d</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">min</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">]);</span> 
-        <span class="n">d</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">min</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">][</span><span class="mi">3</span><span class="p">]);</span>
-        <span class="n">d</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">c</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span> <span class="o">+</span> <span class="n">min</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">][</span><span class="mi">2</span><span class="p">]);</span>
-    <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">min</span><span class="p">({</span><span class="n">d</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="mi">2</span><span class="p">],</span> <span class="n">d</span><span class="p">[</span><span class="n">n</span><span class="p">][</span><span class="mi">3</span><span class="p">]});</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h2 id="채점-결과">채점 결과</h2>
-<p><img width="732" alt="스크린샷 2023-06-04 19 39 02" src="https://github.com/ihmmaru99/BOJ/assets/109266664/b905459f-f152-4ab1-91c8-668f8237c152" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="DP" /><category term="C++" /><summary type="html"><![CDATA[RGB 거리 난이도 실버 1]]></summary></entry></feed>
+<p><img width="732" alt="스크린샷 2023-06-04 19 15 34" src="https://github.com/ihmmaru99/BOJ/assets/109266664/98abf7dd-3631-48bc-8a8c-4aec904684cb" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="BFS" /><category term="C++" /><summary type="html"><![CDATA[나이트의 이동]]></summary></entry></feed>
