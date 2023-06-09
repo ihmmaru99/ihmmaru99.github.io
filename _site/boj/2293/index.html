@@ -22,8 +22,8 @@
 
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>[백준][7562] 나이트의 이동 - IhmMaru99의 잡동사니</title>
-<meta name="description" content="나이트의 이동">
+<!-- begin _includes/seo.html --><title>[백준][2293] 동전1 - IhmMaru99의 잡동사니</title>
+<meta name="description" content="동전 1 난이도      골드 5">
 
 
   <meta name="author" content="임정빈">
@@ -35,32 +35,32 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="IhmMaru99의 잡동사니">
-<meta property="og:title" content="[백준][7562] 나이트의 이동">
-<meta property="og:url" content="http://localhost:4000/boj/7562/">
+<meta property="og:title" content="[백준][2293] 동전1">
+<meta property="og:url" content="http://localhost:4000/boj/2293/">
 
 
-  <meta property="og:description" content="나이트의 이동">
-
-
-
+  <meta property="og:description" content="동전 1 난이도      골드 5">
 
 
 
 
-  <meta property="article:published_time" content="2023-06-02T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2023-06-07T16:15:11+09:00">
+  <meta property="article:published_time" content="2023-06-09T00:00:00+09:00">
 
 
 
-  
+  <meta property="article:modified_time" content="2023-06-09T00:00:00+09:00">
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/boj/7562/">
+
+<link rel="canonical" href="http://localhost:4000/boj/2293/">
 
 
 
@@ -454,18 +454,18 @@
 
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="[백준][7562] 나이트의 이동">
-    <meta itemprop="description" content="나이트의 이동">
-    <meta itemprop="datePublished" content="2023-06-02T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2023-06-07T16:15:11+09:00">
+    <meta itemprop="headline" content="[백준][2293] 동전1">
+    <meta itemprop="description" content="동전 1난이도    골드 5">
+    <meta itemprop="datePublished" content="2023-06-09T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2023-06-09T00:00:00+09:00">
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 id="page-title" class="page__title" itemprop="headline">[백준][7562] 나이트의 이동
+          <h1 id="page-title" class="page__title" itemprop="headline">[백준][2293] 동전1
 </h1>
           
-            <p class="page__meta"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Date:</strong> <time datetime="2023-06-02T00:00:00+09:00">2023.06.02</time>&nbsp&nbsp&nbsp<strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-06-07 16:15:11 +0900">2023.06.07</time></p>
+            <p class="page__meta"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Date:</strong> <time datetime="2023-06-09T00:00:00+09:00">2023.06.09</time>&nbsp&nbsp&nbsp<strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2023-06-09">2023.06.09</time></p>
           
           
             <font size="3em">
@@ -498,11 +498,11 @@
     
       
       
-      <a href="/tags/#bfs" class="page__taxonomy-item-tag" rel="tag">BFS</a><span class="sep"> </span>
+      <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a><span class="sep"> </span>
     
       
       
-      <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a><span class="sep"> </span>
+      <a href="/tags/#dp" class="page__taxonomy-item-tag" rel="tag">DP</a><span class="sep"> </span>
     
       
       
@@ -520,7 +520,7 @@
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> 목차</h4></header>
               <ul class="toc__menu">
-  <li><a href="#나이트의-이동">나이트의 이동</a>
+  <li><a href="#동전-1">동전 1</a>
     <ul>
       <li><a href="#난이도">난이도</a></li>
       <li><a href="#문제">문제</a></li>
@@ -535,90 +535,51 @@
             </nav>
           </aside>
         
-        <h1 id="나이트의-이동">나이트의 이동</h1>
-
+        <h1 id="동전-1">동전 1</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
-  <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/1725e8ac-be34-44d1-a4db-174d0a2cd0dd" alt="10" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 1</span></p>
+  <p><img src="https://github.com/ihmmaru99/BOJ/assets/109266664/96cb338c-cf4e-498c-9ae4-c9632a0b73f4" alt="11" width="20px&quot;, height=&quot;20px" /> <span style="color:#FFBF00"> 골드 5</span></p>
 </blockquote>
 
 <h2 id="문제">문제</h2>
-<p>체스판 위에 한 나이트가 놓여져 있다. 나이트가 한 번에 이동할 수 있는 칸은 아래 그림에 나와있다. 나이트가 이동하려고 하는 칸이 주어진다. 나이트는 몇 번 움직이면 이 칸으로 이동할 수 있을까?<br />
-<img width="150" alt="knight" src="https://github.com/ihmmaru99/BOJ/assets/109266664/a1ca905c-c353-4be9-ba9a-2b7ce5f6fe0f" /></p>
+<p>n가지 종류의 동전이 있다. 각각의 동전이 나타내는 가치는 다르다. 이 동전을 적당히 사용해서, 그 가치의 합이 k원이 되도록 하고 싶다. 그 경우의 수를 구하시오. 각각의 동전은 몇 개라도 사용할 수 있다.</p>
+
+<p>사용한 동전의 구성이 같은데, 순서만 다른 것은 같은 경우이다.</p>
 
 <h2 id="입력">입력</h2>
-<p>입력의 첫째 줄에는 테스트 케이스의 개수가 주어진다.</p>
-
-<p>각 테스트 케이스는 세 줄로 이루어져 있다. 첫째 줄에는 체스판의 한 변의 길이 l(4 ≤ l ≤ 300)이 주어진다. 체스판의 크기는 l × l이다. 체스판의 각 칸은 두 수의 쌍 {0, …, l-1} × {0, …, l-1}로 나타낼 수 있다. 둘째 줄과 셋째 줄에는 나이트가 현재 있는 칸, 나이트가 이동하려고 하는 칸이 주어진다.</p>
+<p>첫째 줄에 n, k가 주어진다. (1 ≤ n ≤ 100, 1 ≤ k ≤ 10,000) 다음 n개의 줄에는 각각의 동전의 가치가 주어진다. 동전의 가치는 100,000보다 작거나 같은 자연수이다.</p>
 
 <h2 id="출력">출력</h2>
-<p>각 테스트 케이스마다 나이트가 최소 몇 번만에 이동할 수 있는지 출력한다.</p>
+<p>첫째 줄에 경우의 수를 출력한다. 경우의 수는 \(2^{31}\)보다 작다.</p>
 
 <h2 id="풀이">풀이</h2>
-<blockquote>
-  <p>나이트가 갈 수 있는 위치의 경우의 수는 8가지이다. 갈 수 있는 경우의 수에 대한 이동 값을 dx, dy에 저장한다. 그리고 갈 수 있는 경우의 수를 파악해서 bfs 알고리즘을 돌린다. map 배열을 초기에 0으로 모두 채우고 해당 배열에서 말이 이동한 횟수를 기록해둔다. 그리고 만약 원하는 위치에 이동했다면 bfs를 종료하도록 한다. 그리고 해당 위치에 도달했을 때 이동한 거리가 적혀있는 map의 해당 위치의 인덱스 값에 적혀있는 값을 출력하도록 한다.</p>
-</blockquote>
 
 <h2 id="결과">결과</h2>
-<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/7562/7562.cpp">7562 - 나이트의 이동</a></p>
+<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/2293/2293.cpp">2293 - 동전1</a></p>
 <div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;queue&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;cstring&gt;</span><span class="cp">
-</span>
-<span class="cp"># define MAX 300
 </span>
 <span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
 
-<span class="kt">int</span> <span class="n">l</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">x_end</span><span class="p">,</span> <span class="n">y_end</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">field</span><span class="p">[</span><span class="n">MAX</span><span class="p">][</span><span class="n">MAX</span><span class="p">];</span>
-<span class="kt">bool</span> <span class="n">visited</span><span class="p">[</span><span class="n">MAX</span><span class="p">][</span><span class="n">MAX</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="nb">false</span><span class="p">,</span> <span class="p">};</span>
-<span class="kt">int</span> <span class="n">dx</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span> <span class="p">};</span>
-<span class="kt">int</span> <span class="n">dy</span><span class="p">[</span><span class="mi">8</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span> <span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span> <span class="p">};</span>
+<span class="kt">int</span> <span class="n">dp</span><span class="p">[</span><span class="mi">10001</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="p">};</span>
+<span class="kt">int</span> <span class="n">num</span><span class="p">[</span><span class="mi">101</span><span class="p">];</span>
 
-<span class="kt">void</span> <span class="nf">bfs</span><span class="p">(</span><span class="kt">int</span> <span class="n">x</span><span class="p">,</span> <span class="kt">int</span> <span class="n">y</span><span class="p">)</span> <span class="p">{</span>
-	<span class="n">queue</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;&gt;</span><span class="n">q</span><span class="p">;</span>
-	<span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">make_pair</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">));</span>
-	<span class="n">visited</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-	<span class="k">while</span> <span class="p">(</span><span class="o">!</span><span class="n">q</span><span class="p">.</span><span class="n">empty</span><span class="p">())</span> <span class="p">{</span>
-		<span class="n">x</span> <span class="o">=</span> <span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">().</span><span class="n">first</span><span class="p">;</span>
-		<span class="n">y</span> <span class="o">=</span> <span class="n">q</span><span class="p">.</span><span class="n">front</span><span class="p">().</span><span class="n">second</span><span class="p">;</span>
-		<span class="n">q</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
-		<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class="n">i</span> <span class="o">&lt;</span> <span class="mi">8</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-			<span class="kt">int</span> <span class="n">nx</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">dx</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-			<span class="kt">int</span> <span class="n">ny</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="n">dy</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-			<span class="k">if</span> <span class="p">(</span><span class="n">nx</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">ny</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="n">nx</span> <span class="o">&gt;=</span> <span class="n">l</span> <span class="o">||</span> <span class="n">ny</span> <span class="o">&gt;=</span> <span class="n">l</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
-			<span class="k">if</span> <span class="p">(</span><span class="n">visited</span><span class="p">[</span><span class="n">nx</span><span class="p">][</span><span class="n">ny</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span> <span class="o">||</span> <span class="n">field</span><span class="p">[</span><span class="n">nx</span><span class="p">][</span><span class="n">ny</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span>
-			<span class="n">field</span><span class="p">[</span><span class="n">nx</span><span class="p">][</span><span class="n">ny</span><span class="p">]</span> <span class="o">=</span> <span class="n">field</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">y</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
-			<span class="n">q</span><span class="p">.</span><span class="n">push</span><span class="p">({</span> <span class="n">nx</span><span class="p">,</span><span class="n">ny</span> <span class="p">});</span>
-			<span class="n">visited</span><span class="p">[</span><span class="n">nx</span><span class="p">][</span><span class="n">ny</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-			<span class="k">if</span> <span class="p">(</span><span class="n">nx</span> <span class="o">==</span> <span class="n">x_end</span> <span class="o">&amp;&amp;</span> <span class="n">ny</span> <span class="o">==</span> <span class="n">y_end</span><span class="p">)</span> <span class="k">return</span><span class="p">;</span>
-		<span class="p">}</span>
-	<span class="p">}</span>
-<span class="p">}</span>
-
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
-	<span class="n">ios_base</span><span class="o">::</span><span class="n">sync_with_stdio</span><span class="p">(</span><span class="nb">false</span><span class="p">);</span>
-	<span class="n">cin</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
-	<span class="n">cout</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="nb">NULL</span><span class="p">);</span>
-
-	<span class="kt">int</span> <span class="n">tc</span><span class="p">;</span>
-	<span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">tc</span><span class="p">;</span>
-	<span class="k">while</span> <span class="p">(</span><span class="n">tc</span><span class="o">--</span><span class="p">)</span> <span class="p">{</span>
-		<span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">l</span><span class="p">;</span>
-		<span class="kt">int</span> <span class="n">x0</span><span class="p">,</span> <span class="n">y0</span><span class="p">;</span>
-		<span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">x0</span> <span class="o">&gt;&gt;</span> <span class="n">y0</span> <span class="o">&gt;&gt;</span> <span class="n">x_end</span> <span class="o">&gt;&gt;</span> <span class="n">y_end</span><span class="p">;</span>
-		<span class="n">field</span><span class="p">[</span><span class="n">x0</span><span class="p">][</span><span class="n">y0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-		<span class="n">bfs</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span><span class="n">y0</span><span class="p">);</span>
-		<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">field</span><span class="p">[</span><span class="n">x_end</span><span class="p">][</span><span class="n">y_end</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
-		<span class="n">memset</span><span class="p">(</span><span class="n">visited</span><span class="p">,</span> <span class="nb">false</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">visited</span><span class="p">));</span>
-		<span class="n">memset</span><span class="p">(</span><span class="n">field</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">field</span><span class="p">));</span>
-	<span class="p">}</span>
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+    <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">k</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span> <span class="o">&gt;&gt;</span> <span class="n">k</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+    <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">];</span> <span class="n">j</span><span class="o">&lt;=</span><span class="n">k</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
+            <span class="n">dp</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">+=</span> <span class="n">dp</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">]];</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">dp</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
 <h2 id="채점-결과">채점 결과</h2>
-<p><img width="732" alt="스크린샷 2023-06-04 19 15 34" src="https://github.com/ihmmaru99/BOJ/assets/109266664/98abf7dd-3631-48bc-8a8c-4aec904684cb" /></p>
 
 
         
@@ -630,12 +591,11 @@
 
   <nav class="pagination">
     
-      <a href="/boj/1149/" class="pagination--pager" title="[백준][1149] RGB 거리
+      <a href="/programmers/shuttlebus/" class="pagination--pager" title="[프로그래머스] 셔틀버스
 ">이전</a>
     
     
-      <a href="/boj/2583/" class="pagination--pager" title="[백준][2583] 영역 구하기
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 
@@ -643,26 +603,6 @@
 
 
 
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
 
   
   	
@@ -674,10 +614,10 @@
 
   <nav class="pagination_prev_next">
     
-      <a href="/boj/1149/" class="pagination_prev_next--pager"><span class="prev_next">이전 글  &nbsp</span>[백준][1149] RGB 거리</a>
+      <a href="/boj/1987/" class="pagination_prev_next--pager"><span class="prev_next">이전 글  &nbsp</span>[백준][1987] 알파벳</a>
     
     
-      <a href="/boj/2583/" class="pagination_prev_next--pager"><span class="prev_next">다음 글  &nbsp  </span>[백준][2583] 영역 구하기</a>
+      <a href="#" class="pagination_prev_next--pager disabled-last-child ">가장 최근 글입니다</a>
     
   </nav>
 
@@ -715,42 +655,6 @@
   
   
     <div class="page__related"> <!--site.data.ui-text[site.locale].related_label-->
-        
-          
-
-
-
-<div class="list__item">
-    <article class="archive-item">
-        <div>
-            <span>
-              <a href="/boj/2293/">[백준][2293] 동전1</a>
-            </span>
-            <small> 
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.06.09
-              <!--Archive page 용-: (post -> page)-->
-<!--page__taxonomy.html에서 가져 옴-->
-        
-        <span class="page__taxonomy">
-            <span itemprop="keywords"><a href="/categories/#boj" class="page__taxonomy-item-category" rel="tag">BOJ</a>
-                    
-                    
-                    <a href="/tags/#algorithm" class="page__taxonomy-item-tag" rel="tag">Algorithm</a><span class="sep"> </span>
-                
-                    
-                    
-                    <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a><span class="sep"> </span>
-                
-                    
-                    
-                    <a href="/tags/#dp" class="page__taxonomy-item-tag" rel="tag">DP</a>
-                
-            </span>
-        </span>
-            </small>
-        </div>
-      </article>
-</div>
         
           
 
@@ -1072,6 +976,42 @@
                     
                     
                     <a href="/tags/#coding-test" class="page__taxonomy-item-tag" rel="tag">Coding Test</a>
+                
+            </span>
+        </span>
+            </small>
+        </div>
+      </article>
+</div>
+        
+          
+
+
+
+<div class="list__item">
+    <article class="archive-item">
+        <div>
+            <span>
+              <a href="/boj/16953/">[백준][16953] A → B</a>
+            </span>
+            <small> 
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.06.04
+              <!--Archive page 용-: (post -> page)-->
+<!--page__taxonomy.html에서 가져 옴-->
+        
+        <span class="page__taxonomy">
+            <span itemprop="keywords"><a href="/categories/#boj" class="page__taxonomy-item-category" rel="tag">BOJ</a>
+                    
+                    
+                    <a href="/tags/#algorithm" class="page__taxonomy-item-tag" rel="tag">Algorithm</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#bfs" class="page__taxonomy-item-tag" rel="tag">BFS</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a>
                 
             </span>
         </span>
