@@ -94,4 +94,10 @@ var store = [{
         "tags": ["Algorithm","C++","DFS"],
         "url": "/boj/1987/",
         "teaser": null
+      },{
+        "title": "[프로그래머스] 셔틀버스",
+        "excerpt":"2018 KAKAO BLIND RECRUITMENT 셔틀버스 문제 카카오에서는 무료 셔틀버스를 운행하기 때문에 판교역에서 편하게 사무실로 올 수 있다. 카카오의 직원은 서로를 ‘크루’라고 부르는데, 아침마다 많은 크루들이 이 셔틀을 이용하여 출근한다. 이 문제에서는 편의를 위해 셔틀은 다음과 같은 규칙으로 운행한다고 가정하자. 셔틀은 09:00부터 총 n회 t분 간격으로 역에 도착하며, 하나의 셔틀에는 최대...","categories": ["Programmers"],
+        "tags": ["Algorithm","C++","Implementation"],
+        "url": "/programmers/shuttlebus/",
+        "teaser": null
       }]
