@@ -308,7 +308,7 @@
   <ul class="nav__items" id="category_tag_menu">
       <!--전체 글 수-->
       <li>
-            <span style="font-family:'TheJamsil';"><font size="3em">전체 글 수</font></style> <span style="font-family:''TheJamsil';"><font size="3em">18</font></style> <span style="font-family:'TheJamsil';"><font size="3em">개</font></style> 
+            <span style="font-family:'TheJamsil';"><font size="3em">전체 글 수</font></style> <span style="font-family:''TheJamsil';"><font size="3em">20</font></style> <span style="font-family:'TheJamsil';"><font size="3em">개</font></style> 
       </li>
       <li>
         <span class="nav__sub-title">AE</span>
@@ -382,7 +382,7 @@
                     
                 
                     
-                        <li><a href="/categories/boj" class="">백준 (15)</a></li>
+                        <li><a href="/categories/boj" class="">백준 (17)</a></li>
                     
                 
             </ul>
@@ -553,6 +553,9 @@
 <p>첫째 줄에 경우의 수를 출력한다. 경우의 수는 \(2^{31}\)보다 작다.</p>
 
 <h2 id="풀이">풀이</h2>
+<blockquote>
+  <p>입력된 동전을 통해서 가능한 경우의 수를 모두 더해서 DP를 활용하면 된다. 1,2,5의 동전이 있다면 1만으로 10을 만드는 경우는 각각 1가지이다. 여기서 2를 더하면 1을 제외하고 각각의 경우에서 경우가 추가로 생기는 것을 알 수 있다. 2를 만드는 방법은 2개, 3을 만드는 방법은 2개, 4를 만드는 방법은 2+2,1+2+1, 1+1+1+1로 총 3개인데 기존에 1+1+1+1의 방법에서 2를 만드는 방법 2개가 추가되어서 3개가 된 것이다. dp[i] + dp[i-2]를 해주는 것과 같다. 다음 식을 일반화해서 문제를 해결하면 된다.</p>
+</blockquote>
 
 <h2 id="결과">결과</h2>
 <p><a href="https://github.com/ihmmaru99/BOJ/blob/main/2293/2293.cpp">2293 - 동전1</a></p>
@@ -580,6 +583,7 @@
 </code></pre></div></div>
 
 <h2 id="채점-결과">채점 결과</h2>
+<p><img width="730" alt="스크린샷 2023-06-09 14 10 09" src="https://github.com/ihmmaru99/BOJ/assets/109266664/92786188-a19d-4085-b4ea-4155e467c3d9" /></p>
 
 
         
@@ -591,11 +595,12 @@
 
   <nav class="pagination">
     
-      <a href="/programmers/shuttlebus/" class="pagination--pager" title="[프로그래머스] 셔틀버스
+      <a href="/boj/1715/" class="pagination--pager" title="[백준][1715] 카드 정렬하기
 ">이전</a>
     
     
-      <a href="#" class="pagination--pager disabled">다음</a>
+      <a href="/boj/2527/" class="pagination--pager" title="[백준][2527] 직사각형
+">다음</a>
     
   </nav>
 
@@ -603,6 +608,8 @@
 
 
 
+
+  
 
   
   	
@@ -614,10 +621,10 @@
 
   <nav class="pagination_prev_next">
     
-      <a href="/boj/1987/" class="pagination_prev_next--pager"><span class="prev_next">이전 글  &nbsp</span>[백준][1987] 알파벳</a>
+      <a href="/boj/1715/" class="pagination_prev_next--pager"><span class="prev_next">이전 글  &nbsp</span>[백준][1715] 카드 정렬하기</a>
     
     
-      <a href="#" class="pagination_prev_next--pager disabled-last-child ">가장 최근 글입니다</a>
+      <a href="/boj/2527/" class="pagination_prev_next--pager"><span class="prev_next">다음 글  &nbsp  </span>[백준][2527] 직사각형</a>
     
   </nav>
 
@@ -655,6 +662,82 @@
   
   
     <div class="page__related"> <!--site.data.ui-text[site.locale].related_label-->
+        
+          
+
+
+
+<div class="list__item">
+    <article class="archive-item">
+        <div>
+            <span>
+              <a href="/boj/2527/">[백준][2527] 직사각형</a>
+            </span>
+            <small> 
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.06.10
+              <!--Archive page 용-: (post -> page)-->
+<!--page__taxonomy.html에서 가져 옴-->
+        
+        <span class="page__taxonomy">
+            <span itemprop="keywords"><a href="/categories/#boj" class="page__taxonomy-item-category" rel="tag">BOJ</a>
+                    
+                    
+                    <a href="/tags/#algorithm" class="page__taxonomy-item-tag" rel="tag">Algorithm</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#geometry" class="page__taxonomy-item-tag" rel="tag">Geometry</a>
+                
+            </span>
+        </span>
+            </small>
+        </div>
+      </article>
+</div>
+        
+          
+
+
+
+<div class="list__item">
+    <article class="archive-item">
+        <div>
+            <span>
+              <a href="/boj/1715/">[백준][1715] 카드 정렬하기</a>
+            </span>
+            <small> 
+              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.06.09
+              <!--Archive page 용-: (post -> page)-->
+<!--page__taxonomy.html에서 가져 옴-->
+        
+        <span class="page__taxonomy">
+            <span itemprop="keywords"><a href="/categories/#boj" class="page__taxonomy-item-category" rel="tag">BOJ</a>
+                    
+                    
+                    <a href="/tags/#algorithm" class="page__taxonomy-item-tag" rel="tag">Algorithm</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#greedy" class="page__taxonomy-item-tag" rel="tag">Greedy</a><span class="sep"> </span>
+                
+                    
+                    
+                    <a href="/tags/#queue" class="page__taxonomy-item-tag" rel="tag">Queue</a>
+                
+            </span>
+        </span>
+            </small>
+        </div>
+      </article>
+</div>
         
           
 
@@ -924,78 +1007,6 @@
             </span>
             <small> 
               <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.06.05
-              <!--Archive page 용-: (post -> page)-->
-<!--page__taxonomy.html에서 가져 옴-->
-        
-        <span class="page__taxonomy">
-            <span itemprop="keywords"><a href="/categories/#boj" class="page__taxonomy-item-category" rel="tag">BOJ</a>
-                    
-                    
-                    <a href="/tags/#algorithm" class="page__taxonomy-item-tag" rel="tag">Algorithm</a><span class="sep"> </span>
-                
-                    
-                    
-                    <a href="/tags/#bfs" class="page__taxonomy-item-tag" rel="tag">BFS</a><span class="sep"> </span>
-                
-                    
-                    
-                    <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a>
-                
-            </span>
-        </span>
-            </small>
-        </div>
-      </article>
-</div>
-        
-          
-
-
-
-<div class="list__item">
-    <article class="archive-item">
-        <div>
-            <span>
-              <a href="/programmers/singo/">[프로그래머스] Lv2. 신고 결과 받기</a>
-            </span>
-            <small> 
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.06.04
-              <!--Archive page 용-: (post -> page)-->
-<!--page__taxonomy.html에서 가져 옴-->
-        
-        <span class="page__taxonomy">
-            <span itemprop="keywords"><a href="/categories/#programmers" class="page__taxonomy-item-category" rel="tag">Programmers</a>
-                    
-                    
-                    <a href="/tags/#algorithm" class="page__taxonomy-item-tag" rel="tag">Algorithm</a><span class="sep"> </span>
-                
-                    
-                    
-                    <a href="/tags/#c" class="page__taxonomy-item-tag" rel="tag">C++</a><span class="sep"> </span>
-                
-                    
-                    
-                    <a href="/tags/#coding-test" class="page__taxonomy-item-tag" rel="tag">Coding Test</a>
-                
-            </span>
-        </span>
-            </small>
-        </div>
-      </article>
-</div>
-        
-          
-
-
-
-<div class="list__item">
-    <article class="archive-item">
-        <div>
-            <span>
-              <a href="/boj/16953/">[백준][16953] A → B</a>
-            </span>
-            <small> 
-              <i class="fas fa-fw fa-calendar-alt" aria-hidden="true"> </i> 2023.06.04
               <!--Archive page 용-: (post -> page)-->
 <!--page__taxonomy.html에서 가져 옴-->
         
