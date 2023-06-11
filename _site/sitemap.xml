@@ -81,6 +81,10 @@
 <lastmod>2023-06-10T00:00:00+09:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/boj/20157/</loc>
+<lastmod>2023-06-11T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/categories/algorithm</loc>
 <lastmod>2023-05-30T00:49:52+09:00</lastmod>
 </url>
@@ -122,6 +126,10 @@
 </url>
 <url>
 <loc>http://localhost:4000/page4/</loc>
+<lastmod>2023-05-26T20:43:35+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/page5/</loc>
 <lastmod>2023-05-26T20:43:35+09:00</lastmod>
 </url>
 </urlset>
