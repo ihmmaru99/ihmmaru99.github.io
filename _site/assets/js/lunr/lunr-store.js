@@ -136,4 +136,16 @@ var store = [{
         "tags": ["Algorithm","Backtracking","C++"],
         "url": "/boj/9663/",
         "teaser": null
+      },{
+        "title": "[소프티어] 강의실 배정",
+        "excerpt":"강의실 배정 난이도 level 3 문제 김교수는 강의실 1개에 최대한 많은 강의를 배정하려고 한다. 배정된 강의는 서로 겹치지 않아야 하며 수업시간의 길이와 상관없이 최대한 강의를 많이 배정하라. 단, 두 강의의 시작시간과 종료시간은 겹쳐도 된다. 제약조건 1 ≤ N ≤ \\(10^6\\) 인 정수 1 ≤ \\(S_i\\) ＜ \\(F_i\\) ≤ \\(10^9\\) 입력형식...","categories": ["Softeer"],
+        "tags": ["Algorithm","C++","Greedy"],
+        "url": "/softeer/%EA%B0%95%EC%9D%98%EC%8B%A4%EB%B0%B0%EC%A0%95/",
+        "teaser": null
+      },{
+        "title": "[소프티어] 우물 안 개구리",
+        "excerpt":"우물 안 개구리 난이도 level 3 문제 헬스장에서 N명의 회원이 운동을 하고 있다. 각 회원은 1에서 N사이의 번호가 부여되어 있고, i번 회원이 들 수 있는 역기의 무게는 Wi이다. 회원들 사이에는 M개의 친분관계 (Aj, Bj)가 있다. (Aj, Bj)는 Aj번 회원과 Bj번 회원이 친분 관계가 있다는 것을 의미한다. i번 회원은 자신과 친분...","categories": ["Softeer"],
+        "tags": ["Algorithm","C++","Implementation"],
+        "url": "/softeer/%EC%9A%B0%EB%AC%BC%EC%95%88%EA%B0%9C%EA%B5%AC%EB%A6%AC/",
+        "teaser": null
       }]
