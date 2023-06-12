@@ -124,4 +124,10 @@ var store = [{
         "tags": ["Algorithm","C++","Geometry"],
         "url": "/boj/20157/",
         "teaser": null
+      },{
+        "title": "[백준][9663] N-Queen",
+        "excerpt":"N-Queen 난이도 골드 4 문제 N-Queen 문제는 크기가 N × N인 체스판 위에 퀸 N개를 서로 공격할 수 없게 놓는 문제이다. N이 주어졌을 때, 퀸을 놓는 방법의 수를 구하는 프로그램을 작성하시오. 입력 첫째 줄에 N이 주어진다. (1 ≤ N &lt; 15) 출력 첫째 줄에 퀸 N개를 서로 공격할 수 없게...","categories": ["BOJ"],
+        "tags": ["Algorithm","Backtracking","C++"],
+        "url": "/boj/9663/",
+        "teaser": null
       }]
