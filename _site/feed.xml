@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-12T10:23:15+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IhmMaru99의 잡동사니</title><subtitle>ihmmaru99&apos;s blog</subtitle><author><name>임정빈</name></author><entry><title type="html">[백준][9663] N-Queen</title><link href="http://localhost:4000/boj/9663/" rel="alternate" type="text/html" title="[백준][9663] N-Queen" /><published>2023-06-12T00:00:00+09:00</published><updated>2023-06-12T00:00:00+09:00</updated><id>http://localhost:4000/boj/9663</id><content type="html" xml:base="http://localhost:4000/boj/9663/"><![CDATA[<h1 id="n-queen">N-Queen</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-06-12T12:03:00+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IhmMaru99의 잡동사니</title><subtitle>ihmmaru99&apos;s blog</subtitle><author><name>임정빈</name></author><entry><title type="html">[백준][9663] N-Queen</title><link href="http://localhost:4000/boj/9663/" rel="alternate" type="text/html" title="[백준][9663] N-Queen" /><published>2023-06-12T00:00:00+09:00</published><updated>2023-06-12T00:00:00+09:00</updated><id>http://localhost:4000/boj/9663</id><content type="html" xml:base="http://localhost:4000/boj/9663/"><![CDATA[<h1 id="n-queen">N-Queen</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
   <p><img src="https://github.com/ihmmaru99/ihmmaru99/assets/109266664/4f74cb65-a628-44e0-8f7f-210cdc98eb6e" alt="12" width="20px&quot;, height=&quot;20px" /> <span style="color:#FFBF00"> 골드 4</span></p>
@@ -55,7 +55,89 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<h1 id="채점-결과">채점 결과</h1>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Backtracking" /><category term="C++" /><summary type="html"><![CDATA[N-Queen 난이도 골드 4]]></summary></entry><entry><title type="html">[백준][20157] 화살을 쏘자!</title><link href="http://localhost:4000/boj/20157/" rel="alternate" type="text/html" title="[백준][20157] 화살을 쏘자!" /><published>2023-06-11T00:00:00+09:00</published><updated>2023-06-11T00:00:00+09:00</updated><id>http://localhost:4000/boj/20157</id><content type="html" xml:base="http://localhost:4000/boj/20157/"><![CDATA[<h1 id="화살을-쏘자">화살을 쏘자!</h1>
+<h1 id="채점-결과">채점 결과</h1>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="Backtracking" /><category term="C++" /><summary type="html"><![CDATA[N-Queen 난이도 골드 4]]></summary></entry><entry><title type="html">[백준][3015] 오아시스 재결합 (작성 중)</title><link href="http://localhost:4000/boj/3015/" rel="alternate" type="text/html" title="[백준][3015] 오아시스 재결합 (작성 중)" /><published>2023-06-12T00:00:00+09:00</published><updated>2023-06-12T00:00:00+09:00</updated><id>http://localhost:4000/boj/3015</id><content type="html" xml:base="http://localhost:4000/boj/3015/"><![CDATA[<h1 id="오아시스-재결합">오아시스 재결합</h1>
+<h2 id="난이도">난이도</h2>
+<blockquote>
+  <p><img src="https://github.com/ihmmaru99/ihmmaru99/assets/109266664/b0b9d8fa-6e70-4649-a19c-41023d019dee" alt="16" width="20px&quot;, height=&quot;20px" /> <span style="color:#27E2A4"> 플래티넘 5</span></p>
+</blockquote>
+
+<h2 id="문제">문제</h2>
+<p>오아시스의 재결합 공연에 N명이 한 줄로 서서 기다리고 있다.</p>
+
+<p>이 역사적인 순간을 맞이하기 위해 줄에서서 기다리고 있던 백준이는 갑자기 자기가 볼 수 있는 사람의 수가 궁금해 졌다.</p>
+
+<p>두 사람 A와 B가 서로 볼 수 있으려면, 두 사람 사이에 A 또는 B보다 키가 큰 사람이 없어야 한다.</p>
+
+<p>줄에 서있는 사람의 키가 주어졌을 때, 서로 볼 수 있는 쌍의 수를 구하는 프로그램을 작성하시오.</p>
+
+<h2 id="입력">입력</h2>
+<p>첫째 줄에 줄에서 기다리고 있는 사람의 수 N이 주어진다. (1 ≤ N ≤ 500,000)</p>
+
+<p>둘째 줄부터 N개의 줄에는 각 사람의 키가 나노미터 단위로 주어진다. 모든 사람의 키는 231 나노미터 보다 작다.</p>
+
+<p>사람들이 서 있는 순서대로 입력이 주어진다.</p>
+
+<h2 id="출력">출력</h2>
+<p>서로 볼 수 있는 쌍의 수를 출력한다.</p>
+
+<h2 id="풀이">풀이</h2>
+
+<h2 id="결과">결과</h2>
+<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/3015/3015.cpp">3015 - 오아시스 재결합</a></p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span><span class="cpf">&lt;stack&gt;</span><span class="cp">
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+    <span class="n">ios_base</span><span class="o">::</span><span class="n">sync_with_stdio</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+    <span class="kt">int</span> <span class="n">people_num</span><span class="p">;</span>
+    <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">people_num</span><span class="p">;</span>
+    
+    <span class="n">stack</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">st</span><span class="p">;</span>
+    <span class="kt">int</span> <span class="n">now</span><span class="p">,</span><span class="n">cnt_same_height</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+    <span class="kt">long</span> <span class="kt">long</span>  <span class="n">cnt_pair</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span>
+    
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">people_num</span> <span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="n">cin</span><span class="o">&gt;&gt;</span><span class="n">now</span><span class="p">;</span>
+        <span class="n">cnt_same_height</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+        
+        <span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">st</span><span class="p">.</span><span class="n">empty</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="n">st</span><span class="p">.</span><span class="n">top</span><span class="p">().</span><span class="n">first</span> <span class="o">&lt;</span> <span class="n">now</span><span class="p">){</span>
+            <span class="n">cnt_pair</span> <span class="o">+=</span> <span class="n">st</span><span class="p">.</span><span class="n">top</span><span class="p">().</span><span class="n">second</span><span class="p">;</span>
+            <span class="n">st</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
+        <span class="p">}</span>
+        
+        <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">st</span><span class="p">.</span><span class="n">empty</span><span class="p">()</span> <span class="p">){</span>
+            <span class="k">if</span><span class="p">(</span><span class="n">st</span><span class="p">.</span><span class="n">top</span><span class="p">().</span><span class="n">first</span><span class="o">==</span> <span class="n">now</span><span class="p">){</span>
+                <span class="n">cnt_pair</span> <span class="o">+=</span> <span class="n">st</span><span class="p">.</span><span class="n">top</span><span class="p">().</span><span class="n">second</span><span class="p">;</span>
+                <span class="n">cnt_same_height</span> <span class="o">=</span> <span class="p">(</span><span class="n">st</span><span class="p">.</span><span class="n">top</span><span class="p">().</span><span class="n">second</span> <span class="o">+</span><span class="mi">1</span><span class="p">);</span>
+                
+                <span class="k">if</span><span class="p">(</span><span class="n">st</span><span class="p">.</span><span class="n">size</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span>
+                    <span class="n">cnt_pair</span><span class="o">++</span><span class="p">;</span>
+                <span class="n">st</span><span class="p">.</span><span class="n">pop</span><span class="p">();</span>
+            <span class="p">}</span><span class="k">else</span>
+        <span class="n">cnt_pair</span><span class="o">++</span><span class="p">;</span>
+        <span class="p">}</span>
+        <span class="n">st</span><span class="p">.</span><span class="n">push</span><span class="p">(</span><span class="n">make_pair</span><span class="p">(</span><span class="n">now</span><span class="p">,</span> <span class="n">cnt_same_height</span><span class="p">));</span>
+    <span class="p">}</span>
+    <span class="n">cout</span><span class="o">&lt;&lt;</span><span class="n">cnt_pair</span><span class="o">&lt;&lt;</span><span class="sc">'\n'</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="cm">/*
+n = 7 입력
+Now =2 처음에 st = (2 1) cnt_pair = 0
+Now = 4, cnt_pair = 1, st = empty, st = (4 1)
+Now = 1, while문 통과, cnt_pair = 2, st= (1 1) (4 1)
+Now = 2, while문에서 (1 1) 빠지고 cnt_pair=3, cnt_pair=4, st=(2 1) (4 1)
+Now = 2, if문에서 cnt_pair=5, cnt_same_height=2, cnt_pair=6, st = (4 1) st= (2 2) (4 1)
+Now = 5, while문에서 (2 2) 빠지면서 cnt_pair=8, st =(4 1) 빠지고, cnt_pair=9, st = (5 1)
+Now = 1, cnt_pair= 10, st = (1 1) (5 1)
+*/</span>
+</code></pre></div></div>
+
+<h2 id="채점-결과">채점 결과</h2>
+<p><img width="730" alt="스크린샷 2023-06-12 12 01 54" src="https://github.com/ihmmaru99/BOJ/assets/109266664/5fe52381-2d16-49cb-94c0-3e363dbb9989" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="C++" /><category term="Stack" /><summary type="html"><![CDATA[오아시스 재결합 난이도 플래티넘 5]]></summary></entry><entry><title type="html">[백준][20157] 화살을 쏘자!</title><link href="http://localhost:4000/boj/20157/" rel="alternate" type="text/html" title="[백준][20157] 화살을 쏘자!" /><published>2023-06-11T00:00:00+09:00</published><updated>2023-06-11T00:00:00+09:00</updated><id>http://localhost:4000/boj/20157</id><content type="html" xml:base="http://localhost:4000/boj/20157/"><![CDATA[<h1 id="화살을-쏘자">화살을 쏘자!</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
   <p><img src="https://github.com/ihmmaru99/BOJ/assets/109266664/96cb338c-cf4e-498c-9ae4-c9632a0b73f4" alt="11" width="20px&quot;, height=&quot;20px" /> <span style="color:#FFBF00"> 골드 5</span></p>
@@ -213,55 +295,7 @@
 <span class="p">}</span>
 </code></pre></div></div>
 
-<h2 id="채점-결과">채점 결과</h2>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="C++" /><category term="Geometry" /><summary type="html"><![CDATA[직사각형 난이도 실버 1]]></summary></entry><entry><title type="html">[백준][2293] 동전1</title><link href="http://localhost:4000/boj/2293/" rel="alternate" type="text/html" title="[백준][2293] 동전1" /><published>2023-06-09T00:00:00+09:00</published><updated>2023-06-09T00:00:00+09:00</updated><id>http://localhost:4000/boj/2293</id><content type="html" xml:base="http://localhost:4000/boj/2293/"><![CDATA[<h1 id="동전-1">동전 1</h1>
-<h2 id="난이도">난이도</h2>
-<blockquote>
-  <p><img src="https://github.com/ihmmaru99/BOJ/assets/109266664/96cb338c-cf4e-498c-9ae4-c9632a0b73f4" alt="11" width="20px&quot;, height=&quot;20px" /> <span style="color:#FFBF00"> 골드 5</span></p>
-</blockquote>
-
-<h2 id="문제">문제</h2>
-<p>n가지 종류의 동전이 있다. 각각의 동전이 나타내는 가치는 다르다. 이 동전을 적당히 사용해서, 그 가치의 합이 k원이 되도록 하고 싶다. 그 경우의 수를 구하시오. 각각의 동전은 몇 개라도 사용할 수 있다.</p>
-
-<p>사용한 동전의 구성이 같은데, 순서만 다른 것은 같은 경우이다.</p>
-
-<h2 id="입력">입력</h2>
-<p>첫째 줄에 n, k가 주어진다. (1 ≤ n ≤ 100, 1 ≤ k ≤ 10,000) 다음 n개의 줄에는 각각의 동전의 가치가 주어진다. 동전의 가치는 100,000보다 작거나 같은 자연수이다.</p>
-
-<h2 id="출력">출력</h2>
-<p>첫째 줄에 경우의 수를 출력한다. 경우의 수는 \(2^{31}\)보다 작다.</p>
-
-<h2 id="풀이">풀이</h2>
-<blockquote>
-  <p>입력된 동전을 통해서 가능한 경우의 수를 모두 더해서 DP를 활용하면 된다. 1,2,5의 동전이 있다면 1만으로 10을 만드는 경우는 각각 1가지이다. 여기서 2를 더하면 1을 제외하고 각각의 경우에서 경우가 추가로 생기는 것을 알 수 있다. 2를 만드는 방법은 2개, 3을 만드는 방법은 2개, 4를 만드는 방법은 2+2,1+2+1, 1+1+1+1로 총 3개인데 기존에 1+1+1+1의 방법에서 2를 만드는 방법 2개가 추가되어서 3개가 된 것이다. dp[i] + dp[i-2]를 해주는 것과 같다. 다음 식을 일반화해서 문제를 해결하면 된다.</p>
-</blockquote>
-
-<h2 id="결과">결과</h2>
-<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/2293/2293.cpp">2293 - 동전1</a></p>
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-
-<span class="kt">int</span> <span class="n">dp</span><span class="p">[</span><span class="mi">10001</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="p">};</span>
-<span class="kt">int</span> <span class="n">num</span><span class="p">[</span><span class="mi">101</span><span class="p">];</span>
-
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-    <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">k</span><span class="p">;</span>
-    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span> <span class="o">&gt;&gt;</span> <span class="n">k</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-        <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
-    <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">];</span> <span class="n">j</span><span class="o">&lt;=</span><span class="n">k</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
-            <span class="n">dp</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">+=</span> <span class="n">dp</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">]];</span>
-        <span class="p">}</span>
-    <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">dp</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h2 id="채점-결과">채점 결과</h2>
-<p><img width="730" alt="스크린샷 2023-06-09 14 10 09" src="https://github.com/ihmmaru99/BOJ/assets/109266664/92786188-a19d-4085-b4ea-4155e467c3d9" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="C++" /><category term="DP" /><summary type="html"><![CDATA[동전 1 난이도 골드 5]]></summary></entry><entry><title type="html">[백준][1715] 카드 정렬하기</title><link href="http://localhost:4000/boj/1715/" rel="alternate" type="text/html" title="[백준][1715] 카드 정렬하기" /><published>2023-06-09T00:00:00+09:00</published><updated>2023-06-10T00:00:00+09:00</updated><id>http://localhost:4000/boj/1715</id><content type="html" xml:base="http://localhost:4000/boj/1715/"><![CDATA[<h1 id="카드-정렬하기">카드 정렬하기</h1>
+<h2 id="채점-결과">채점 결과</h2>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="C++" /><category term="Geometry" /><summary type="html"><![CDATA[직사각형 난이도 실버 1]]></summary></entry><entry><title type="html">[백준][1715] 카드 정렬하기</title><link href="http://localhost:4000/boj/1715/" rel="alternate" type="text/html" title="[백준][1715] 카드 정렬하기" /><published>2023-06-09T00:00:00+09:00</published><updated>2023-06-10T00:00:00+09:00</updated><id>http://localhost:4000/boj/1715</id><content type="html" xml:base="http://localhost:4000/boj/1715/"><![CDATA[<h1 id="카드-정렬하기">카드 정렬하기</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
   <p><img src="https://github.com/ihmmaru99/ihmmaru99/assets/109266664/4f74cb65-a628-44e0-8f7f-210cdc98eb6e" alt="12" width="20px&quot;, height=&quot;20px" /> <span style="color:#FFBF00"> 골드 4</span></p>
@@ -318,7 +352,55 @@
 </code></pre></div></div>
 
 <h2 id="채점-결과">채점 결과</h2>
-<p><img width="730" alt="스크린샷 2023-06-10 14 27 21" src="https://github.com/ihmmaru99/BOJ/assets/109266664/82b78ea7-fb86-4aeb-b137-58c4a6ee8996" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="C++" /><category term="Greedy" /><category term="Queue" /><summary type="html"><![CDATA[카드 정렬하기 난이도 골드 4]]></summary></entry><entry><title type="html">[프로그래머스] 셔틀버스</title><link href="http://localhost:4000/programmers/shuttlebus/" rel="alternate" type="text/html" title="[프로그래머스] 셔틀버스" /><published>2023-06-08T00:00:00+09:00</published><updated>2023-06-09T00:00:00+09:00</updated><id>http://localhost:4000/programmers/shuttlebus</id><content type="html" xml:base="http://localhost:4000/programmers/shuttlebus/"><![CDATA[<h1 id="2018-kakao-blind-recruitment-셔틀버스">2018 KAKAO BLIND RECRUITMENT 셔틀버스</h1>
+<p><img width="730" alt="스크린샷 2023-06-10 14 27 21" src="https://github.com/ihmmaru99/BOJ/assets/109266664/82b78ea7-fb86-4aeb-b137-58c4a6ee8996" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="C++" /><category term="Greedy" /><category term="Queue" /><summary type="html"><![CDATA[카드 정렬하기 난이도 골드 4]]></summary></entry><entry><title type="html">[백준][2293] 동전1</title><link href="http://localhost:4000/boj/2293/" rel="alternate" type="text/html" title="[백준][2293] 동전1" /><published>2023-06-09T00:00:00+09:00</published><updated>2023-06-09T00:00:00+09:00</updated><id>http://localhost:4000/boj/2293</id><content type="html" xml:base="http://localhost:4000/boj/2293/"><![CDATA[<h1 id="동전-1">동전 1</h1>
+<h2 id="난이도">난이도</h2>
+<blockquote>
+  <p><img src="https://github.com/ihmmaru99/BOJ/assets/109266664/96cb338c-cf4e-498c-9ae4-c9632a0b73f4" alt="11" width="20px&quot;, height=&quot;20px" /> <span style="color:#FFBF00"> 골드 5</span></p>
+</blockquote>
+
+<h2 id="문제">문제</h2>
+<p>n가지 종류의 동전이 있다. 각각의 동전이 나타내는 가치는 다르다. 이 동전을 적당히 사용해서, 그 가치의 합이 k원이 되도록 하고 싶다. 그 경우의 수를 구하시오. 각각의 동전은 몇 개라도 사용할 수 있다.</p>
+
+<p>사용한 동전의 구성이 같은데, 순서만 다른 것은 같은 경우이다.</p>
+
+<h2 id="입력">입력</h2>
+<p>첫째 줄에 n, k가 주어진다. (1 ≤ n ≤ 100, 1 ≤ k ≤ 10,000) 다음 n개의 줄에는 각각의 동전의 가치가 주어진다. 동전의 가치는 100,000보다 작거나 같은 자연수이다.</p>
+
+<h2 id="출력">출력</h2>
+<p>첫째 줄에 경우의 수를 출력한다. 경우의 수는 \(2^{31}\)보다 작다.</p>
+
+<h2 id="풀이">풀이</h2>
+<blockquote>
+  <p>입력된 동전을 통해서 가능한 경우의 수를 모두 더해서 DP를 활용하면 된다. 1,2,5의 동전이 있다면 1만으로 10을 만드는 경우는 각각 1가지이다. 여기서 2를 더하면 1을 제외하고 각각의 경우에서 경우가 추가로 생기는 것을 알 수 있다. 2를 만드는 방법은 2개, 3을 만드는 방법은 2개, 4를 만드는 방법은 2+2,1+2+1, 1+1+1+1로 총 3개인데 기존에 1+1+1+1의 방법에서 2를 만드는 방법 2개가 추가되어서 3개가 된 것이다. dp[i] + dp[i-2]를 해주는 것과 같다. 다음 식을 일반화해서 문제를 해결하면 된다.</p>
+</blockquote>
+
+<h2 id="결과">결과</h2>
+<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/2293/2293.cpp">2293 - 동전1</a></p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="n">dp</span><span class="p">[</span><span class="mi">10001</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="p">};</span>
+<span class="kt">int</span> <span class="n">num</span><span class="p">[</span><span class="mi">101</span><span class="p">];</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+    <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">k</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span> <span class="o">&gt;&gt;</span> <span class="n">k</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+        <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+    <span class="n">dp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">];</span> <span class="n">j</span><span class="o">&lt;=</span><span class="n">k</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
+            <span class="n">dp</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">+=</span> <span class="n">dp</span><span class="p">[</span><span class="n">j</span><span class="o">-</span><span class="n">num</span><span class="p">[</span><span class="n">i</span><span class="p">]];</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">dp</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
+    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="채점-결과">채점 결과</h2>
+<p><img width="730" alt="스크린샷 2023-06-09 14 10 09" src="https://github.com/ihmmaru99/BOJ/assets/109266664/92786188-a19d-4085-b4ea-4155e467c3d9" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="C++" /><category term="DP" /><summary type="html"><![CDATA[동전 1 난이도 골드 5]]></summary></entry><entry><title type="html">[프로그래머스] 셔틀버스</title><link href="http://localhost:4000/programmers/shuttlebus/" rel="alternate" type="text/html" title="[프로그래머스] 셔틀버스" /><published>2023-06-08T00:00:00+09:00</published><updated>2023-06-09T00:00:00+09:00</updated><id>http://localhost:4000/programmers/shuttlebus</id><content type="html" xml:base="http://localhost:4000/programmers/shuttlebus/"><![CDATA[<h1 id="2018-kakao-blind-recruitment-셔틀버스">2018 KAKAO BLIND RECRUITMENT 셔틀버스</h1>
 <h2 id="문제">문제</h2>
 <p>카카오에서는 무료 셔틀버스를 운행하기 때문에 판교역에서 편하게 사무실로 올 수 있다. 카카오의 직원은 서로를 ‘크루’라고 부르는데, 아침마다 많은 크루들이 이 셔틀을 이용하여 출근한다.
 이 문제에서는 편의를 위해 셔틀은 다음과 같은 규칙으로 운행한다고 가정하자.</p>
@@ -400,51 +482,7 @@
 </code></pre></div></div>
 
 <h2 id="채점-결과">채점 결과</h2>
-<p><img width="149" alt="스크린샷 2023-06-09 12 07 33" src="https://github.com/ihmmaru99/Programmers/assets/109266664/0ae294f6-be8e-4f23-9afb-2b8e1d5d33b4" /></p>]]></content><author><name>임정빈</name></author><category term="Programmers" /><category term="Algorithm" /><category term="C++" /><category term="Implementation" /><summary type="html"><![CDATA[2018 KAKAO BLIND RECRUITMENT 셔틀버스 문제 카카오에서는 무료 셔틀버스를 운행하기 때문에 판교역에서 편하게 사무실로 올 수 있다. 카카오의 직원은 서로를 ‘크루’라고 부르는데, 아침마다 많은 크루들이 이 셔틀을 이용하여 출근한다. 이 문제에서는 편의를 위해 셔틀은 다음과 같은 규칙으로 운행한다고 가정하자. 셔틀은 09:00부터 총 n회 t분 간격으로 역에 도착하며, 하나의 셔틀에는 최대 m명의 승객이 탈 수 있다. 셔틀은 도착했을 때 도착한 순간에 대기열에 선 크루까지 포함해서 대기 순서대로 태우고 바로 출발한다. 예를 들어 09:00에 도착한 셔틀은 자리가 있다면 09:00에 줄을 선 크루도 탈 수 있다.]]></summary></entry><entry><title type="html">[백준][11726] 2xn 타일링</title><link href="http://localhost:4000/boj/11726/" rel="alternate" type="text/html" title="[백준][11726] 2xn 타일링" /><published>2023-06-08T00:00:00+09:00</published><updated>2023-06-08T00:00:00+09:00</updated><id>http://localhost:4000/boj/11726</id><content type="html" xml:base="http://localhost:4000/boj/11726/"><![CDATA[<h1 id="2xn-타일링">2xn 타일링</h1>
-<h2 id="난이도">난이도</h2>
-<blockquote>
-  <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/40f259a0-6d4e-4cfa-a954-225e9b42961f" alt="8" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 3</span></p>
-</blockquote>
-
-<h2 id="문제">문제</h2>
-<p>2×n 크기의 직사각형을 1×2, 2×1 타일로 채우는 방법의 수를 구하는 프로그램을 작성하시오.</p>
-
-<p>아래 그림은 2×5 크기의 직사각형을 채운 한 가지 방법의 예이다.<br />
-<img src="https://github.com/ihmmaru99/BOJ/assets/109266664/e04b9615-225a-4d1a-97ef-eee0e05a658a" alt="1" /></p>
-
-<h2 id="입력">입력</h2>
-<p>첫째 줄에 n이 주어진다. (1 ≤ n ≤ 1,000)</p>
-
-<h2 id="출력">출력</h2>
-<p>첫째 줄에 2×n 크기의 직사각형을 채우는 방법의 수를 10,007로 나눈 나머지를 출력한다.</p>
-
-<h2 id="풀이">풀이</h2>
-<blockquote>
-  <p>DP를 이용해서 문제를 풀이하면 된다. 2x1을 만들 수 있는 경우의 수와 2x2를 만들 수 있는 경우의 수를 더하면 2x3을 만들 수 있는 경우의 수를 알 수 있다. 이를 통해서 점화식을 세워서 값을 배열에 저장해 놓으면 값을 알수 있다.</p>
-</blockquote>
-
-<h2 id="결과">결과</h2>
-<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/11726/11726.cpp">11726 - 2xn 타일링</a></p>
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-</span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-<span class="kt">int</span> <span class="n">dp</span><span class="p">[</span><span class="mi">1001</span><span class="p">];</span>
-
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-    <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
-    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
-    <span class="n">dp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="n">dp</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">3</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-        <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">%</span><span class="mi">10007</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">dp</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h2 id="채점-결과">채점 결과</h2>
-<p><img width="730" alt="스크린샷 2023-06-08 14 51 42" src="https://github.com/ihmmaru99/BOJ/assets/109266664/91f32128-84bf-43a7-b46b-73be22393bba" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="C++" /><category term="DP" /><summary type="html"><![CDATA[2xn 타일링 난이도 실버 3]]></summary></entry><entry><title type="html">[백준][1987] 알파벳</title><link href="http://localhost:4000/boj/1987/" rel="alternate" type="text/html" title="[백준][1987] 알파벳" /><published>2023-06-08T00:00:00+09:00</published><updated>2023-06-08T00:00:00+09:00</updated><id>http://localhost:4000/boj/1987</id><content type="html" xml:base="http://localhost:4000/boj/1987/"><![CDATA[<h1 id="알파벳">알파벳</h1>
+<p><img width="149" alt="스크린샷 2023-06-09 12 07 33" src="https://github.com/ihmmaru99/Programmers/assets/109266664/0ae294f6-be8e-4f23-9afb-2b8e1d5d33b4" /></p>]]></content><author><name>임정빈</name></author><category term="Programmers" /><category term="Algorithm" /><category term="C++" /><category term="Implementation" /><summary type="html"><![CDATA[2018 KAKAO BLIND RECRUITMENT 셔틀버스 문제 카카오에서는 무료 셔틀버스를 운행하기 때문에 판교역에서 편하게 사무실로 올 수 있다. 카카오의 직원은 서로를 ‘크루’라고 부르는데, 아침마다 많은 크루들이 이 셔틀을 이용하여 출근한다. 이 문제에서는 편의를 위해 셔틀은 다음과 같은 규칙으로 운행한다고 가정하자. 셔틀은 09:00부터 총 n회 t분 간격으로 역에 도착하며, 하나의 셔틀에는 최대 m명의 승객이 탈 수 있다. 셔틀은 도착했을 때 도착한 순간에 대기열에 선 크루까지 포함해서 대기 순서대로 태우고 바로 출발한다. 예를 들어 09:00에 도착한 셔틀은 자리가 있다면 09:00에 줄을 선 크루도 탈 수 있다.]]></summary></entry><entry><title type="html">[백준][1987] 알파벳</title><link href="http://localhost:4000/boj/1987/" rel="alternate" type="text/html" title="[백준][1987] 알파벳" /><published>2023-06-08T00:00:00+09:00</published><updated>2023-06-08T00:00:00+09:00</updated><id>http://localhost:4000/boj/1987</id><content type="html" xml:base="http://localhost:4000/boj/1987/"><![CDATA[<h1 id="알파벳">알파벳</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
   <p><img src="https://github.com/ihmmaru99/ihmmaru99/assets/109266664/4f74cb65-a628-44e0-8f7f-210cdc98eb6e" alt="12" width="20px&quot;, height=&quot;20px" /> <span style="color:#FFBF00"> 골드 4</span></p>
@@ -523,100 +561,51 @@
 </code></pre></div></div>
 
 <h2 id="채점-결과">채점 결과</h2>
-<p><img width="730" alt="스크린샷 2023-06-08 21 09 22" src="https://github.com/ihmmaru99/BOJ/assets/109266664/98f8f03b-fe55-4236-8f41-a2748981f1f7" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="C++" /><category term="DFS" /><summary type="html"><![CDATA[알파벳 난이도 골드 4]]></summary></entry><entry><title type="html">[백준][11660] 구간 합 구하기 5</title><link href="http://localhost:4000/boj/11660/" rel="alternate" type="text/html" title="[백준][11660] 구간 합 구하기 5" /><published>2023-06-07T00:00:00+09:00</published><updated>2023-06-07T00:00:00+09:00</updated><id>http://localhost:4000/boj/11660</id><content type="html" xml:base="http://localhost:4000/boj/11660/"><![CDATA[<h1 id="구간-합-구하기-5">구간 합 구하기 5</h1>
-
+<p><img width="730" alt="스크린샷 2023-06-08 21 09 22" src="https://github.com/ihmmaru99/BOJ/assets/109266664/98f8f03b-fe55-4236-8f41-a2748981f1f7" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="C++" /><category term="DFS" /><summary type="html"><![CDATA[알파벳 난이도 골드 4]]></summary></entry><entry><title type="html">[백준][11726] 2xn 타일링</title><link href="http://localhost:4000/boj/11726/" rel="alternate" type="text/html" title="[백준][11726] 2xn 타일링" /><published>2023-06-08T00:00:00+09:00</published><updated>2023-06-08T00:00:00+09:00</updated><id>http://localhost:4000/boj/11726</id><content type="html" xml:base="http://localhost:4000/boj/11726/"><![CDATA[<h1 id="2xn-타일링">2xn 타일링</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
-  <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/1725e8ac-be34-44d1-a4db-174d0a2cd0dd" alt="10" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 1</span></p>
+  <p><img src="https://github.com/ihmmaru99/ihmmaru99.github.io/assets/109266664/40f259a0-6d4e-4cfa-a954-225e9b42961f" alt="8" width="20px&quot;, height=&quot;20px" /> <span style="color:#585858"> 실버 3</span></p>
 </blockquote>
 
 <h2 id="문제">문제</h2>
-<p>N×N개의 수가 N×N 크기의 표에 채워져 있다. (x1, y1)부터 (x2, y2)까지 합을 구하는 프로그램을 작성하시오. (x, y)는 x행 y열을 의미한다.</p>
+<p>2×n 크기의 직사각형을 1×2, 2×1 타일로 채우는 방법의 수를 구하는 프로그램을 작성하시오.</p>
 
-<p>예를 들어, N = 4이고, 표가 아래와 같이 채워져 있는 경우를 살펴보자.</p>
-
-<table>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
-      <td>7</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>여기서 (2, 2)부터 (3, 4)까지 합을 구하면 3+4+5+4+5+6 = 27이고, (4, 4)부터 (4, 4)까지 합을 구하면 7이다.</p>
-
-<p>표에 채워져 있는 수와 합을 구하는 연산이 주어졌을 때, 이를 처리하는 프로그램을 작성하시오.</p>
+<p>아래 그림은 2×5 크기의 직사각형을 채운 한 가지 방법의 예이다.<br />
+<img src="https://github.com/ihmmaru99/BOJ/assets/109266664/e04b9615-225a-4d1a-97ef-eee0e05a658a" alt="1" /></p>
 
 <h2 id="입력">입력</h2>
-<p>첫째 줄에 표의 크기 N과 합을 구해야 하는 횟수 M이 주어진다. (1 ≤ N ≤ 1024, 1 ≤ M ≤ 100,000) 둘째 줄부터 N개의 줄에는 표에 채워져 있는 수가 1행부터 차례대로 주어진다. 다음 M개의 줄에는 네 개의 정수 x1, y1, x2, y2 가 주어지며, (x1, y1)부터 (x2, y2)의 합을 구해 출력해야 한다. 표에 채워져 있는 수는 1,000보다 작거나 같은 자연수이다. (x1 ≤ x2, y1 ≤ y2)</p>
+<p>첫째 줄에 n이 주어진다. (1 ≤ n ≤ 1,000)</p>
 
 <h2 id="출력">출력</h2>
-<p>총 M줄에 걸쳐 (x1, y1)부터 (x2, y2)까지 합을 구해 출력한다.</p>
+<p>첫째 줄에 2×n 크기의 직사각형을 채우는 방법의 수를 10,007로 나눈 나머지를 출력한다.</p>
 
 <h2 id="풀이">풀이</h2>
 <blockquote>
-  <p>일반적인 구간 합 문제에서는 단순히 for문을 돌린다면 시간초과를 마주하게 된다. 나 또한 마찬가지로 for문을 돌렸으나 시간초과가 되었다. 시간초과를 마주치지 않기 위해서는 DP를 활용해야 한다. DP를 활용해서 각 인덱스에 해당 인덱스까지의 구간합을 적어놓고 필요한 구간만큼의 값을 뽑아낼 수 있도록 한다.</p>
+  <p>DP를 이용해서 문제를 풀이하면 된다. 2x1을 만들 수 있는 경우의 수와 2x2를 만들 수 있는 경우의 수를 더하면 2x3을 만들 수 있는 경우의 수를 알 수 있다. 이를 통해서 점화식을 세워서 값을 배열에 저장해 놓으면 값을 알수 있다.</p>
 </blockquote>
 
-<p><img width="404" alt="스크린샷 2023-06-07 16 07 20" src="https://github.com/ihmmaru99/BOJ/assets/109266664/83a10efe-e841-43e3-a86f-50d70f94cc69" /><br />
-다음과 같은 그림에서 노란 구간의 합을 구하기 위해서는 각 맵에 전체의 구간합을 적어준 다음에 색칠되어 있는 전체 영역의 구간합에 - (파랑+초록) - (빨강+초록) + 초록을 하면 노란 영역만의 구간합을 구할 수 있다.</p>
-
 <h2 id="결과">결과</h2>
-<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/11660/11660.cpp">11660 - 구간합구하기5</a></p>
+<p><a href="https://github.com/ihmmaru99/BOJ/blob/main/11726/11726.cpp">11726 - 2xn 타일링</a></p>
 <div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
 </span>
-<span class="cp"># define MAX 1025
-</span>
 <span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-
-<span class="kt">int</span> <span class="n">map</span><span class="p">[</span><span class="n">MAX</span><span class="p">][</span><span class="n">MAX</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="p">};</span>
+<span class="kt">int</span> <span class="n">dp</span><span class="p">[</span><span class="mi">1001</span><span class="p">];</span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
-    <span class="n">ios_base</span><span class="o">::</span><span class="n">sync_with_stdio</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-    <span class="n">cin</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span> <span class="n">cout</span><span class="p">.</span><span class="n">tie</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
-
-    <span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">m</span><span class="p">;</span>
-    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span> <span class="o">&gt;&gt;</span> <span class="n">m</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
-            <span class="kt">int</span> <span class="n">temp</span><span class="p">;</span>
-            <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">temp</span><span class="p">;</span>
-            <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">+</span> <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">temp</span> <span class="o">-</span> <span class="n">map</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span>
-        <span class="p">}</span>
+    <span class="kt">int</span> <span class="n">n</span><span class="p">;</span>
+    <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
+    <span class="n">dp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="n">dp</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">3</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+        <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span> <span class="o">+</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">%</span><span class="mi">10007</span><span class="p">;</span>
     <span class="p">}</span>
-    <span class="kt">int</span> <span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">x_end</span><span class="p">,</span> <span class="n">y_end</span><span class="p">,</span> <span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">m</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-        <span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">x</span> <span class="o">&gt;&gt;</span> <span class="n">y</span> <span class="o">&gt;&gt;</span> <span class="n">x_end</span> <span class="o">&gt;&gt;</span> <span class="n">y_end</span><span class="p">;</span>
-        <span class="n">cnt</span> <span class="o">=</span> <span class="n">map</span><span class="p">[</span><span class="n">x_end</span><span class="p">][</span><span class="n">y_end</span><span class="p">]</span> <span class="o">-</span> <span class="n">map</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">y_end</span><span class="p">]</span> <span class="o">-</span> <span class="n">map</span><span class="p">[</span><span class="n">x_end</span><span class="p">][</span><span class="n">y</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">+</span><span class="n">map</span><span class="p">[</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">y</span><span class="o">-</span><span class="mi">1</span><span class="p">];</span>
-        <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">cnt</span> <span class="o">&lt;&lt;</span> <span class="sc">'\n'</span><span class="p">;</span>
-    <span class="p">}</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">dp</span><span class="p">[</span><span class="n">n</span><span class="p">];</span>
     <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
 <h2 id="채점-결과">채점 결과</h2>
-<p><img width="733" alt="스크린샷 2023-06-07 15 59 33" src="https://github.com/ihmmaru99/BOJ/assets/109266664/60f30917-88bc-436a-87a5-7810479c946a" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="C++" /><category term="DP" /><summary type="html"><![CDATA[구간 합 구하기 5]]></summary></entry><entry><title type="html">[백준][14502] 연구소</title><link href="http://localhost:4000/boj/14502/" rel="alternate" type="text/html" title="[백준][14502] 연구소" /><published>2023-06-07T00:00:00+09:00</published><updated>2023-06-07T00:00:00+09:00</updated><id>http://localhost:4000/boj/14502</id><content type="html" xml:base="http://localhost:4000/boj/14502/"><![CDATA[<h1 id="연구소">연구소</h1>
+<p><img width="730" alt="스크린샷 2023-06-08 14 51 42" src="https://github.com/ihmmaru99/BOJ/assets/109266664/91f32128-84bf-43a7-b46b-73be22393bba" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="C++" /><category term="DP" /><summary type="html"><![CDATA[2xn 타일링 난이도 실버 3]]></summary></entry><entry><title type="html">[백준][14502] 연구소</title><link href="http://localhost:4000/boj/14502/" rel="alternate" type="text/html" title="[백준][14502] 연구소" /><published>2023-06-07T00:00:00+09:00</published><updated>2023-06-07T00:00:00+09:00</updated><id>http://localhost:4000/boj/14502</id><content type="html" xml:base="http://localhost:4000/boj/14502/"><![CDATA[<h1 id="연구소">연구소</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
   <p><img src="https://github.com/ihmmaru99/ihmmaru99/assets/109266664/4f74cb65-a628-44e0-8f7f-210cdc98eb6e" alt="12" width="20px&quot;, height=&quot;20px" /> <span style="color:#FFBF00"> 골드 4</span></p>
