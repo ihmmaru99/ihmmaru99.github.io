@@ -148,4 +148,10 @@ var store = [{
         "tags": ["Algorithm","C++","Implementation"],
         "url": "/softeer/%EC%9A%B0%EB%AC%BC%EC%95%88%EA%B0%9C%EA%B5%AC%EB%A6%AC/",
         "teaser": null
+      },{
+        "title": "[백준][5014] 스타트링크",
+        "excerpt":"스타트링크 난이도 실버 1 문제 강호는 코딩 교육을 하는 스타트업 스타트링크에 지원했다. 오늘은 강호의 면접날이다. 하지만, 늦잠을 잔 강호는 스타트링크가 있는 건물에 늦게 도착하고 말았다. 스타트링크는 총 F층으로 이루어진 고층 건물에 사무실이 있고, 스타트링크가 있는 곳의 위치는 G층이다. 강호가 지금 있는 곳은 S층이고, 이제 엘리베이터를 타고 G층으로 이동하려고 한다. 보통...","categories": ["BOJ"],
+        "tags": ["Algorithm","BFS","C++"],
+        "url": "/boj/5014/",
+        "teaser": null
       }]

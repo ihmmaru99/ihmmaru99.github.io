@@ -101,6 +101,10 @@
 <lastmod>2023-06-12T00:00:00+09:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/boj/5014/</loc>
+<lastmod>2023-06-13T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/categories/algorithm</loc>
 <lastmod>2023-05-30T00:49:52+09:00</lastmod>
 </url>
@@ -119,6 +123,10 @@
 <url>
 <loc>http://localhost:4000/categories/programmers</loc>
 <lastmod>2023-05-30T00:49:52+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/categories/softeer</loc>
+<lastmod>2023-06-12T17:07:46+09:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
@@ -146,6 +154,10 @@
 </url>
 <url>
 <loc>http://localhost:4000/page5/</loc>
+<lastmod>2023-05-26T20:43:35+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/page6/</loc>
 <lastmod>2023-05-26T20:43:35+09:00</lastmod>
 </url>
 </urlset>
