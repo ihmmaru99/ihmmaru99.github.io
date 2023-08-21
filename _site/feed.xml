@@ -1,4 +1,7 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-07-31T10:36:08+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IhmMaru99의 잡동사니</title><subtitle>ihmmaru99&apos;s blog</subtitle><author><name>임정빈</name></author><entry><title type="html">[백준][5014] 스타트링크</title><link href="http://localhost:4000/boj/5014/" rel="alternate" type="text/html" title="[백준][5014] 스타트링크" /><published>2023-06-13T00:00:00+09:00</published><updated>2023-06-13T00:00:00+09:00</updated><id>http://localhost:4000/boj/5014</id><content type="html" xml:base="http://localhost:4000/boj/5014/"><![CDATA[<h1 id="스타트링크">스타트링크</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-08-02T11:50:38+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">IhmMaru99의 잡동사니</title><subtitle>ihmmaru99&apos;s blog</subtitle><author><name>임정빈</name></author><entry><title type="html">[자율주행SW경진대회] 자율주행차 하드웨어 제작 (1)</title><link href="http://localhost:4000/autocarsw/1/" rel="alternate" type="text/html" title="[자율주행SW경진대회] 자율주행차 하드웨어 제작 (1)" /><published>2023-07-24T00:00:00+09:00</published><updated>2023-08-02T00:00:00+09:00</updated><id>http://localhost:4000/autocarsw/1</id><content type="html" xml:base="http://localhost:4000/autocarsw/1/"><![CDATA[<h1 id="모터-제어">모터 제어</h1>
+<p>대회는 다음과 같은 형태의 유아용 전동차를 활용해서 대회가 진행된다.
+<img src="https://github.com/ihmmaru99/BOJ/assets/109266664/57dd3504-5d2b-4e26-aed4-b7a48ddfb56c" alt="2d10e3ddaa0feac409a29efa284c3515" width="400px&quot;, height=&quot;100px" /><br />
+해당 차량은 뒷바퀴에 두개의 모터가 연결되어 있다. 뒷바퀴는 차량의 구동을 위한 구동 모터로 사용할 예정이며 앞에는 모터가 하나 연결되어 있으며 이는 모터를 이용한 차량의 조향을 위해 사용할 계획이다</p>]]></content><author><name>임정빈</name></author><category term="AutoCarSW" /><category term="HW" /><category term="Motor" /><summary type="html"><![CDATA[모터 제어 대회는 다음과 같은 형태의 유아용 전동차를 활용해서 대회가 진행된다. 해당 차량은 뒷바퀴에 두개의 모터가 연결되어 있다. 뒷바퀴는 차량의 구동을 위한 구동 모터로 사용할 예정이며 앞에는 모터가 하나 연결되어 있으며 이는 모터를 이용한 차량의 조향을 위해 사용할 계획이다]]></summary></entry><entry><title type="html">[백준][5014] 스타트링크</title><link href="http://localhost:4000/boj/5014/" rel="alternate" type="text/html" title="[백준][5014] 스타트링크" /><published>2023-06-13T00:00:00+09:00</published><updated>2023-06-13T00:00:00+09:00</updated><id>http://localhost:4000/boj/5014</id><content type="html" xml:base="http://localhost:4000/boj/5014/"><![CDATA[<h1 id="스타트링크">스타트링크</h1>
 
 <h2 id="난이도">난이도</h2>
 <blockquote>
@@ -73,61 +76,7 @@
 </code></pre></div></div>
 
 <h2 id="채점-결과">채점 결과</h2>
-<p><img width="730" alt="스크린샷 2023-06-13 11 12 25" src="https://github.com/ihmmaru99/BOJ/assets/109266664/c351b656-548b-4fb6-9a76-183c0e2bf899" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="BFS" /><category term="C++" /><summary type="html"><![CDATA[스타트링크]]></summary></entry><entry><title type="html">[소프티어] 강의실 배정</title><link href="http://localhost:4000/softeer/%EA%B0%95%EC%9D%98%EC%8B%A4%EB%B0%B0%EC%A0%95/" rel="alternate" type="text/html" title="[소프티어] 강의실 배정" /><published>2023-06-12T00:00:00+09:00</published><updated>2023-06-12T00:00:00+09:00</updated><id>http://localhost:4000/softeer/%EA%B0%95%EC%9D%98%EC%8B%A4%EB%B0%B0%EC%A0%95</id><content type="html" xml:base="http://localhost:4000/softeer/%EA%B0%95%EC%9D%98%EC%8B%A4%EB%B0%B0%EC%A0%95/"><![CDATA[<h1 id="강의실-배정">강의실 배정</h1>
-
-<h2 id="난이도">난이도</h2>
-<blockquote>
-  <p>level 3</p>
-</blockquote>
-
-<h2 id="문제">문제</h2>
-<p>김교수는 강의실 1개에 최대한 많은 강의를 배정하려고 한다. 배정된 강의는 서로 겹치지 않아야 하며 수업시간의 길이와 상관없이 최대한 강의를 많이 배정하라. 단, 두 강의의 시작시간과 종료시간은 겹쳐도 된다.</p>
-
-<h2 id="제약조건">제약조건</h2>
-<p>1 ≤ N ≤ \(10^6\) 인 정수<br />
-1 ≤ \(S_i\) ＜ \(F_i\) ≤ \(10^9\)</p>
-
-<h2 id="입력형식">입력형식</h2>
-<p>첫 번째 줄에 강의 개수 N이 주어진다. i + 1 (1 ≤ i ≤ N)번째 줄에는 i번째 강의의 시작 시간 Si와 종료 시간 Fi가 주어진다.</p>
-
-<h2 id="출력형식">출력형식</h2>
-<p>첫 번째 줄에 최대 강의 수를 출력하라.</p>
-
-<h2 id="풀이">풀이</h2>
-
-<h2 id="결과">결과</h2>
-<p><a href="https://github.com/ihmmaru99/Softeer/blob/main/강의실배정/강의실배정.cpp">강의실배정</a></p>
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp">
-</span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-
-<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
-<span class="p">{</span>
-	<span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">cnt</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
-	<span class="n">vector</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">v</span><span class="p">;</span>
-	<span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
-	<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-		<span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">;</span>
-		<span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">a</span> <span class="o">&gt;&gt;</span> <span class="n">b</span><span class="p">;</span>
-		<span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">make_pair</span><span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="n">a</span><span class="p">));</span>
-	<span class="p">}</span>
-	<span class="n">sort</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
-	<span class="kt">int</span> <span class="n">start</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">first</span><span class="p">;</span>
-	<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-		<span class="k">if</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">second</span> <span class="o">&gt;=</span> <span class="n">start</span><span class="p">){</span>
-			<span class="n">cnt</span><span class="o">++</span><span class="p">;</span>
-			<span class="n">start</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">first</span><span class="p">;</span>
-		<span class="p">}</span>
-	<span class="p">}</span>
-	<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">cnt</span><span class="p">;</span>
-	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h2 id="채점-결과">채점 결과</h2>
-<p><img width="695" alt="스크린샷 2023-06-12 14 38 58" src="https://github.com/ihmmaru99/Softeer/assets/109266664/686cfc5d-7b78-41c0-aabf-aace92a1048e" /></p>]]></content><author><name>임정빈</name></author><category term="Softeer" /><category term="Algorithm" /><category term="C++" /><category term="Greedy" /><summary type="html"><![CDATA[강의실 배정]]></summary></entry><entry><title type="html">[백준][9663] N-Queen</title><link href="http://localhost:4000/boj/9663/" rel="alternate" type="text/html" title="[백준][9663] N-Queen" /><published>2023-06-12T00:00:00+09:00</published><updated>2023-06-12T00:00:00+09:00</updated><id>http://localhost:4000/boj/9663</id><content type="html" xml:base="http://localhost:4000/boj/9663/"><![CDATA[<h1 id="n-queen">N-Queen</h1>
+<p><img width="730" alt="스크린샷 2023-06-13 11 12 25" src="https://github.com/ihmmaru99/BOJ/assets/109266664/c351b656-548b-4fb6-9a76-183c0e2bf899" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="BFS" /><category term="C++" /><summary type="html"><![CDATA[스타트링크]]></summary></entry><entry><title type="html">[백준][9663] N-Queen</title><link href="http://localhost:4000/boj/9663/" rel="alternate" type="text/html" title="[백준][9663] N-Queen" /><published>2023-06-12T00:00:00+09:00</published><updated>2023-06-12T00:00:00+09:00</updated><id>http://localhost:4000/boj/9663</id><content type="html" xml:base="http://localhost:4000/boj/9663/"><![CDATA[<h1 id="n-queen">N-Queen</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
   <p><img src="https://github.com/ihmmaru99/ihmmaru99/assets/109266664/4f74cb65-a628-44e0-8f7f-210cdc98eb6e" alt="12" width="20px&quot;, height=&quot;20px" /> <span style="color:#FFBF00"> 골드 4</span></p>
@@ -339,7 +288,61 @@ Now = 1, cnt_pair= 10, st = (1 1) (5 1)
 </code></pre></div></div>
 
 <h2 id="채점-결과">채점 결과</h2>
-<p><img width="695" alt="스크린샷 2023-06-12 16 58 58" src="https://github.com/ihmmaru99/Softeer/assets/109266664/d4dde186-2e85-4f81-a70c-9cfebe70d919" /></p>]]></content><author><name>임정빈</name></author><category term="Softeer" /><category term="Algorithm" /><category term="C++" /><category term="Implementation" /><summary type="html"><![CDATA[우물 안 개구리]]></summary></entry><entry><title type="html">[백준][20157] 화살을 쏘자!</title><link href="http://localhost:4000/boj/20157/" rel="alternate" type="text/html" title="[백준][20157] 화살을 쏘자!" /><published>2023-06-11T00:00:00+09:00</published><updated>2023-06-11T00:00:00+09:00</updated><id>http://localhost:4000/boj/20157</id><content type="html" xml:base="http://localhost:4000/boj/20157/"><![CDATA[<h1 id="화살을-쏘자">화살을 쏘자!</h1>
+<p><img width="695" alt="스크린샷 2023-06-12 16 58 58" src="https://github.com/ihmmaru99/Softeer/assets/109266664/d4dde186-2e85-4f81-a70c-9cfebe70d919" /></p>]]></content><author><name>임정빈</name></author><category term="Softeer" /><category term="Algorithm" /><category term="C++" /><category term="Implementation" /><summary type="html"><![CDATA[우물 안 개구리]]></summary></entry><entry><title type="html">[소프티어] 강의실 배정</title><link href="http://localhost:4000/softeer/%EA%B0%95%EC%9D%98%EC%8B%A4%EB%B0%B0%EC%A0%95/" rel="alternate" type="text/html" title="[소프티어] 강의실 배정" /><published>2023-06-12T00:00:00+09:00</published><updated>2023-06-12T00:00:00+09:00</updated><id>http://localhost:4000/softeer/%EA%B0%95%EC%9D%98%EC%8B%A4%EB%B0%B0%EC%A0%95</id><content type="html" xml:base="http://localhost:4000/softeer/%EA%B0%95%EC%9D%98%EC%8B%A4%EB%B0%B0%EC%A0%95/"><![CDATA[<h1 id="강의실-배정">강의실 배정</h1>
+
+<h2 id="난이도">난이도</h2>
+<blockquote>
+  <p>level 3</p>
+</blockquote>
+
+<h2 id="문제">문제</h2>
+<p>김교수는 강의실 1개에 최대한 많은 강의를 배정하려고 한다. 배정된 강의는 서로 겹치지 않아야 하며 수업시간의 길이와 상관없이 최대한 강의를 많이 배정하라. 단, 두 강의의 시작시간과 종료시간은 겹쳐도 된다.</p>
+
+<h2 id="제약조건">제약조건</h2>
+<p>1 ≤ N ≤ \(10^6\) 인 정수<br />
+1 ≤ \(S_i\) ＜ \(F_i\) ≤ \(10^9\)</p>
+
+<h2 id="입력형식">입력형식</h2>
+<p>첫 번째 줄에 강의 개수 N이 주어진다. i + 1 (1 ≤ i ≤ N)번째 줄에는 i번째 강의의 시작 시간 Si와 종료 시간 Fi가 주어진다.</p>
+
+<h2 id="출력형식">출력형식</h2>
+<p>첫 번째 줄에 최대 강의 수를 출력하라.</p>
+
+<h2 id="풀이">풀이</h2>
+
+<h2 id="결과">결과</h2>
+<p><a href="https://github.com/ihmmaru99/Softeer/blob/main/강의실배정/강의실배정.cpp">강의실배정</a></p>
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
+#include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp">
+</span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span>
+<span class="p">{</span>
+	<span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="n">cnt</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+	<span class="n">vector</span><span class="o">&lt;</span><span class="n">pair</span><span class="o">&lt;</span><span class="kt">int</span><span class="p">,</span><span class="kt">int</span><span class="o">&gt;&gt;</span> <span class="n">v</span><span class="p">;</span>
+	<span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">n</span><span class="p">;</span>
+	<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+		<span class="kt">int</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">;</span>
+		<span class="n">cin</span> <span class="o">&gt;&gt;</span> <span class="n">a</span> <span class="o">&gt;&gt;</span> <span class="n">b</span><span class="p">;</span>
+		<span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">make_pair</span><span class="p">(</span><span class="n">b</span><span class="p">,</span><span class="n">a</span><span class="p">));</span>
+	<span class="p">}</span>
+	<span class="n">sort</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
+	<span class="kt">int</span> <span class="n">start</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="n">first</span><span class="p">;</span>
+	<span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+		<span class="k">if</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">second</span> <span class="o">&gt;=</span> <span class="n">start</span><span class="p">){</span>
+			<span class="n">cnt</span><span class="o">++</span><span class="p">;</span>
+			<span class="n">start</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">first</span><span class="p">;</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+	<span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">cnt</span><span class="p">;</span>
+	<span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h2 id="채점-결과">채점 결과</h2>
+<p><img width="695" alt="스크린샷 2023-06-12 14 38 58" src="https://github.com/ihmmaru99/Softeer/assets/109266664/686cfc5d-7b78-41c0-aabf-aace92a1048e" /></p>]]></content><author><name>임정빈</name></author><category term="Softeer" /><category term="Algorithm" /><category term="C++" /><category term="Greedy" /><summary type="html"><![CDATA[강의실 배정]]></summary></entry><entry><title type="html">[백준][20157] 화살을 쏘자!</title><link href="http://localhost:4000/boj/20157/" rel="alternate" type="text/html" title="[백준][20157] 화살을 쏘자!" /><published>2023-06-11T00:00:00+09:00</published><updated>2023-06-11T00:00:00+09:00</updated><id>http://localhost:4000/boj/20157</id><content type="html" xml:base="http://localhost:4000/boj/20157/"><![CDATA[<h1 id="화살을-쏘자">화살을 쏘자!</h1>
 <h2 id="난이도">난이도</h2>
 <blockquote>
   <p><img src="https://github.com/ihmmaru99/BOJ/assets/109266664/96cb338c-cf4e-498c-9ae4-c9632a0b73f4" alt="11" width="20px&quot;, height=&quot;20px" /> <span style="color:#FFBF00"> 골드 5</span></p>
@@ -603,86 +606,4 @@ Now = 1, cnt_pair= 10, st = (1 1) (5 1)
 </code></pre></div></div>
 
 <h2 id="채점-결과">채점 결과</h2>
-<p><img width="730" alt="스크린샷 2023-06-10 14 27 21" src="https://github.com/ihmmaru99/BOJ/assets/109266664/82b78ea7-fb86-4aeb-b137-58c4a6ee8996" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="C++" /><category term="Greedy" /><category term="Queue" /><summary type="html"><![CDATA[카드 정렬하기 난이도 골드 4]]></summary></entry><entry><title type="html">[프로그래머스] 셔틀버스</title><link href="http://localhost:4000/programmers/shuttlebus/" rel="alternate" type="text/html" title="[프로그래머스] 셔틀버스" /><published>2023-06-08T00:00:00+09:00</published><updated>2023-06-09T00:00:00+09:00</updated><id>http://localhost:4000/programmers/shuttlebus</id><content type="html" xml:base="http://localhost:4000/programmers/shuttlebus/"><![CDATA[<h1 id="2018-kakao-blind-recruitment-셔틀버스">2018 KAKAO BLIND RECRUITMENT 셔틀버스</h1>
-<h2 id="문제">문제</h2>
-<p>카카오에서는 무료 셔틀버스를 운행하기 때문에 판교역에서 편하게 사무실로 올 수 있다. 카카오의 직원은 서로를 ‘크루’라고 부르는데, 아침마다 많은 크루들이 이 셔틀을 이용하여 출근한다.
-이 문제에서는 편의를 위해 셔틀은 다음과 같은 규칙으로 운행한다고 가정하자.</p>
-<ul>
-  <li>셔틀은 09:00부터 총 n회 t분 간격으로 역에 도착하며, 하나의 셔틀에는 최대 m명의 승객이 탈 수 있다.</li>
-  <li>셔틀은 도착했을 때 도착한 순간에 대기열에 선 크루까지 포함해서 대기 순서대로 태우고 바로 출발한다. 예를 들어 09:00에 도착한 셔틀은 자리가 있다면 09:00에 줄을 선 크루도 탈 수 있다.</li>
-</ul>
-
-<p>일찍 나와서 셔틀을 기다리는 것이 귀찮았던 콘은, 일주일간의 집요한 관찰 끝에 어떤 크루가 몇 시에 셔틀 대기열에 도착하는지 알아냈다. 콘이 셔틀을 타고 사무실로 갈 수 있는 도착 시각 중 제일 늦은 시각을 구하여라.
-단, 콘은 게으르기 때문에 같은 시각에 도착한 크루 중 대기열에서 제일 뒤에 선다. 또한, 모든 크루는 잠을 자야 하므로 23:59에 집에 돌아간다. 따라서 어떤 크루도 다음날 셔틀을 타는 일은 없다.</p>
-
-<h2 id="입력-형식">입력 형식</h2>
-<p>셔틀 운행 횟수 n, 셔틀 운행 간격 t, 한 셔틀에 탈 수 있는 최대 크루 수 m, 크루가 대기열에 도착하는 시각을 모은 배열 timetable이 입력으로 주어진다.</p>
-<ul>
-  <li>0 ＜ n ≦ 10</li>
-  <li>0 ＜ t ≦ 60</li>
-  <li>0 ＜ m ≦ 45</li>
-  <li>timetable은 최소 길이 1이고 최대 길이 2000인 배열로, 하루 동안 크루가 대기열에 도착하는 시각이 HH:MM 형식으로 이루어져 있다.</li>
-  <li>크루의 도착 시각 HH:MM은 00:01에서 23:59 사이이다.</li>
-</ul>
-
-<h2 id="출력-형식">출력 형식</h2>
-<p>콘이 무사히 셔틀을 타고 사무실로 갈 수 있는 제일 늦은 도착 시각을 출력한다. 도착 시각은 HH:MM 형식이며, 00:00에서 23:59 사이의 값이 될 수 있다.</p>
-
-<h2 id="풀이">풀이</h2>
-<blockquote>
-  <p>문제에서 사람이 오는 시간은 배열에 문자열의 형태로 저장되어 있다. 문자열을 정수로 반환하여 도착한 시간을 확인할 수 있도록 한다. 정수로 변환된 사람들의 도착시간을 오름차순으로 정렬한다. 정렬된 사람들을 통해서 셔틀버스에 해당 시간에 탈 수 있는지 확인한다. 만약 셔틀버스에 탈 수 있는 잔여석이 남아있고 현재 사람이 도착해있다면 그 사람은 해당 셔틀버스에 탈 수 있고 탔음을 표시한다. 그렇게 사람을 다 넣었으면 콘이 셔틀버스에 탈 수 있는 시간을 확인해야 한다. 만약 현재 도착한 사람들을 모두 태웠을 때 내가 탈 수 없다면 마지막에 탄 사람보다 1분 빨리 와야 하고 아니고 아직 맨 마지막에 정확히 도착하는 셔틀버스를 타도록 하면 된다. 이렇게 저장된 콘이 도착해야 되는 시간을 다시 문자열로 변환해서 출력할 수 있도록 하면 된다.</p>
-</blockquote>
-
-<h2 id="결과">결과</h2>
-<p><a href="https://github.com/ihmmaru99/Programmers/blob/main/셔틀버스/셔틀버스.cpp">셔틀버스</a></p>
-<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;string&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;vector&gt;</span><span class="cp">
-#include</span> <span class="cpf">&lt;algorithm&gt;</span><span class="cp">
-</span>
-<span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
-
-<span class="n">string</span> <span class="nf">solution</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">,</span> <span class="kt">int</span> <span class="n">t</span><span class="p">,</span> <span class="kt">int</span> <span class="n">m</span><span class="p">,</span> <span class="n">vector</span><span class="o">&lt;</span><span class="n">string</span><span class="o">&gt;</span> <span class="n">timetable</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">result</span><span class="p">;</span>
-    <span class="n">string</span> <span class="n">answer</span> <span class="o">=</span> <span class="s">""</span><span class="p">;</span>
-    <span class="n">vector</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">v</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="n">string</span> <span class="n">time</span> <span class="o">:</span> <span class="n">timetable</span><span class="p">)</span>
-        <span class="n">v</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">stoi</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">substr</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">+</span> <span class="n">stoi</span><span class="p">(</span><span class="n">time</span><span class="p">.</span><span class="n">substr</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">)));</span>
-    <span class="n">sort</span><span class="p">(</span><span class="n">v</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">v</span><span class="p">.</span><span class="n">end</span><span class="p">());</span>
-    <span class="kt">int</span> <span class="n">bus</span> <span class="o">=</span> <span class="mi">540</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">index</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-    <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
-        <span class="kt">int</span> <span class="n">cnt</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-        <span class="k">for</span><span class="p">(</span><span class="kt">int</span> <span class="n">j</span><span class="o">=</span><span class="n">index</span><span class="p">;</span> <span class="n">j</span><span class="o">&lt;</span><span class="n">v</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">j</span><span class="o">++</span><span class="p">){</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">v</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">bus</span><span class="p">){</span>
-                <span class="n">index</span><span class="o">++</span><span class="p">;</span>
-                <span class="n">cnt</span><span class="o">++</span><span class="p">;</span>
-                <span class="k">if</span><span class="p">(</span><span class="n">cnt</span> <span class="o">==</span> <span class="n">m</span><span class="p">)</span>
-                    <span class="k">break</span><span class="p">;</span>
-            <span class="p">}</span>
-        <span class="p">}</span>
-        <span class="k">if</span><span class="p">(</span><span class="n">i</span> <span class="o">==</span> <span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">){</span>
-            <span class="k">if</span><span class="p">(</span><span class="n">cnt</span> <span class="o">==</span> <span class="n">m</span><span class="p">){</span>
-                <span class="n">result</span> <span class="o">=</span> <span class="n">v</span><span class="p">[</span><span class="n">index</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="mi">1</span><span class="p">;</span>
-            <span class="p">}</span>
-            <span class="k">else</span>
-                <span class="n">result</span> <span class="o">=</span> <span class="n">bus</span><span class="p">;</span>
-        <span class="p">}</span>
-        <span class="n">bus</span> <span class="o">+=</span> <span class="n">t</span><span class="p">;</span>
-    <span class="p">}</span>
-    <span class="kt">int</span> <span class="n">h</span> <span class="o">=</span> <span class="n">result</span> <span class="o">/</span> <span class="mi">60</span><span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">h</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)</span>
-        <span class="n">answer</span> <span class="o">+=</span> <span class="s">"0"</span> <span class="o">+</span> <span class="n">to_string</span><span class="p">(</span><span class="n">h</span><span class="p">)</span> <span class="o">+</span> <span class="s">":"</span><span class="p">;</span>
-    <span class="k">else</span>
-        <span class="n">answer</span> <span class="o">+=</span> <span class="n">to_string</span><span class="p">(</span><span class="n">h</span><span class="p">)</span> <span class="o">+</span> <span class="s">":"</span><span class="p">;</span>
-    <span class="kt">int</span> <span class="n">minutes</span> <span class="o">=</span> <span class="n">result</span> <span class="o">%</span> <span class="mi">60</span><span class="p">;</span>
-    <span class="k">if</span><span class="p">(</span><span class="n">minutes</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)</span>
-        <span class="n">answer</span> <span class="o">+=</span> <span class="s">"0"</span> <span class="o">+</span> <span class="n">to_string</span><span class="p">(</span><span class="n">minutes</span><span class="p">);</span>
-    <span class="k">else</span>
-        <span class="n">answer</span> <span class="o">+=</span> <span class="n">to_string</span><span class="p">(</span><span class="n">minutes</span><span class="p">);</span>
-    <span class="k">return</span> <span class="n">answer</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<h2 id="채점-결과">채점 결과</h2>
-<p><img width="149" alt="스크린샷 2023-06-09 12 07 33" src="https://github.com/ihmmaru99/Programmers/assets/109266664/0ae294f6-be8e-4f23-9afb-2b8e1d5d33b4" /></p>]]></content><author><name>임정빈</name></author><category term="Programmers" /><category term="Algorithm" /><category term="C++" /><category term="Implementation" /><summary type="html"><![CDATA[2018 KAKAO BLIND RECRUITMENT 셔틀버스 문제 카카오에서는 무료 셔틀버스를 운행하기 때문에 판교역에서 편하게 사무실로 올 수 있다. 카카오의 직원은 서로를 ‘크루’라고 부르는데, 아침마다 많은 크루들이 이 셔틀을 이용하여 출근한다. 이 문제에서는 편의를 위해 셔틀은 다음과 같은 규칙으로 운행한다고 가정하자. 셔틀은 09:00부터 총 n회 t분 간격으로 역에 도착하며, 하나의 셔틀에는 최대 m명의 승객이 탈 수 있다. 셔틀은 도착했을 때 도착한 순간에 대기열에 선 크루까지 포함해서 대기 순서대로 태우고 바로 출발한다. 예를 들어 09:00에 도착한 셔틀은 자리가 있다면 09:00에 줄을 선 크루도 탈 수 있다.]]></summary></entry></feed>
+<p><img width="730" alt="스크린샷 2023-06-10 14 27 21" src="https://github.com/ihmmaru99/BOJ/assets/109266664/82b78ea7-fb86-4aeb-b137-58c4a6ee8996" /></p>]]></content><author><name>임정빈</name></author><category term="BOJ" /><category term="Algorithm" /><category term="C++" /><category term="Greedy" /><category term="Queue" /><summary type="html"><![CDATA[카드 정렬하기 난이도 골드 4]]></summary></entry></feed>

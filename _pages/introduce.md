@@ -18,7 +18,7 @@ sidebar_main: true
 <img src="https://github.com/ihmmaru99/ihmmaru99/assets/109266664/d284c760-df41-4b58-ac5a-d30c908dbf0b" width="25px" height="25px">
 세종과학고등학교 8기 졸업 (2015.03 ~ 2018.02)<br>
 <img src="https://github.com/ihmmaru99/ihmmaru99/assets/109266664/7963b194-4583-4323-a431-70da592d682f" width="25px" height="25px">
-한양대학교 미래자동차공학과 18학번 (2018.03 ~ )<br>
+한양대학교 미래자동차공학과 18학번 (2018.03 ~ 2024.02)<br>
 <img src="https://github.com/ihmmaru99/BOJ/assets/109266664/0003dfed-b57e-44e2-baa5-de9e4a0e1695" width="25px" height="25px">
 대한민국 공군 병장 만기전역 (2019.09 ~ 2021.06)<br>
 <img src="https://github.com/ihmmaru99/ihmmaru99/assets/109266664/081bfcf2-c7a5-4cf5-94d5-f14bd7dcf558" width="50px" height="25px">
@@ -26,7 +26,7 @@ sidebar_main: true
 <img src="https://github.com/ihmmaru99/ihmmaru99/assets/109266664/fdccd428-3fe6-4370-9d95-d35e83f88be1" width="25px" height="25px">
 컨트롤웍스 미래기술본부 현장실습생 (2022.12 ~ 2023.02)<br>
 <img src="https://github.com/ihmmaru99/ihmmaru99/assets/109266664/8f16482b-dc76-4715-a882-5727d9e98157" width="25px" height="25px">
-프로그래머스 자율주행 인지 데브코스 (2023.03 ~ )<br>
+프로그래머스 자율주행 인지 데브코스 (2023.03 ~ 2023.08)<br>
 
 # SNS
 ---
