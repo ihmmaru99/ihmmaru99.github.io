@@ -160,4 +160,10 @@ var store = [{
         "tags": ["HW","Motor"],
         "url": "/autocarsw/1/",
         "teaser": null
+      },{
+        "title": "[백준][5014] 스타트링크",
+        "excerpt":"test  ","categories": ["BOJ"],
+        "tags": ["Algorithm","BFS","C++"],
+        "url": "/boj/1/",
+        "teaser": null
       }]
